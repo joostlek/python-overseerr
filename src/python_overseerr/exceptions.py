@@ -7,4 +7,3 @@ class OverseerrError(Exception):
 
 class OverseerrConnectionError(OverseerrError):
     """Overseerr connection exception."""
-
