@@ -9,8 +9,7 @@ import socket
 from typing import TYPE_CHECKING, Any
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
-from aiohttp.hdrs import METH_GET, METH_PUT
-from mashumaro import MissingField
+from aiohttp.hdrs import METH_GET
 from yarl import URL
 
 from .exceptions import OverseerrConnectionError

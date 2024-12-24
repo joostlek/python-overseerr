@@ -3,18 +3,17 @@
 from __future__ import annotations
 
 import asyncio
-from typing import TYPE_CHECKING, Any, Awaitable, Callable
+from typing import TYPE_CHECKING, Any
 
 import aiohttp
 from aiohttp import ClientError
-from aiohttp.hdrs import METH_PUT
 from aioresponses import CallbackResult, aioresponses
 import pytest
 
 from python_overseerr import OverseerrClient
-from python_overseerr.exceptions import OverseerrError, OverseerrConnectionError
+from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
 from tests import load_fixture
-from tests.const import HEADERS, MOCK_HOST, MOCK_URL
+from tests.const import MOCK_HOST, MOCK_URL
 
 if TYPE_CHECKING:
     from syrupy import SnapshotAssertion
@@ -70,7 +69,6 @@ async def test_unexpected_server_response(
         await client.get_request_count()
 
 
-
 async def test_timeout(
     responses: aioresponses,
 ) -> None:
@@ -86,7 +84,9 @@ async def test_timeout(
         f"{MOCK_URL}/request/count",
         callback=response_handler,
     )
-    async with OverseerrClient(request_timeout=1, host=MOCK_HOST, api_key="abc") as overseerr:
+    async with OverseerrClient(
+        request_timeout=1, host=MOCK_HOST, api_key="abc"
+    ) as overseerr:
         with pytest.raises(OverseerrConnectionError):
             await overseerr.get_request_count()
 
@@ -121,4 +121,3 @@ async def test_request_count(
         body=load_fixture("request_count.json"),
     )
     assert await client.get_request_count() == snapshot
-
