@@ -1,6 +1,6 @@
 """Asynchronous Python client for Overseerr."""
 
-from typing import AsyncGenerator, Generator
+from collections.abc import AsyncGenerator, Generator
 
 import aiohttp
 from aioresponses import aioresponses
@@ -21,11 +21,14 @@ def snapshot_assertion(snapshot: SnapshotAssertion) -> SnapshotAssertion:
 @pytest.fixture
 async def client() -> AsyncGenerator[OverseerrClient, None]:
     """Return a Overseerr client."""
-    async with aiohttp.ClientSession() as session, OverseerrClient(
-        "192.168.0.30",
-        "key",
-        session=session,
-    ) as overseerr_client:
+    async with (
+        aiohttp.ClientSession() as session,
+        OverseerrClient(
+            "192.168.0.30",
+            "key",
+            session=session,
+        ) as overseerr_client,
+    ):
         yield overseerr_client
 
 
