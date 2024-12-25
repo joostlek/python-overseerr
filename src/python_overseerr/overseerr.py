@@ -26,7 +26,7 @@ VERSION = metadata.version(__package__)
 class OverseerrClient:
     """Main class for handling connections with Overseerr."""
 
-    host: str
+    url: str
     api_key: str
     session: ClientSession | None = None
     request_timeout: int = 10
@@ -40,15 +40,12 @@ class OverseerrClient:
         data: dict[str, Any] | None = None,
     ) -> str:
         """Handle a request to Overseerr."""
-        url = URL.build(
-            scheme="https",
-            host=self.host,
-            port=443,
-        ).joinpath(f"api/v1/{uri}")
+        url = URL(self.url).joinpath(f"api/v1/{uri}")
 
         headers = {
             "User-Agent": f"PythonOverseerr/{VERSION}",
             "Accept": "application/json",
+            "X-Api-Key": self.api_key,
         }
 
         if self.session is None:

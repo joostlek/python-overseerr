@@ -24,7 +24,7 @@ async def client() -> AsyncGenerator[OverseerrClient, None]:
     async with (
         aiohttp.ClientSession() as session,
         OverseerrClient(
-            "192.168.0.30",
+            "https://192.168.0.30",
             "key",
             session=session,
         ) as overseerr_client,
