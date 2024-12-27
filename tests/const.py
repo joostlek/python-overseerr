@@ -10,4 +10,5 @@ version = metadata.version("python_overseerr")
 HEADERS = {
     "User-Agent": f"PythonOverseerr/{version}",
     "Accept": "application/json",
+    "X-Api-Key": "key",
 }
