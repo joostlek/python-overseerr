@@ -7,13 +7,14 @@ from typing import TYPE_CHECKING, Any
 
 import aiohttp
 from aiohttp import ClientError
+from aiohttp.hdrs import METH_GET
 from aioresponses import CallbackResult, aioresponses
 import pytest
 
 from python_overseerr import OverseerrClient
 from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
 from tests import load_fixture
-from tests.const import MOCK_URL
+from tests.const import HEADERS, MOCK_URL
 
 if TYPE_CHECKING:
     from syrupy import SnapshotAssertion
@@ -29,7 +30,7 @@ async def test_putting_in_own_session(
         body=load_fixture("request_count.json"),
     )
     async with aiohttp.ClientSession() as session:
-        overseerr = OverseerrClient("https://192.168.0.30", "abc", session=session)
+        overseerr = OverseerrClient("192.168.0.30", 443, "abc", session=session)
         await overseerr.get_request_count()
         assert overseerr.session is not None
         assert not overseerr.session.closed
@@ -46,7 +47,7 @@ async def test_creating_own_session(
         status=200,
         body=load_fixture("request_count.json"),
     )
-    overseerr = OverseerrClient("https://192.168.0.30", "abc")
+    overseerr = OverseerrClient("192.168.0.30", 443, "abc")
     await overseerr.get_request_count()
     assert overseerr.session is not None
     assert not overseerr.session.closed
@@ -85,7 +86,8 @@ async def test_timeout(
         callback=response_handler,
     )
     async with OverseerrClient(
-        "https://192.168.0.30",
+        "192.168.0.30",
+        443,
         "abc",
         request_timeout=1,
     ) as overseerr:
@@ -123,3 +125,9 @@ async def test_request_count(
         body=load_fixture("request_count.json"),
     )
     assert await client.get_request_count() == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/request/count",
+        METH_GET,
+        headers=HEADERS,
+        json=None,
+    )
