@@ -143,5 +143,35 @@ async def test_data_retrieval(
         f"{MOCK_URL}/{endpoint}",
         METH_GET,
         headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
+@pytest.mark.parametrize(
+    "fixtures",
+    [
+        "search_1.json",
+        "search_2.json",
+    ],
+)
+async def test_search(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+    fixtures: str,
+) -> None:
+    """Test searching for media."""
+    responses.get(
+        f"{MOCK_URL}/search?query=frosty",
+        status=200,
+        body=load_fixture(fixtures),
+    )
+    assert await client.search("frosty") == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/search",
+        METH_GET,
+        headers=HEADERS,
+        params={"query": "frosty"},
         json=None,
     )

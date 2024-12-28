@@ -13,7 +13,7 @@ from aiohttp.hdrs import METH_GET
 from yarl import URL
 
 from .exceptions import OverseerrConnectionError
-from .models import RequestCount, Status
+from .models import RequestCount, Result, SearchResult, Status
 
 if TYPE_CHECKING:
     from typing_extensions import Self
@@ -39,6 +39,7 @@ class OverseerrClient:
         method: str,
         uri: str,
         *,
+        params: dict[str, Any] | None = None,
         data: dict[str, Any] | None = None,
     ) -> str:
         """Handle a request to Overseerr."""
@@ -61,6 +62,7 @@ class OverseerrClient:
                 response = await self.session.request(
                     method,
                     url,
+                    params=params,
                     headers=headers,
                     json=data,
                 )
@@ -95,6 +97,11 @@ class OverseerrClient:
         """Get status from Overseerr."""
         response = await self._request(METH_GET, "status")
         return Status.from_json(response)
+
+    async def search(self, keyword: str) -> list[Result]:
+        """Search for media in Overseerr."""
+        response = await self._request(METH_GET, "search", params={"query": keyword})
+        return SearchResult.from_json(response).results
 
     async def close(self) -> None:
         """Close open client session."""
