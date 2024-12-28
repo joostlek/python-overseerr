@@ -143,5 +143,27 @@ async def test_data_retrieval(
         f"{MOCK_URL}/{endpoint}",
         METH_GET,
         headers=HEADERS,
+        params=None,
+        json=None,
+    )
+
+
+async def test_search(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test searching for media."""
+    responses.get(
+        f"{MOCK_URL}/search?query=frosty",
+        status=200,
+        body=load_fixture("search_1.json"),
+    )
+    assert await client.search("frosty") == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/search",
+        METH_GET,
+        headers=HEADERS,
+        params={"query": "frosty"},
         json=None,
     )
