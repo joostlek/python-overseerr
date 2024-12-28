@@ -118,10 +118,16 @@ async def test_client_error(
     [
         ("request/count", "request_count.json", "get_request_count"),
         ("status", "status.json", "get_status"),
+        (
+            "settings/notifications/webhook",
+            "webhook_config.json",
+            "get_webhook_notification_config",
+        ),
     ],
     ids=[
         "request_count",
         "status",
+        "webhook_config",
     ],
 )
 async def test_data_retrieval(
