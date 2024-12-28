@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import date, datetime  # noqa: TC003
 from enum import IntEnum, StrEnum
 from typing import Annotated
 
@@ -51,8 +51,9 @@ class MediaInfo(DataClassORJSONMixin):
     """Media info model."""
 
     id: int
-    tmdb_id: int = field(metadata=field_options(alias="tmdbId"))
-    tvdb_id: int = field(metadata=field_options(alias="tvdbId"))
+    tmdb_id: int | None = field(metadata=field_options(alias="tmdbId"))
+    tvdb_id: int | None = field(metadata=field_options(alias="tvdbId"))
+    imdb_id: str | None = field(metadata=field_options(alias="imdbId"))
     status: MediaStatus
     created_at: datetime = field(metadata=field_options(alias="createdAt"))
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
@@ -68,37 +69,60 @@ class MediaType(StrEnum):
 
 @dataclass
 class Result(DataClassORJSONMixin):
+    """Result model."""
+
     id: int
-    mediaType: MediaType
+    mediaType: MediaType  # noqa: N815 # pylint: disable=invalid-name
     media_type: MediaType = field(metadata=field_options(alias="mediaType"))
-    adult: bool
 
 
 @dataclass
-class MovieResult(Result):
-    mediaType = MediaType.MOVIE
+class Movie(Result):
+    """Movie result model."""
+
+    mediaType = MediaType.MOVIE  # noqa: N815 # pylint: disable=invalid-name
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_title: str = field(metadata=field_options(alias="originalTitle"))
     overview: str
     popularity: float
     title: str
+    adult: bool
     media_info: MediaInfo | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
     )
 
 
 @dataclass
-class TVResult(Result):
-    mediaType = MediaType.TV
+class TV(Result):
+    """TV result model."""
+
+    mediaType = MediaType.TV  # noqa: N815 # pylint: disable=invalid-name
+    first_air_date: date = field(metadata=field_options(alias="firstAirDate"))
+    name: str
+    original_language: str = field(metadata=field_options(alias="originalLanguage"))
+    original_name: str = field(metadata=field_options(alias="originalName"))
+    overview: str
+    popularity: float
+    media_info: MediaInfo | None = field(
+        metadata=field_options(alias="mediaInfo"), default=None
+    )
 
 
 @dataclass
-class PersonResult(Result):
-    mediaType = MediaType.PERSON
+class Person(Result):
+    """Person result model."""
+
+    mediaType = MediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
+    name: str
+    popularity: float
+    known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
+    adult: bool
 
 
 @dataclass
 class SearchResult(DataClassORJSONMixin):
+    """Search result model."""
+
     results: list[
         Annotated[Result, Discriminator(field="mediaType", include_subtypes=True)]
     ]

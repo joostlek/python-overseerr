@@ -1,0 +1,527 @@
+{
+    "page": 1,
+    "totalPages": 5,
+    "totalResults": 91,
+    "results": [
+        {
+            "id": 47640,
+            "firstAirDate": "2014-07-13",
+            "genreIds": [
+                10765,
+                18,
+                9648
+            ],
+            "mediaType": "tv",
+            "name": "The Strain",
+            "originCountry": [
+                "US"
+            ],
+            "originalLanguage": "en",
+            "originalName": "The Strain",
+            "overview": "A high concept thriller that tells the story of Dr. Ephraim Goodweather, the head of the Center for Disease Control Canary Team in New York City. He and his team are called upon to investigate a mysterious viral outbreak with hallmarks of an ancient and evil strain of vampirism. As the strain spreads, Eph, his team, and an assembly of everyday New Yorkers, wage war for the fate of humanity itself.",
+            "popularity": 284.215,
+            "voteAverage": 7.478,
+            "voteCount": 1819,
+            "backdropPath": "/4YnAZ1KO9goeS4c06VO7HXiO3oO.jpg",
+            "posterPath": "/2BWErT9QcADpf2G4BZ769eSnFTP.jpg",
+            "mediaInfo": {
+                "downloadStatus": [],
+                "downloadStatus4k": [],
+                "id": 503,
+                "mediaType": "tv",
+                "tmdbId": 47640,
+                "tvdbId": 276564,
+                "imdbId": null,
+                "status": 4,
+                "status4k": 1,
+                "createdAt": "2024-12-16T21:15:21.000Z",
+                "updatedAt": "2024-12-16T21:15:21.000Z",
+                "lastSeasonChange": "2024-12-16T21:15:21.000Z",
+                "mediaAddedAt": "2024-12-16T08:35:24.000Z",
+                "serviceId": null,
+                "serviceId4k": null,
+                "externalServiceId": null,
+                "externalServiceId4k": null,
+                "externalServiceSlug": null,
+                "externalServiceSlug4k": null,
+                "ratingKey": "9520",
+                "ratingKey4k": null,
+                "seasons": [
+                    {
+                        "id": 420,
+                        "seasonNumber": 0,
+                        "status": 1,
+                        "status4k": 1,
+                        "createdAt": "2024-12-16T21:15:22.000Z",
+                        "updatedAt": "2024-12-16T21:15:22.000Z"
+                    },
+                    {
+                        "id": 421,
+                        "seasonNumber": 1,
+                        "status": 5,
+                        "status4k": 1,
+                        "createdAt": "2024-12-16T21:15:22.000Z",
+                        "updatedAt": "2024-12-16T21:15:22.000Z"
+                    },
+                    {
+                        "id": 422,
+                        "seasonNumber": 2,
+                        "status": 5,
+                        "status4k": 1,
+                        "createdAt": "2024-12-16T21:15:22.000Z",
+                        "updatedAt": "2024-12-16T21:15:22.000Z"
+                    },
+                    {
+                        "id": 423,
+                        "seasonNumber": 3,
+                        "status": 5,
+                        "status4k": 1,
+                        "createdAt": "2024-12-16T21:15:22.000Z",
+                        "updatedAt": "2024-12-16T21:15:22.000Z"
+                    },
+                    {
+                        "id": 425,
+                        "seasonNumber": 4,
+                        "status": 5,
+                        "status4k": 1,
+                        "createdAt": "2024-12-16T21:15:22.000Z",
+                        "updatedAt": "2024-12-16T21:15:22.000Z"
+                    }
+                ],
+                "plexUrl": "https://app.plex.tv/desktop#!/server/aaaa/details?key=%2Flibrary%2Fmetadata%2F9520",
+                "iOSPlexUrl": "plex://preplay/?metadataKey=%2Flibrary%2Fmetadata%2F9520&server=aaaa"
+            }
+        },
+        {
+            "id": 19997,
+            "firstAirDate": "2008-05-26",
+            "genreIds": [
+                10765,
+                18,
+                10759
+            ],
+            "mediaType": "tv",
+            "name": "The Andromeda Strain",
+            "originCountry": [
+                "US"
+            ],
+            "originalLanguage": "en",
+            "originalName": "The Andromeda Strain",
+            "overview": "A U.S. satellite crash-lands near a small town in Utah, unleashing a deadly plague that kills virtually everyone except two survivors, who may provide clues to immunizing the population. As the military attempts to quarantine the area, a team of highly specialized scientists is assembled to find a cure and stop the spread of the alien pathogen, code-named Andromeda.",
+            "popularity": 38.794,
+            "voteAverage": 6.211,
+            "voteCount": 213,
+            "backdropPath": "/9vypNFCSB7GWK6wfAbVml9pMVi9.jpg",
+            "posterPath": "/6sLbP198qk1czySbc6yE0RnHYY.jpg"
+        },
+        {
+            "id": 272184,
+            "firstAirDate": "2014-07-13",
+            "genreIds": [],
+            "mediaType": "tv",
+            "name": "The Strain",
+            "originCountry": [
+                "ES"
+            ],
+            "originalLanguage": "es",
+            "originalName": "The Strain",
+            "overview": "",
+            "popularity": 0.006,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": null
+        },
+        {
+            "id": 10514,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                878,
+                53
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Andromeda Strain",
+            "overview": "When virtually all of the residents of Piedmont, New Mexico, are found dead after the return to Earth of a space satellite, the head of the US Air Force's Project Scoop declares an emergency. A group of eminent scientists led by Dr. Jeremy Stone scramble to a secure laboratory and try to first isolate the life form while determining why two people from Piedmont - an old alcoholic and a six-month-old baby - survived. The scientists methodically study the alien life form unaware that it has already mutated and presents a far greater danger in the lab, which is equipped with a nuclear self-destruct device designed to prevent the escape of dangerous biological agents.",
+            "popularity": 16.612,
+            "releaseDate": "1971-03-12",
+            "title": "The Andromeda Strain",
+            "video": false,
+            "voteAverage": 7.048,
+            "voteCount": 693,
+            "backdropPath": "/8yE0aOQoZSSl2CuuPvjxdHuQl4P.jpg",
+            "posterPath": "/i3rTxQRJaBJoBcY8VMUOPT2E8Hp.jpg"
+        },
+        {
+            "id": 962613,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                99,
+                878,
+                18
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "Terra Incognita: Making the Andromeda Strain",
+            "overview": "A behind the scenes look at the background and making of the 2008 TV mini-series",
+            "popularity": 2.258,
+            "releaseDate": "2008-07-21",
+            "title": "Terra Incognita: Making the Andromeda Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": "/mmmMytFB1S0RsUhkRHx6Bb4RwiD.jpg"
+        },
+        {
+            "id": 73101,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                27,
+                53
+            ],
+            "originalLanguage": "fr",
+            "originalTitle": "The Killing Strain",
+            "overview": "A man-made virus, 'The Killing Strain'-- an out-of-control swine flu-- turns infected humans into raging monsters. As it rapidly spreads, a group of uninfected survivors must make life-or-death decisions before the U.S. military firebombs the area in a desperate attempt contain the contagion. The survivors are unaware that the virus has already reached their group-- by infecting one of them-- and now the merciless metamorphic process has begun.",
+            "popularity": 1.021,
+            "releaseDate": "2010-01-01",
+            "title": "The Killing Strain",
+            "video": false,
+            "voteAverage": 3.2,
+            "voteCount": 5,
+            "backdropPath": null,
+            "posterPath": "/uvr3ukOPUZSLcg410I2Exi7bk0c.jpg"
+        },
+        {
+            "id": 1074431,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                99
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Andromeda Strain: Making the Film",
+            "overview": "The making of \"The Andromeda Strain\".",
+            "popularity": 0.979,
+            "releaseDate": "2003-04-01",
+            "title": "The Andromeda Strain: Making the Film",
+            "video": false,
+            "voteAverage": 6,
+            "voteCount": 1,
+            "backdropPath": null,
+            "posterPath": "/cclujsq7P7Ua0hYTQqtPlWDRpCb.jpg"
+        },
+        {
+            "id": 291952,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                18
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Racing Strain",
+            "overview": "Lucille Cameron, the spirited daughter of a Kentucky colonel, discovers that her father is nearly bankrupt as a result of his dealings with New York horseman and stock promoter Jim De Luce....",
+            "popularity": 0.158,
+            "releaseDate": "1918-12-22",
+            "title": "The Racing Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": "/q78eqDKe8iYzEOtMPr3bmt6W4uG.jpg",
+            "posterPath": "/wjzev8BHgnb3xXmOJKia3mneF0R.jpg"
+        },
+        {
+            "id": 982014,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                35,
+                18
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Wild Strain",
+            "overview": "Although the prominent Hollywood family prides itself on its illustrious family tree, young Winifred Hollywood exhibits a fondness for wild adventures that greatly disturbs her parents. When Winifred becomes engaged to bank official Harold Burton, his equally snobbish parents visit the Hollywood home and are shocked by the young woman's spirited outbursts and mischievous tricks, and the engagement is broken after she decides to perform bareback feats with a traveling circus.",
+            "popularity": 0.179,
+            "releaseDate": "1918-01-14",
+            "title": "The Wild Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": "/uEnJZjaHr4Yjw7wge3kxznbP0MI.jpg"
+        },
+        {
+            "id": 159423,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                18
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Racing Strain",
+            "overview": "A race-car driver whose career is on the skids because of his drinking falls for a rich society girl. That motivates him to clean up his act and resume his career, but it may be too late for that.",
+            "popularity": 1.441,
+            "releaseDate": "1932-12-16",
+            "title": "The Racing Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": "/39yDZKVXnCtQlOz7RoNAf4i1a77.jpg",
+            "posterPath": "/e9WgARGE5sHKewCxS21bFnMP3Ac.jpg"
+        },
+        {
+            "id": 622790,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                37
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Golden Strain",
+            "overview": "Lt. Milt Mulford graduates from West Point and is assigned to a cavalry outpost in the West, near an Apache reservation. One day the Apaches, tired of being cheated by a crooked Indian agent, break the reservation and Mulford is sent after them with a patrol. Unfortunately, he cracks under the pressure of his first firefight, and is thrown out of the army. His fiancé, disgusted, ends their engagement. He sets out to prove that he is not a coward and regain his fiancé's love.",
+            "popularity": 0.564,
+            "releaseDate": "1925-12-27",
+            "title": "The Golden Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": "/9BbBExXJVjwohBJbqHuapHGDNDS.jpg",
+            "posterPath": "/xe0dIiHdWP62vFS5gPJnKtLNQH0.jpg"
+        },
+        {
+            "id": 1040917,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                16
+            ],
+            "originalLanguage": "sh",
+            "originalTitle": "Plemeniti soj",
+            "overview": "Short animated film.",
+            "popularity": 0.238,
+            "releaseDate": "1971-01-01",
+            "title": "The Noble Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": null
+        },
+        {
+            "id": 223061,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                27
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Missouri Strain",
+            "overview": "A family threatened by a nationwide biological apocalypse flees everyday city life to survive.",
+            "popularity": 0.298,
+            "releaseDate": "2013-11-01",
+            "title": "The Missouri Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": null
+        },
+        {
+            "id": 243291,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                99
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Winning Strain",
+            "overview": "A 1966 short documentary showing athletes in action at the 1966 National Amateur Athletic Union track carnival in New York. The film was nominated for an Oscar for Best Live Action Short Film.",
+            "popularity": 0.347,
+            "releaseDate": "1966-01-01",
+            "title": "The Winning Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": "/9NnuxC7BUb6yaOPCwpuESMiEtBM.jpg"
+        },
+        {
+            "id": 526388,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                18,
+                10752
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Warrior Strain",
+            "overview": "An Earl's cadet son stops a German baron from planting wireless-controlled signals at Brighton.",
+            "popularity": 0.442,
+            "releaseDate": "1919-03-15",
+            "title": "The Warrior Strain",
+            "video": false,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": "/fcyYZUqiSONBNZBoTTWyr1XXGSE.jpg",
+            "posterPath": "/8o5ESrX3Quncyp2pkqUD3m9JNrC.jpg"
+        },
+        {
+            "id": 938337,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                37,
+                10749
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "The Iron Strain",
+            "overview": "The story is set in Alaska, where spoiled and pampered heiress Octavia Van Ness has come for her health. Here she meets 'Chuck' Hemingway, who despite his rough exterior is likewise a child of wealth, and a Yale graduate to boot. When Van Ness violently rejects his romantic overtures, Hemingway turns to an old Indian chum for advice. The Indian suggests rather chauvinistically that the way to win a headstrong girl is to \"tame\" her -- that is, treat 'er rough and make 'er like it.",
+            "popularity": 0.442,
+            "releaseDate": "1915-11-07",
+            "title": "The Iron Strain",
+            "video": false,
+            "voteAverage": 4,
+            "voteCount": 1,
+            "backdropPath": "/oPDapwbJ9bbUipZFolgg76FKVsM.jpg",
+            "posterPath": "/a1APOLxbPfL3sWo2QNjZEMmkKtJ.jpg"
+        },
+        {
+            "id": 80116,
+            "name": "Julie Strain",
+            "popularity": 14.373,
+            "adult": false,
+            "mediaType": "person",
+            "profilePath": "/2M537eXSUhaxzQ0s7XM33m0AoXe.jpg",
+            "knownFor": [
+                {
+                    "id": 67395,
+                    "mediaType": "movie",
+                    "adult": false,
+                    "genreIds": [
+                        28,
+                        53
+                    ],
+                    "originalLanguage": "en",
+                    "originalTitle": "L.E.T.H.A.L. Ladies: Return to Savage Beach",
+                    "overview": "A stolen computer disk contains the location of a hidden tresaure trove. It's up to the sexy ladies of LETHAL (Legion to Ensure Total Harmony and Law) to find the treasure before the bad guys do.",
+                    "popularity": 34.91,
+                    "releaseDate": "1998-01-27",
+                    "title": "L.E.T.H.A.L. Ladies: Return to Savage Beach",
+                    "video": false,
+                    "voteAverage": 6.101,
+                    "voteCount": 193,
+                    "backdropPath": "/cQpSKsSjoQYnDmqTlYl0gV3qnif.jpg",
+                    "posterPath": "/9z3hdYnDdfWGKD55kdDmshDojeP.jpg"
+                },
+                {
+                    "id": 16225,
+                    "mediaType": "movie",
+                    "adult": false,
+                    "genreIds": [
+                        28,
+                        12,
+                        16,
+                        14,
+                        878
+                    ],
+                    "originalLanguage": "en",
+                    "originalTitle": "Heavy Metal 2000",
+                    "overview": "Upon discovery of a shard of what could be the Loc-Nar, a miner named Tyler becomes possessed with an insatiable hunger for power and a thirst for immortality. On his way to the planet of youth, Tyler wipes out most of a space colony and kidnaps a beautiful young woman. His only mistake is that he doesn't kill her sister, Julie, who then sets out on a mission of rescue and revenge.",
+                    "popularity": 12.815,
+                    "releaseDate": "2000-04-19",
+                    "title": "Heavy Metal 2000",
+                    "video": false,
+                    "voteAverage": 6,
+                    "voteCount": 215,
+                    "backdropPath": "/f5C03doOWiauu37bToKXtpgP5bS.jpg",
+                    "posterPath": "/mzOgKYOXiuwE5DIfagFs34bOb3J.jpg"
+                },
+                {
+                    "id": 9594,
+                    "mediaType": "movie",
+                    "adult": false,
+                    "genreIds": [
+                        53,
+                        28,
+                        80,
+                        18
+                    ],
+                    "originalLanguage": "en",
+                    "originalTitle": "Double Impact",
+                    "overview": "Jean Claude Van Damme plays a dual role as Alex and Chad, twins separated at the death of their parents. Chad is raised by a family retainer in Paris, Alex becomes a petty crook in Hong Kong. Seeing a picture of Alex, Chad rejoins him and convinces him that his rival in Hong Kong is also the man who killed their parents. Alex is suspicious of Chad, especially when it comes to his girlfriend.",
+                    "popularity": 33.319,
+                    "releaseDate": "1991-07-31",
+                    "title": "Double Impact",
+                    "video": false,
+                    "voteAverage": 6.1,
+                    "voteCount": 1057,
+                    "backdropPath": "/iI0n28l5vn3K1GdXHVoA54kRemv.jpg",
+                    "posterPath": "/jEXOguTFhYV93cq65XfiazbkfYK.jpg"
+                }
+            ]
+        },
+        {
+            "id": 216141,
+            "mediaType": "movie",
+            "adult": false,
+            "genreIds": [
+                27,
+                18,
+                878
+            ],
+            "originalLanguage": "en",
+            "originalTitle": "Doctor Strain the Body Snatcher",
+            "overview": "Positively torturous, undecipherable shambles of a horror film concerns the titular doctor and his nephew as they incautiously revive corpses in their basement laboratory.",
+            "popularity": 0.479,
+            "releaseDate": "1991-10-31",
+            "title": "Doctor Strain the Body Snatcher",
+            "video": false,
+            "voteAverage": 3.3,
+            "voteCount": 3,
+            "backdropPath": null,
+            "posterPath": null
+        },
+        {
+            "id": 69019,
+            "firstAirDate": "1995-11-10",
+            "genreIds": [
+                18
+            ],
+            "mediaType": "tv",
+            "name": "Strain of Blood",
+            "originCountry": [
+                "TH"
+            ],
+            "originalLanguage": "th",
+            "originalName": "สายโลหิต",
+            "overview": "Krai comes from a family of soldiers and has spent most of his life fighting in battles and wars for his country. Dao is the youngest daughter of a prominent village chief, who is very curious and happy go lucky as a youngster. Krai's older brother marries Dao's older sister, sealing the connection between both families. Krai meets Dao as a young girl and he spends a lot of time taking care of her, buying her toys and taking her on village outings with him to the market. Krai and his older brother are called away to defend the border and he promises Dao that he will return to take care of her always as an older brother. Years later, Krai comes back to realize that Dao has grown into a young beautiful maiden and the good feelings that both had for each other from years ago resurface into true love.",
+            "popularity": 10.02,
+            "voteAverage": 0,
+            "voteCount": 0,
+            "backdropPath": null,
+            "posterPath": "/eBJeBVxQW7UwATdAs5oYXmOFXdA.jpg"
+        },
+        {
+            "id": 31715,
+            "firstAirDate": "2006-11-01",
+            "genreIds": [
+                16,
+                10765
+            ],
+            "mediaType": "tv",
+            "name": "Strain: Strategic Armored Infantry",
+            "originCountry": [
+                "JP"
+            ],
+            "originalLanguage": "ja",
+            "originalName": "奏光のストレイン",
+            "overview": "In the distant future, mankind is divided into two factions: Union and Deague. They have waged a war against each other for so long that no one remembers when it first began.Sara Werec, the daughter of a respectable family, is a 16-year old girl who attends a Space Academy where she is training to become a pilot. Her brother, Ralph Werec, had been sent to the frontline to accomplish a special mission when she was 11 years old. The two of them had lost their parents when they were young and the bond between the two is very close. It is Sara’s dearest wish to be reunited with her brother. To do that, she must travel to the battlefield where he is.One day, Sara’s planet is suddenly assaulted by Deague forces. To her surprise, her brother, Ralph, turns out to be one of the raiders who successfully kidnap a mysterious girl sleeping in a capsule.",
+            "popularity": 12.867,
+            "voteAverage": 8.4,
+            "voteCount": 5,
+            "backdropPath": "/slBzY18bTsr9mSnj2iZI73ebpOh.jpg",
+            "posterPath": "/2WrCZULqB481U27oqAOtTLn5dqj.jpg"
+        }
+    ]
+}
