@@ -84,7 +84,7 @@ class OverseerrClient:
             msg = "Error occurred while communicating with the service"
             raise OverseerrConnectionError(msg) from exception
 
-        if response.status != 200:
+        if response.status >= 400:
             content_type = response.headers.get("Content-Type", "")
             text = await response.text()
             msg = "Unexpected response from Overseerr"
@@ -114,6 +114,24 @@ class OverseerrClient:
         """Get webhook notification config from Overseerr."""
         response = await self._request(METH_GET, "settings/notifications/webhook")
         return WebhookNotificationConfig.from_json(response)
+
+    async def test_webhook_notification_config(
+        self, webhook_url: str, json_payload: str
+    ) -> bool:
+        """Test webhook notification config with Overseerr."""
+        try:
+            await self._request(
+                METH_POST,
+                "settings/notifications/webhook/test",
+                data={
+                    "enabled": True,
+                    "types": NotificationType.REQUEST_PENDING_APPROVAL,
+                    "options": {"webhookUrl": webhook_url, "jsonPayload": json_payload},
+                },
+            )
+        except OverseerrConnectionError:
+            return False
+        return True
 
     async def set_webhook_notification_config(
         self,

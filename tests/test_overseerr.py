@@ -213,3 +213,68 @@ async def test_setting_webhook_configuration(
             },
         },
     )
+
+
+async def test_webhook_config_test(
+    responses: aioresponses,
+    client: OverseerrClient,
+) -> None:
+    """Test setting webhook configuration."""
+    responses.post(
+        f"{MOCK_URL}/settings/notifications/webhook/test",
+        status=204,
+    )
+    assert (
+        await client.test_webhook_notification_config(
+            webhook_url="http://localhost",
+            json_payload="{}",
+        )
+        is True
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/settings/notifications/webhook/test",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json={
+            "enabled": True,
+            "types": 2,
+            "options": {
+                "webhookUrl": "http://localhost",
+                "jsonPayload": "{}",
+            },
+        },
+    )
+
+
+async def test_failing_webhook_config_test(
+    responses: aioresponses,
+    client: OverseerrClient,
+) -> None:
+    """Test setting webhook configuration."""
+    responses.post(
+        f"{MOCK_URL}/settings/notifications/webhook/test",
+        status=500,
+        body='{"message": "Failed to send webhook notification."}',
+    )
+    assert (
+        await client.test_webhook_notification_config(
+            webhook_url="http://localhost",
+            json_payload="{}",
+        )
+        is False
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/settings/notifications/webhook/test",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json={
+            "enabled": True,
+            "types": 2,
+            "options": {
+                "webhookUrl": "http://localhost",
+                "jsonPayload": "{}",
+            },
+        },
+    )
