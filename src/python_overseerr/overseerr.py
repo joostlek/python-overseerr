@@ -13,7 +13,7 @@ from aiohttp.hdrs import METH_GET
 from yarl import URL
 
 from .exceptions import OverseerrConnectionError
-from .models import RequestCount
+from .models import RequestCount, Status
 
 if TYPE_CHECKING:
     from typing_extensions import Self
@@ -90,6 +90,11 @@ class OverseerrClient:
         """Get request count from Overseerr."""
         response = await self._request(METH_GET, "request/count")
         return RequestCount.from_json(response)
+
+    async def get_status(self) -> Status:
+        """Get status from Overseerr."""
+        response = await self._request(METH_GET, "status")
+        return Status.from_json(response)
 
     async def close(self) -> None:
         """Close open client session."""

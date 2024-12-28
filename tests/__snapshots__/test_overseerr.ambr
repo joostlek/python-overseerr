@@ -1,5 +1,5 @@
 # serializer version: 1
-# name: test_request_count
+# name: test_data_retrieval[request_count]
   dict({
     'approved': 11,
     'available': 8,
@@ -9,5 +9,13 @@
     'processing': 3,
     'total': 11,
     'tv': 2,
+  })
+# ---
+# name: test_data_retrieval[status]
+  dict({
+    'commits_behind': 0,
+    'restart_required': False,
+    'update_available': False,
+    'version': 'develop-local',
   })
 # ---
