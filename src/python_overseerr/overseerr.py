@@ -13,7 +13,13 @@ from aiohttp.hdrs import METH_GET
 from yarl import URL
 
 from .exceptions import OverseerrConnectionError
-from .models import RequestCount, Result, SearchResult, Status
+from .models import (
+    RequestCount,
+    Result,
+    SearchResult,
+    Status,
+    WebhookNotificationConfig,
+)
 
 if TYPE_CHECKING:
     from typing_extensions import Self
@@ -102,6 +108,11 @@ class OverseerrClient:
         """Search for media in Overseerr."""
         response = await self._request(METH_GET, "search", params={"query": keyword})
         return SearchResult.from_json(response).results
+
+    async def get_webhook_notification_config(self) -> WebhookNotificationConfig:
+        """Get webhook notification config from Overseerr."""
+        response = await self._request(METH_GET, "settings/notifications/webhook")
+        return WebhookNotificationConfig.from_json(response)
 
     async def close(self) -> None:
         """Close open client session."""

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import date, datetime  # noqa: TC003
-from enum import IntEnum, StrEnum
+from enum import IntEnum, IntFlag, StrEnum
 from typing import Annotated
 
 from mashumaro import field_options
@@ -126,3 +126,41 @@ class SearchResult(DataClassORJSONMixin):
     results: list[
         Annotated[Result, Discriminator(field="mediaType", include_subtypes=True)]
     ]
+
+
+class WebhookNotificationType(IntFlag):
+    """Webhook notification type enum."""
+
+    REQUEST_PENDING_APPROVAL = 2
+    REQUEST_APPROVED = 4
+    REQUEST_AVAILABLE = 8
+    REQUEST_PROCESSING_FAILED = 16
+    REQUEST_DECLINED = 64
+    REQUEST_AUTOMATICALLY_APPROVED = 128
+    ISSUE_REPORTED = 256
+    ISSUE_COMMENT = 512
+    ISSUE_RESOLVED = 1024
+    ISSUE_REOPENED = 2048
+
+
+@dataclass
+class NotificationConfig(DataClassORJSONMixin):
+    """Webhook config model."""
+
+    enabled: bool
+    types: WebhookNotificationType
+
+
+@dataclass
+class WebhookNotificationOptions:
+    """Webhook notification options model."""
+
+    json_payload: str = field(metadata=field_options(alias="jsonPayload"))
+    webhook_url: str = field(metadata=field_options(alias="webhookUrl"))
+
+
+@dataclass
+class WebhookNotificationConfig(NotificationConfig):
+    """Webhook config model."""
+
+    options: WebhookNotificationOptions
