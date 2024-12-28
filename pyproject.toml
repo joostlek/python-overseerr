@@ -118,6 +118,8 @@ disable = [
   "unsubscriptable-object",
   "too-many-instance-attributes",
   "wrong-import-order",
+  "too-many-arguments",
+  "too-many-positional-arguments",
 ]
 
 [tool.pylint.SIMILARITIES]

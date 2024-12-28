@@ -113,20 +113,34 @@ async def test_client_error(
         await client.get_request_count()
 
 
-async def test_request_count(
+@pytest.mark.parametrize(
+    ("endpoint", "fixture", "method"),
+    [
+        ("request/count", "request_count.json", "get_request_count"),
+        ("status", "status.json", "get_status"),
+    ],
+    ids=[
+        "request_count",
+        "status",
+    ],
+)
+async def test_data_retrieval(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    endpoint: str,
+    fixture: str,
+    method: str,
 ) -> None:
-    """Test getting request count."""
+    """Test data retrieval."""
     responses.get(
-        f"{MOCK_URL}/request/count",
+        f"{MOCK_URL}/{endpoint}",
         status=200,
-        body=load_fixture("request_count.json"),
+        body=load_fixture(fixture),
     )
-    assert await client.get_request_count() == snapshot
+    assert await getattr(client, method)() == snapshot
     responses.assert_called_once_with(
-        f"{MOCK_URL}/request/count",
+        f"{MOCK_URL}/{endpoint}",
         METH_GET,
         headers=HEADERS,
         json=None,
