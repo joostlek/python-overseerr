@@ -7,12 +7,13 @@ from typing import TYPE_CHECKING, Any
 
 import aiohttp
 from aiohttp import ClientError
-from aiohttp.hdrs import METH_GET
+from aiohttp.hdrs import METH_GET, METH_POST
 from aioresponses import CallbackResult, aioresponses
 import pytest
 
 from python_overseerr import OverseerrClient
 from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
+from python_overseerr.models import NotificationType
 from tests import load_fixture
 from tests.const import HEADERS, MOCK_URL
 
@@ -180,4 +181,35 @@ async def test_search(
         headers=HEADERS,
         params={"query": "frosty"},
         json=None,
+    )
+
+
+async def test_setting_webhook_configuration(
+    responses: aioresponses,
+    client: OverseerrClient,
+) -> None:
+    """Test setting webhook configuration."""
+    responses.post(
+        f"{MOCK_URL}/settings/notifications/webhook",
+        status=200,
+    )
+    await client.set_webhook_notification_config(
+        enabled=True,
+        types=NotificationType.REQUEST_APPROVED,
+        webhook_url="http://localhost",
+        json_payload="{}",
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/settings/notifications/webhook",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json={
+            "enabled": True,
+            "types": 4,
+            "options": {
+                "webhookUrl": "http://localhost",
+                "jsonPayload": "{}",
+            },
+        },
     )
