@@ -9,11 +9,12 @@ import socket
 from typing import TYPE_CHECKING, Any
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
-from aiohttp.hdrs import METH_GET
+from aiohttp.hdrs import METH_GET, METH_POST
 from yarl import URL
 
 from .exceptions import OverseerrConnectionError
 from .models import (
+    NotificationType,
     RequestCount,
     Result,
     SearchResult,
@@ -113,6 +114,25 @@ class OverseerrClient:
         """Get webhook notification config from Overseerr."""
         response = await self._request(METH_GET, "settings/notifications/webhook")
         return WebhookNotificationConfig.from_json(response)
+
+    async def set_webhook_notification_config(
+        self,
+        *,
+        enabled: bool,
+        types: NotificationType,
+        webhook_url: str,
+        json_payload: str,
+    ) -> None:
+        """Get webhook notification config from Overseerr."""
+        await self._request(
+            METH_POST,
+            "settings/notifications/webhook",
+            data={
+                "enabled": enabled,
+                "types": types,
+                "options": {"webhookUrl": webhook_url, "jsonPayload": json_payload},
+            },
+        )
 
     async def close(self) -> None:
         """Close open client session."""

@@ -128,7 +128,7 @@ class SearchResult(DataClassORJSONMixin):
     ]
 
 
-class WebhookNotificationType(IntFlag):
+class NotificationType(IntFlag):
     """Webhook notification type enum."""
 
     REQUEST_PENDING_APPROVAL = 2
@@ -148,7 +148,7 @@ class NotificationConfig(DataClassORJSONMixin):
     """Webhook config model."""
 
     enabled: bool
-    types: WebhookNotificationType
+    types: NotificationType
 
 
 @dataclass
