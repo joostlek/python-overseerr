@@ -54,6 +54,7 @@ class MediaInfo(DataClassORJSONMixin):
     tmdb_id: int | None = field(metadata=field_options(alias="tmdbId"))
     tvdb_id: int | None = field(metadata=field_options(alias="tvdbId"))
     imdb_id: str | None = field(metadata=field_options(alias="imdbId"))
+    media_type: MediaType = field(metadata=field_options(alias="mediaType"))
     status: MediaStatus
     created_at: datetime = field(metadata=field_options(alias="createdAt"))
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
@@ -230,6 +231,13 @@ class Request(DataClassORJSONMixin):
     )
 
 
+@dataclass(kw_only=True)
+class RequestWithMedia(Request):
+    """Request with media model."""
+
+    media: MediaInfo
+
+
 @dataclass
 class MediaInfoWithRequests(MediaInfo):
     """Media info with requests model."""
@@ -241,7 +249,7 @@ class MediaInfoWithRequests(MediaInfo):
 class RequestResponse(DataClassORJSONMixin):
     """Request response model."""
 
-    results: list[Request]
+    results: list[RequestWithMedia]
 
 
 @dataclass
