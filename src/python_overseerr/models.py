@@ -164,3 +164,74 @@ class WebhookNotificationConfig(NotificationConfig):
     """Webhook config model."""
 
     options: WebhookNotificationOptions
+
+
+@dataclass
+class User(DataClassORJSONMixin):
+    """User model."""
+
+    id: int
+    plex_username: str = field(metadata=field_options(alias="plexUsername"))
+    plex_id: int = field(metadata=field_options(alias="plexId"))
+    email: str
+    avatar: str
+    movie_quota_limit: int | None = field(
+        metadata=field_options(alias="movieQuotaLimit")
+    )
+    movie_quota_days: int | None = field(metadata=field_options(alias="movieQuotaDays"))
+    tv_quota_limit: int | None = field(metadata=field_options(alias="tvQuotaLimit"))
+    tv_quota_days: int | None = field(metadata=field_options(alias="tvQuotaDays"))
+    created_at: datetime = field(metadata=field_options(alias="createdAt"))
+    updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
+    request_count: int = field(metadata=field_options(alias="requestCount"))
+    display_name: str = field(metadata=field_options(alias="displayName"))
+
+
+class RequestFilterStatus(StrEnum):
+    """Request filter status enum."""
+
+    ALL = "all"
+    APPROVED = "approved"
+    AVAILABLE = "available"
+    PENDING = "pending"
+    PROCESSING = "processing"
+    UNAVAILABLE = "unavailable"
+    FAILED = "failed"
+
+
+class RequestSortStatus(StrEnum):
+    """Request sort status enum."""
+
+    ADDED = "added"
+    MODIFIED = "modified"
+
+
+class RequestStatus(IntEnum):
+    """Request status enum."""
+
+    PENDING_APPROVAL = 1
+    APPROVED = 2
+    DECLINED = 3
+
+
+@dataclass
+class Request(DataClassORJSONMixin):
+    """Request model."""
+
+    id: int
+    status: RequestStatus
+    created_at: datetime = field(metadata=field_options(alias="createdAt"))
+    updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
+    is4k: bool
+    requested_by: User = field(metadata=field_options(alias="requestedBy"))
+    season_count: int = field(metadata=field_options(alias="seasonCount"))
+    modified_by: User | None = field(
+        metadata=field_options(alias="modifiedBy"), default=None
+    )
+
+
+@dataclass
+class RequestResponse(DataClassORJSONMixin):
+    """Request response model."""
+
+    results: list[Request]

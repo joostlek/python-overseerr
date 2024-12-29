@@ -15,7 +15,11 @@ from yarl import URL
 from .exceptions import OverseerrConnectionError
 from .models import (
     NotificationType,
+    Request,
     RequestCount,
+    RequestFilterStatus,
+    RequestResponse,
+    RequestSortStatus,
     Result,
     SearchResult,
     Status,
@@ -114,6 +118,23 @@ class OverseerrClient:
         """Get webhook notification config from Overseerr."""
         response = await self._request(METH_GET, "settings/notifications/webhook")
         return WebhookNotificationConfig.from_json(response)
+
+    async def get_requests(
+        self,
+        status: RequestFilterStatus | None = None,
+        sort: RequestSortStatus | None = None,
+        requested_by: int | None = None,
+    ) -> list[Request]:
+        """Get requests from Overseerr."""
+        params: dict[str, Any] = {}
+        if status:
+            params["filter"] = status
+        if sort:
+            params["sort"] = sort
+        if requested_by:
+            params["requestedBy"] = requested_by
+        response = await self._request(METH_GET, "request", params=params)
+        return RequestResponse.from_json(response).results
 
     async def test_webhook_notification_config(
         self, webhook_url: str, json_payload: str
