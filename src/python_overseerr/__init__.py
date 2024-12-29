@@ -1,13 +1,52 @@
 """Asynchronous Python client for Overseerr."""
 
 from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
-from python_overseerr.models import RequestCount, Status
+from python_overseerr.models import (
+    TV,
+    MediaInfo,
+    MediaStatus,
+    MediaType,
+    Movie,
+    NotificationConfig,
+    NotificationType,
+    Person,
+    Request,
+    RequestCount,
+    RequestFilterStatus,
+    RequestResponse,
+    RequestSortStatus,
+    RequestStatus,
+    Result,
+    SearchResult,
+    Status,
+    User,
+    WebhookNotificationConfig,
+    WebhookNotificationOptions,
+)
 from python_overseerr.overseerr import OverseerrClient
 
 __all__ = [
+    "TV",
+    "MediaInfo",
+    "MediaStatus",
+    "MediaType",
+    "Movie",
+    "NotificationConfig",
+    "NotificationType",
     "OverseerrClient",
     "OverseerrConnectionError",
     "OverseerrError",
+    "Person",
+    "Request",
     "RequestCount",
+    "RequestFilterStatus",
+    "RequestResponse",
+    "RequestSortStatus",
+    "RequestStatus",
+    "Result",
+    "SearchResult",
     "Status",
+    "User",
+    "WebhookNotificationConfig",
+    "WebhookNotificationOptions",
 ]

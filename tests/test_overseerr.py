@@ -13,7 +13,11 @@ import pytest
 
 from python_overseerr import OverseerrClient
 from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
-from python_overseerr.models import NotificationType
+from python_overseerr.models import (
+    NotificationType,
+    RequestFilterStatus,
+    RequestSortStatus,
+)
 from tests import load_fixture
 from tests.const import HEADERS, MOCK_URL
 
@@ -277,4 +281,48 @@ async def test_failing_webhook_config_test(
                 "jsonPayload": "{}",
             },
         },
+    )
+
+
+async def test_fetching_requests(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching requests."""
+    responses.get(
+        f"{MOCK_URL}/request",
+        status=200,
+        body=load_fixture("request.json"),
+    )
+    assert await client.get_requests() == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/request", METH_GET, headers=HEADERS, params={}, json=None
+    )
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "params", "query_string"),
+    [
+        ({"status": RequestFilterStatus.ALL}, {"filter": "all"}, "filter=all"),
+        ({"sort": RequestSortStatus.ADDED}, {"sort": "added"}, "sort=added"),
+        ({"requested_by": 1}, {"requestedBy": 1}, "requestedBy=1"),
+    ],
+)
+async def test_fetching_request_parameters(
+    responses: aioresponses,
+    client: OverseerrClient,
+    kwargs: dict[str, Any],
+    params: dict[str, Any],
+    query_string: str,
+) -> None:
+    """Test fetching requests with parameters."""
+    responses.get(
+        f"{MOCK_URL}/request?{query_string}",
+        status=200,
+        body=load_fixture("request.json"),
+    )
+    await client.get_requests(**kwargs)
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/request", METH_GET, headers=HEADERS, params=params, json=None
     )
