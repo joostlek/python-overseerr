@@ -282,3 +282,56 @@ class MovieDetails(DataClassORJSONMixin):
     tagline: str
     media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
     keywords: list[Keyword]
+
+
+@dataclass
+class Season(DataClassORJSONMixin):
+    """Season model."""
+
+    id: int
+    name: str
+    overview: str
+    season_number: int = field(metadata=field_options(alias="seasonNumber"))
+    episode_count: int = field(metadata=field_options(alias="episodeCount"))
+    air_date: date = field(metadata=field_options(alias="airDate"))
+    poster_path: str = field(metadata=field_options(alias="posterPath"))
+
+
+@dataclass
+class Episode(DataClassORJSONMixin):
+    """Episode model."""
+
+    id: int
+    name: str
+    overview: str
+    episode_number: int = field(metadata=field_options(alias="episodeNumber"))
+    air_date: date = field(metadata=field_options(alias="airDate"))
+    still_path: str = field(metadata=field_options(alias="stillPath"))
+
+
+@dataclass
+class TVDetails(DataClassORJSONMixin):
+    """TV details model."""
+
+    id: int
+    first_air_date: date = field(metadata=field_options(alias="firstAirDate"))
+    genres: list[Genre]
+    languages: list[str]
+    last_air_date: date = field(metadata=field_options(alias="lastAirDate"))
+    name: str
+    number_of_episodes: int = field(metadata=field_options(alias="numberOfEpisodes"))
+    number_of_seasons: int = field(metadata=field_options(alias="numberOfSeasons"))
+    original_language: str = field(metadata=field_options(alias="originalLanguage"))
+    original_name: str = field(metadata=field_options(alias="originalName"))
+    tagline: str
+    overview: str
+    popularity: float
+    seasons: list[Season]
+    last_episode_to_air: Episode = field(
+        metadata=field_options(alias="lastEpisodeToAir")
+    )
+    keywords: list[Keyword]
+    media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
+    next_episode_to_air: Episode | None = field(
+        metadata=field_options(alias="nextEpisodeToAir"), default=None
+    )
