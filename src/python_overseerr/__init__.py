@@ -3,10 +3,14 @@
 from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
 from python_overseerr.models import (
     TV,
+    Genre,
+    Keyword,
     MediaInfo,
+    MediaInfoWithRequests,
     MediaStatus,
     MediaType,
     Movie,
+    MovieDetails,
     NotificationConfig,
     NotificationType,
     Person,
@@ -27,10 +31,14 @@ from python_overseerr.overseerr import OverseerrClient
 
 __all__ = [
     "TV",
+    "Genre",
+    "Keyword",
     "MediaInfo",
+    "MediaInfoWithRequests",
     "MediaStatus",
     "MediaType",
     "Movie",
+    "MovieDetails",
     "NotificationConfig",
     "NotificationType",
     "OverseerrClient",

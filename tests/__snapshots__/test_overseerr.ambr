@@ -71,6 +71,94 @@
     'types': <NotificationType.REQUEST_PENDING_APPROVAL|REQUEST_APPROVED|REQUEST_AVAILABLE|REQUEST_PROCESSING_FAILED|REQUEST_DECLINED|REQUEST_AUTOMATICALLY_APPROVED|ISSUE_REPORTED|ISSUE_COMMENT|ISSUE_RESOLVED|ISSUE_REOPENED: 4062>,
   })
 # ---
+# name: test_fetching_movie_details
+  dict({
+    'adult': False,
+    'budget': 0,
+    'genres': list([
+      dict({
+        'id': 10749,
+        'name': 'Romance',
+      }),
+      dict({
+        'id': 18,
+        'name': 'Drama',
+      }),
+    ]),
+    'id': 1156593,
+    'imdb_id': 'tt28510079',
+    'keywords': list([
+      dict({
+        'id': 818,
+        'name': 'based on novel or book',
+      }),
+      dict({
+        'id': 9663,
+        'name': 'sequel',
+      }),
+    ]),
+    'media_info': dict({
+      'created_at': datetime.datetime(2024, 12, 29, 10, 4, 16, tzinfo=datetime.timezone.utc),
+      'id': 537,
+      'imdb_id': None,
+      'requests': list([
+        dict({
+          'created_at': datetime.datetime(2024, 12, 29, 10, 4, 16, tzinfo=datetime.timezone.utc),
+          'id': 16,
+          'is4k': False,
+          'modified_by': dict({
+            'avatar': 'https://plex.tv/users/aaaaaaa/avatar?c=aaaaaaa',
+            'created_at': datetime.datetime(2024, 12, 16, 21, 13, 58, tzinfo=datetime.timezone.utc),
+            'display_name': 'somebody',
+            'email': 'me@email.com',
+            'id': 1,
+            'movie_quota_days': None,
+            'movie_quota_limit': None,
+            'plex_id': 43972689,
+            'plex_username': 'somebody',
+            'request_count': 11,
+            'tv_quota_days': None,
+            'tv_quota_limit': None,
+            'updated_at': datetime.datetime(2024, 12, 16, 23, 59, 3, tzinfo=datetime.timezone.utc),
+          }),
+          'requested_by': dict({
+            'avatar': 'https://plex.tv/users/aaaaaaa/avatar?c=aaaaaaa',
+            'created_at': datetime.datetime(2024, 12, 16, 21, 13, 58, tzinfo=datetime.timezone.utc),
+            'display_name': 'somebody',
+            'email': 'me@email.com',
+            'id': 1,
+            'movie_quota_days': None,
+            'movie_quota_limit': None,
+            'plex_id': 43972689,
+            'plex_username': 'somebody',
+            'request_count': 11,
+            'tv_quota_days': None,
+            'tv_quota_limit': None,
+            'updated_at': datetime.datetime(2024, 12, 16, 23, 59, 3, tzinfo=datetime.timezone.utc),
+          }),
+          'season_count': 0,
+          'status': <RequestStatus.APPROVED: 2>,
+          'updated_at': datetime.datetime(2024, 12, 29, 10, 4, 16, tzinfo=datetime.timezone.utc),
+        }),
+      ]),
+      'status': <MediaStatus.PROCESSING: 3>,
+      'tmdb_id': 1156593,
+      'tvdb_id': None,
+      'updated_at': datetime.datetime(2024, 12, 29, 10, 4, 17, tzinfo=datetime.timezone.utc),
+    }),
+    'original_language': 'es',
+    'original_title': 'Culpa tuya',
+    'overview': "The love between Noah and Nick seems unwavering despite their parents' attempts to separate them. But his job and her entry into college open up their lives to new relationships that will shake the foundations of both their relationship and the Leister family itself.",
+    'popularity': 3958.479,
+    'release_date': datetime.date(2024, 12, 26),
+    'revenue': 0,
+    'runtime': 120,
+    'tagline': 'Divided by family. Driven by love.',
+    'title': 'Your Fault',
+    'vote_average': 7.7,
+    'vote_count': 190,
+  })
+# ---
 # name: test_fetching_requests
   list([
     dict({
