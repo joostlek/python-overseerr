@@ -343,3 +343,20 @@ async def test_fetching_movie_details(
     responses.assert_called_once_with(
         f"{MOCK_URL}/movie/1156593", METH_GET, headers=HEADERS, params=None, json=None
     )
+
+
+async def test_fetching_tv_details(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching tv details."""
+    responses.get(
+        f"{MOCK_URL}/tv/249522",
+        status=200,
+        body=load_fixture("tv.json"),
+    )
+    assert await client.get_tv_details(249522) == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/tv/249522", METH_GET, headers=HEADERS, params=None, json=None
+    )

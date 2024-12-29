@@ -24,6 +24,7 @@ from .models import (
     Result,
     SearchResult,
     Status,
+    TVDetails,
     WebhookNotificationConfig,
 )
 
@@ -141,6 +142,11 @@ class OverseerrClient:
         """Get movie details from Overseerr."""
         response = await self._request(METH_GET, f"movie/{identifier}")
         return MovieDetails.from_json(response)
+
+    async def get_tv_details(self, identifier: int) -> TVDetails:
+        """Get tv details from Overseerr."""
+        response = await self._request(METH_GET, f"tv/{identifier}")
+        return TVDetails.from_json(response)
 
     async def test_webhook_notification_config(
         self, webhook_url: str, json_payload: str
