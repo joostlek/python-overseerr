@@ -231,7 +231,54 @@ class Request(DataClassORJSONMixin):
 
 
 @dataclass
+class MediaInfoWithRequests(MediaInfo):
+    """Media info with requests model."""
+
+    requests: list[Request]
+
+
+@dataclass
 class RequestResponse(DataClassORJSONMixin):
     """Request response model."""
 
     results: list[Request]
+
+
+@dataclass
+class Genre:
+    """Genre model."""
+
+    id: int
+    name: str
+
+
+@dataclass
+class Keyword:
+    """Keyword model."""
+
+    id: int
+    name: str
+
+
+@dataclass
+class MovieDetails(DataClassORJSONMixin):
+    """Movie details model."""
+
+    id: int
+    adult: bool
+    budget: int
+    genres: list[Genre]
+    original_language: str = field(metadata=field_options(alias="originalLanguage"))
+    original_title: str = field(metadata=field_options(alias="originalTitle"))
+    popularity: float
+    release_date: date = field(metadata=field_options(alias="releaseDate"))
+    revenue: int
+    title: str
+    vote_average: float = field(metadata=field_options(alias="voteAverage"))
+    vote_count: int = field(metadata=field_options(alias="voteCount"))
+    imdb_id: str | None = field(metadata=field_options(alias="imdbId"))
+    overview: str
+    runtime: int
+    tagline: str
+    media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
+    keywords: list[Keyword]

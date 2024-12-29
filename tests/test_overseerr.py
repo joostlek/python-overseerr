@@ -326,3 +326,20 @@ async def test_fetching_request_parameters(
     responses.assert_called_once_with(
         f"{MOCK_URL}/request", METH_GET, headers=HEADERS, params=params, json=None
     )
+
+
+async def test_fetching_movie_details(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching movie details."""
+    responses.get(
+        f"{MOCK_URL}/movie/1156593",
+        status=200,
+        body=load_fixture("movie.json"),
+    )
+    assert await client.get_movie_details(1156593) == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/movie/1156593", METH_GET, headers=HEADERS, params=None, json=None
+    )

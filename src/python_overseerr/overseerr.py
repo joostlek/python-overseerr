@@ -14,6 +14,7 @@ from yarl import URL
 
 from .exceptions import OverseerrConnectionError
 from .models import (
+    MovieDetails,
     NotificationType,
     Request,
     RequestCount,
@@ -135,6 +136,11 @@ class OverseerrClient:
             params["requestedBy"] = requested_by
         response = await self._request(METH_GET, "request", params=params)
         return RequestResponse.from_json(response).results
+
+    async def get_movie_details(self, identifier: int) -> MovieDetails:
+        """Get movie details from Overseerr."""
+        response = await self._request(METH_GET, f"movie/{identifier}")
+        return MovieDetails.from_json(response)
 
     async def test_webhook_notification_config(
         self, webhook_url: str, json_payload: str
