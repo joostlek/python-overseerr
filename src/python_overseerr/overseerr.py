@@ -16,11 +16,11 @@ from .exceptions import OverseerrConnectionError
 from .models import (
     MovieDetails,
     NotificationType,
-    Request,
     RequestCount,
     RequestFilterStatus,
     RequestResponse,
     RequestSortStatus,
+    RequestWithMedia,
     Result,
     SearchResult,
     Status,
@@ -126,7 +126,7 @@ class OverseerrClient:
         status: RequestFilterStatus | None = None,
         sort: RequestSortStatus | None = None,
         requested_by: int | None = None,
-    ) -> list[Request]:
+    ) -> list[RequestWithMedia]:
         """Get requests from Overseerr."""
         params: dict[str, Any] = {}
         if status:
