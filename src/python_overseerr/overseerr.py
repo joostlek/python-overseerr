@@ -6,7 +6,7 @@ import asyncio
 from dataclasses import dataclass
 from importlib import metadata
 import socket
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, Literal
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
 from aiohttp.hdrs import METH_GET, METH_POST
@@ -32,6 +32,8 @@ from .models import (
 
 if TYPE_CHECKING:
     from typing_extensions import Self
+
+    from python_overseerr import MediaType
 
 
 VERSION = metadata.version(__package__)
@@ -139,6 +141,19 @@ class OverseerrClient:
             params["requestedBy"] = requested_by
         response = await self._request(METH_GET, "request", params=params)
         return RequestResponse.from_json(response).results
+
+    async def create_request(
+        self,
+        media_type: MediaType,
+        tmdb_id: int,
+        seasons: list[int] | Literal["all"] | None = None,
+    ) -> RequestWithMedia:
+        """Create a request in Overseerr."""
+        data = {"mediaType": media_type, "mediaId": tmdb_id}
+        if seasons:
+            data["seasons"] = seasons
+        response = await self._request(METH_POST, "request", data=data)
+        return RequestWithMedia.from_json(response)
 
     async def get_movie_details(self, identifier: int) -> MovieDetails:
         """Get movie details from Overseerr."""
