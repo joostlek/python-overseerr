@@ -25,6 +25,8 @@ from python_overseerr.models import (
     Status,
     TVDetails,
     User,
+    WatchlistEntry,
+    WatchlistResponse,
     WebhookNotificationConfig,
     WebhookNotificationOptions,
 )
@@ -57,6 +59,8 @@ __all__ = [
     "Status",
     "TVDetails",
     "User",
+    "WatchlistEntry",
+    "WatchlistResponse",
     "WebhookNotificationConfig",
     "WebhookNotificationOptions",
 ]

@@ -1,0 +1,25 @@
+{
+    "page": 1,
+    "totalPages": 1,
+    "totalResults": 3,
+    "results": [
+        {
+            "ratingKey": "aaaa",
+            "title": "Sonic the Hedgehog 3",
+            "mediaType": "movie",
+            "tmdbId": 939243
+        },
+        {
+            "ratingKey": "bbbb",
+            "title": "Superbad",
+            "mediaType": "movie",
+            "tmdbId": 8363
+        },
+        {
+            "ratingKey": "cccc",
+            "title": "The Legend of Korra",
+            "mediaType": "tv",
+            "tmdbId": 33880
+        }
+    ]
+}

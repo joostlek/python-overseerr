@@ -25,6 +25,8 @@ from .models import (
     SearchResult,
     Status,
     TVDetails,
+    WatchlistEntry,
+    WatchlistResponse,
     WebhookNotificationConfig,
 )
 
@@ -147,6 +149,11 @@ class OverseerrClient:
         """Get tv details from Overseerr."""
         response = await self._request(METH_GET, f"tv/{identifier}")
         return TVDetails.from_json(response)
+
+    async def get_watchlist(self) -> list[WatchlistEntry]:
+        """Get watchlist from Overseerr."""
+        response = await self._request(METH_GET, "discover/watchlist")
+        return WatchlistResponse.from_json(response).results
 
     async def test_webhook_notification_config(
         self, webhook_url: str, json_payload: str

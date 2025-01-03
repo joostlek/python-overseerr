@@ -19,6 +19,28 @@
     'version': 'develop-local',
   })
 # ---
+# name: test_data_retrieval[watchlist]
+  list([
+    dict({
+      'media_type': <MediaType.MOVIE: 'movie'>,
+      'rating_key': 'aaaa',
+      'title': 'Sonic the Hedgehog 3',
+      'tmdb_id': 939243,
+    }),
+    dict({
+      'media_type': <MediaType.MOVIE: 'movie'>,
+      'rating_key': 'bbbb',
+      'title': 'Superbad',
+      'tmdb_id': 8363,
+    }),
+    dict({
+      'media_type': <MediaType.TV: 'tv'>,
+      'rating_key': 'cccc',
+      'title': 'The Legend of Korra',
+      'tmdb_id': 33880,
+    }),
+  ])
+# ---
 # name: test_data_retrieval[webhook_config]
   dict({
     'enabled': True,
