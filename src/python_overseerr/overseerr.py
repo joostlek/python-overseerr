@@ -14,6 +14,7 @@ from yarl import URL
 
 from .exceptions import OverseerrConnectionError
 from .models import (
+    MediaType,
     MovieDetails,
     NotificationType,
     RequestCount,
@@ -32,8 +33,6 @@ from .models import (
 
 if TYPE_CHECKING:
     from typing_extensions import Self
-
-    from python_overseerr import MediaType
 
 
 VERSION = metadata.version(__package__)
