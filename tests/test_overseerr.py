@@ -128,11 +128,17 @@ async def test_client_error(
             "webhook_config.json",
             "get_webhook_notification_config",
         ),
+        (
+            "discover/watchlist",
+            "watchlist.json",
+            "get_watchlist",
+        ),
     ],
     ids=[
         "request_count",
         "status",
         "webhook_config",
+        "watchlist",
     ],
 )
 async def test_data_retrieval(

@@ -343,3 +343,20 @@ class TVDetails(DataClassORJSONMixin):
     next_episode_to_air: Episode | None = field(
         metadata=field_options(alias="nextEpisodeToAir"), default=None
     )
+
+
+@dataclass
+class WatchlistEntry(DataClassORJSONMixin):
+    """Watchlist entry model."""
+
+    rating_key: str = field(metadata=field_options(alias="ratingKey"))
+    title: str
+    media_type: MediaType = field(metadata=field_options(alias="mediaType"))
+    tmdb_id: int | None = field(metadata=field_options(alias="tmdbId"))
+
+
+@dataclass
+class WatchlistResponse(DataClassORJSONMixin):
+    """Watchlist response model."""
+
+    results: list[WatchlistEntry]
