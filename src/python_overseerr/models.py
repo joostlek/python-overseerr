@@ -60,7 +60,7 @@ class MediaInfo(DataClassORJSONMixin):
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
 
 
-class MediaType(StrEnum):
+class ResultMediaType(StrEnum):
     """Media type enum."""
 
     MOVIE = "movie"
@@ -68,20 +68,27 @@ class MediaType(StrEnum):
     PERSON = "person"
 
 
+class MediaType(StrEnum):
+    """Media type enum."""
+
+    MOVIE = "movie"
+    TV = "tv"
+
+
 @dataclass
 class Result(DataClassORJSONMixin):
     """Result model."""
 
     id: int
-    mediaType: MediaType  # noqa: N815 # pylint: disable=invalid-name
-    media_type: MediaType = field(metadata=field_options(alias="mediaType"))
+    mediaType: ResultMediaType  # noqa: N815 # pylint: disable=invalid-name
+    media_type: ResultMediaType = field(metadata=field_options(alias="mediaType"))
 
 
 @dataclass
 class Movie(Result):
     """Movie result model."""
 
-    mediaType = MediaType.MOVIE  # noqa: N815 # pylint: disable=invalid-name
+    mediaType = ResultMediaType.MOVIE  # noqa: N815 # pylint: disable=invalid-name
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_title: str = field(metadata=field_options(alias="originalTitle"))
     overview: str
@@ -97,7 +104,7 @@ class Movie(Result):
 class TV(Result):
     """TV result model."""
 
-    mediaType = MediaType.TV  # noqa: N815 # pylint: disable=invalid-name
+    mediaType = ResultMediaType.TV  # noqa: N815 # pylint: disable=invalid-name
     first_air_date: date = field(metadata=field_options(alias="firstAirDate"))
     name: str
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
@@ -113,7 +120,7 @@ class TV(Result):
 class Person(Result):
     """Person result model."""
 
-    mediaType = MediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
+    mediaType = ResultMediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
     name: str
     popularity: float
     known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
@@ -225,7 +232,9 @@ class Request(DataClassORJSONMixin):
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
     is4k: bool
     requested_by: User = field(metadata=field_options(alias="requestedBy"))
-    season_count: int = field(metadata=field_options(alias="seasonCount"))
+    season_count: int | None = field(
+        metadata=field_options(alias="seasonCount"), default=None
+    )
     modified_by: User | None = field(
         metadata=field_options(alias="modifiedBy"), default=None
     )
