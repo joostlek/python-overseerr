@@ -1,6 +1,10 @@
 """Asynchronous Python client for Overseerr."""
 
-from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
+from python_overseerr.exceptions import (
+    OverseerrAuthenticationError,
+    OverseerrConnectionError,
+    OverseerrError,
+)
 from python_overseerr.models import (
     TV,
     Genre,
@@ -44,6 +48,7 @@ __all__ = [
     "MovieDetails",
     "NotificationConfig",
     "NotificationType",
+    "OverseerrAuthenticationError",
     "OverseerrClient",
     "OverseerrConnectionError",
     "OverseerrError",

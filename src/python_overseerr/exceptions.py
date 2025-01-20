@@ -7,3 +7,7 @@ class OverseerrError(Exception):
 
 class OverseerrConnectionError(OverseerrError):
     """Overseerr connection exception."""
+
+
+class OverseerrAuthenticationError(OverseerrError):
+    """Overseerr authentication exception."""
