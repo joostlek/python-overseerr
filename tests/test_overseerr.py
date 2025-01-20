@@ -126,7 +126,7 @@ async def test_authentication_error(
     client: OverseerrClient,
     responses: aioresponses,
 ) -> None:
-    """Test client error."""
+    """Test authentication error."""
     responses.get(
         f"{MOCK_URL}/request/count",
         status=403,
