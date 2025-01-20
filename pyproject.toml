@@ -17,6 +17,7 @@ classifiers = [
   "Natural Language :: English",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
@@ -40,13 +41,13 @@ pre-commit = "4.0.1"
 pre-commit-hooks = "5.0.0"
 pylint = "3.3.3"
 pytest = "8.3.4"
-pytest-asyncio = "0.25.1"
+pytest-asyncio = "0.25.2"
 pytest-cov = "6.0.0"
-ruff = "0.8.5"
+ruff = "0.9.1"
 safety = "3.2.14"
 yamllint = "1.35.1"
-syrupy = "4.8.0"
-aioresponses = "0.7.7"
+syrupy = "4.8.1"
+aioresponses = "0.7.8"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/joostlek/python-overseerr/issues"

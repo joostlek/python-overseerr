@@ -11,7 +11,7 @@ from aiohttp.hdrs import METH_GET, METH_POST
 from aioresponses import CallbackResult, aioresponses
 import pytest
 
-from python_overseerr import OverseerrClient
+from python_overseerr import MediaType, OverseerrClient
 from python_overseerr.exceptions import (
     OverseerrAuthenticationError,
     OverseerrConnectionError,
@@ -383,4 +383,44 @@ async def test_fetching_tv_details(
     assert await client.get_tv_details(249522) == snapshot
     responses.assert_called_once_with(
         f"{MOCK_URL}/tv/249522", METH_GET, headers=HEADERS, params=None, json=None
+    )
+
+
+@pytest.mark.parametrize(
+    ("args", "fixture", "json"),
+    [
+        (
+            (MediaType.MOVIE, 1156593),
+            "create_movie_request.json",
+            {"mediaType": "movie", "mediaId": 1156593},
+        ),
+        (
+            (MediaType.TV, 249522, "all"),
+            "create_tv_request.json",
+            {"mediaType": "tv", "mediaId": 249522, "seasons": "all"},
+        ),
+        (
+            (MediaType.TV, 249522, [1]),
+            "create_tv_request.json",
+            {"mediaType": "tv", "mediaId": 249522, "seasons": [1]},
+        ),
+    ],
+)
+async def test_creating_request(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+    args: tuple[Any, ...],
+    fixture: str,
+    json: dict[str, Any],
+) -> None:
+    """Test creating a request."""
+    responses.post(
+        f"{MOCK_URL}/request",
+        status=201,
+        body=load_fixture(fixture),
+    )
+    assert await client.create_request(*args) == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/request", METH_POST, headers=HEADERS, params=None, json=json
     )

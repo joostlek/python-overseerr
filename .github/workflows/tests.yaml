@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: ["3.11", "3.12"]
+        python: ["3.11", "3.12", "3.13"]
     steps:
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v4.2.2
@@ -39,7 +39,7 @@ jobs:
       - name: 🚀 Run pytest
         run: poetry run pytest --cov vehicle tests
       - name: ⬆️ Upload coverage artifact
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           include-hidden-files: true
           name: coverage-${{ matrix.python }}
