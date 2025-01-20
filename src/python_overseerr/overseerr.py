@@ -12,7 +12,7 @@ from aiohttp import ClientError, ClientResponseError, ClientSession
 from aiohttp.hdrs import METH_GET, METH_POST
 from yarl import URL
 
-from .exceptions import OverseerrConnectionError
+from .exceptions import OverseerrAuthenticationError, OverseerrConnectionError
 from .models import (
     MediaType,
     MovieDetails,
@@ -92,6 +92,10 @@ class OverseerrClient:
         ) as exception:
             msg = "Error occurred while communicating with the service"
             raise OverseerrConnectionError(msg) from exception
+
+        if response.status == 403:
+            msg = "Invalid API key"
+            raise OverseerrAuthenticationError(msg)
 
         if response.status >= 400:
             content_type = response.headers.get("Content-Type", "")

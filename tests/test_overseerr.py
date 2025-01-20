@@ -12,7 +12,11 @@ from aioresponses import CallbackResult, aioresponses
 import pytest
 
 from python_overseerr import MediaType, OverseerrClient
-from python_overseerr.exceptions import OverseerrConnectionError, OverseerrError
+from python_overseerr.exceptions import (
+    OverseerrAuthenticationError,
+    OverseerrConnectionError,
+    OverseerrError,
+)
 from python_overseerr.models import (
     NotificationType,
     RequestFilterStatus,
@@ -111,10 +115,24 @@ async def test_client_error(
         raise ClientError
 
     responses.get(
-        f"{MOCK_URL}/measures/current",
+        f"{MOCK_URL}/request/count",
         callback=response_handler,
     )
     with pytest.raises(OverseerrConnectionError):
+        await client.get_request_count()
+
+
+async def test_authentication_error(
+    client: OverseerrClient,
+    responses: aioresponses,
+) -> None:
+    """Test authentication error."""
+    responses.get(
+        f"{MOCK_URL}/request/count",
+        status=403,
+        body=load_fixture("no_access.json"),
+    )
+    with pytest.raises(OverseerrAuthenticationError):
         await client.get_request_count()
 
 
