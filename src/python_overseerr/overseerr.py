@@ -14,6 +14,11 @@ from yarl import URL
 
 from .exceptions import OverseerrAuthenticationError, OverseerrConnectionError
 from .models import (
+    Issue,
+    IssueCount,
+    IssueFilterStatus,
+    IssueResponse,
+    IssueSortStatus,
     MediaType,
     MovieDetails,
     NotificationType,
@@ -29,7 +34,6 @@ from .models import (
     WatchlistEntry,
     WatchlistResponse,
     WebhookNotificationConfig,
-    IssueCount, IssueFilterStatus, IssueSortStatus, Issue, IssueResponse,
 )
 
 if TYPE_CHECKING:

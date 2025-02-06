@@ -8,6 +8,7 @@ from python_overseerr.exceptions import (
 from python_overseerr.models import (
     TV,
     Genre,
+    IssueCount,
     Keyword,
     MediaInfo,
     MediaInfoWithRequests,
@@ -33,13 +34,13 @@ from python_overseerr.models import (
     WatchlistResponse,
     WebhookNotificationConfig,
     WebhookNotificationOptions,
-    IssueCount
 )
 from python_overseerr.overseerr import OverseerrClient
 
 __all__ = [
     "TV",
     "Genre",
+    "IssueCount",
     "Keyword",
     "MediaInfo",
     "MediaInfoWithRequests",
@@ -69,5 +70,4 @@ __all__ = [
     "WatchlistResponse",
     "WebhookNotificationConfig",
     "WebhookNotificationOptions",
-    "IssueCount"
 ]

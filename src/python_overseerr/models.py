@@ -312,8 +312,8 @@ class Issue(DataClassORJSONMixin):
     id: int
     issue_type: IssueType = field(metadata=field_options(alias="issueType"))
     status: IssueStatus
-    problemSeason: int = field(metadata=field_options(alias="problemSeason"))
-    problemEpisode: int = field(metadata=field_options(alias="problemEpisode"))
+    problem_season: int = field(metadata=field_options(alias="problemSeason"))
+    problem_episode: int = field(metadata=field_options(alias="problemEpisode"))
     created_at: datetime = field(metadata=field_options(alias="createdAt"))
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
     created_by: User = field(metadata=field_options(alias="createdBy"))
