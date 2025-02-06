@@ -29,7 +29,7 @@ from .models import (
     WatchlistEntry,
     WatchlistResponse,
     WebhookNotificationConfig,
-    IssueCount,
+    IssueCount, IssueFilterStatus, IssueSortStatus, Issue, IssueResponse,
 )
 
 if TYPE_CHECKING:
@@ -163,6 +163,23 @@ class OverseerrClient:
             data["seasons"] = seasons
         response = await self._request(METH_POST, "request", data=data)
         return RequestWithMedia.from_json(response)
+
+    async def get_issues(
+        self,
+        status: IssueFilterStatus | None = None,
+        sort: IssueSortStatus | None = None,
+        requested_by: int | None = None,
+    ) -> list[Issue]:
+        """Get issues from Overseerr."""
+        params: dict[str, Any] = {}
+        if status:
+            params["filter"] = status
+        if sort:
+            params["sort"] = sort
+        if requested_by:
+            params["requestedBy"] = requested_by
+        response = await self._request(METH_GET, "issue", params=params)
+        return IssueResponse.from_json(response).results
 
     async def get_movie_details(self, identifier: int) -> MovieDetails:
         """Get movie details from Overseerr."""

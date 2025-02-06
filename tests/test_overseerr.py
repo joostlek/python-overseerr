@@ -354,6 +354,50 @@ async def test_fetching_request_parameters(
     )
 
 
+async def test_fetching_issues(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching issues."""
+    responses.get(
+        f"{MOCK_URL}/issue",
+        status=200,
+        body=load_fixture("issue.json"),
+    )
+    assert await client.get_issues() == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue", METH_GET, headers=HEADERS, params={}, json=None
+    )
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "params", "query_string"),
+    [
+        ({"status": RequestFilterStatus.ALL}, {"filter": "all"}, "filter=all"),
+        ({"sort": RequestSortStatus.ADDED}, {"sort": "added"}, "sort=added"),
+        ({"requested_by": 1}, {"requestedBy": 1}, "requestedBy=1"),
+    ],
+)
+async def test_fetching_issue_parameters(
+    responses: aioresponses,
+    client: OverseerrClient,
+    kwargs: dict[str, Any],
+    params: dict[str, Any],
+    query_string: str,
+) -> None:
+    """Test fetching issues with parameters."""
+    responses.get(
+        f"{MOCK_URL}/issue?{query_string}",
+        status=200,
+        body=load_fixture("issue.json"),
+    )
+    await client.get_issues(**kwargs)
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue", METH_GET, headers=HEADERS, params=params, json=None
+    )
+
+
 async def test_fetching_movie_details(
     responses: aioresponses,
     client: OverseerrClient,

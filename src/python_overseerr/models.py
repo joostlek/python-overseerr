@@ -274,6 +274,62 @@ class RequestResponse(DataClassORJSONMixin):
     results: list[RequestWithMedia]
 
 
+class IssueFilterStatus(StrEnum):
+    """Issue filter status enum."""
+
+    ALL = "all"
+    OPEN = "open"
+    RESOLVED = "resolved"
+
+
+class IssueSortStatus(StrEnum):
+    """Issue sort status enum."""
+
+    ADDED = "added"
+    MODIFIED = "modified"
+
+
+class IssueStatus(IntEnum):
+    """Issue status enum."""
+
+    OPEN = 1
+    RESOLVED = 2
+
+
+class IssueType(IntEnum):
+    """Issue status enum."""
+
+    VIDEO = 1
+    AUDIO = 2
+    SUBTITLE = 3
+    OTHER = 4
+
+
+@dataclass
+class Issue(DataClassORJSONMixin):
+    """Issue model."""
+
+    id: int
+    issue_type: IssueType = field(metadata=field_options(alias="issueType"))
+    status: IssueStatus
+    problemSeason: int = field(metadata=field_options(alias="problemSeason"))
+    problemEpisode: int = field(metadata=field_options(alias="problemEpisode"))
+    created_at: datetime = field(metadata=field_options(alias="createdAt"))
+    updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
+    created_by: User = field(metadata=field_options(alias="createdBy"))
+    media: MediaInfo
+    modified_by: User | None = field(
+        metadata=field_options(alias="modifiedBy"), default=None
+    )
+
+
+@dataclass
+class IssueResponse(DataClassORJSONMixin):
+    """Issue response model."""
+
+    results: list[Issue]
+
+
 @dataclass
 class Genre:
     """Genre model."""
