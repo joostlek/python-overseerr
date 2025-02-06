@@ -151,12 +151,14 @@ async def test_authentication_error(
             "watchlist.json",
             "get_watchlist",
         ),
+        ("issue/count", "issue_count.json", "get_issue_count"),
     ],
     ids=[
         "request_count",
         "status",
         "webhook_config",
         "watchlist",
+        "issue_count",
     ],
 )
 async def test_data_retrieval(

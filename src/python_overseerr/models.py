@@ -27,6 +27,19 @@ class RequestCount(DataClassORJSONMixin):
 
 
 @dataclass
+class IssueCount(DataClassORJSONMixin):
+    """Issue count model."""
+
+    total: int
+    video: int
+    audio: int
+    subtitles: int
+    others: int
+    open: int
+    closed: int
+
+
+@dataclass
 class Status(DataClassORJSONMixin):
     """Status model."""
 

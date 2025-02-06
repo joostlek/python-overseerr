@@ -29,6 +29,7 @@ from .models import (
     WatchlistEntry,
     WatchlistResponse,
     WebhookNotificationConfig,
+    IssueCount,
 )
 
 if TYPE_CHECKING:
@@ -112,6 +113,11 @@ class OverseerrClient:
         """Get request count from Overseerr."""
         response = await self._request(METH_GET, "request/count")
         return RequestCount.from_json(response)
+
+    async def get_issue_count(self) -> IssueCount:
+        """Get issue count from Overseerr."""
+        response = await self._request(METH_GET, "issue/count")
+        return IssueCount.from_json(response)
 
     async def get_status(self) -> Status:
         """Get status from Overseerr."""

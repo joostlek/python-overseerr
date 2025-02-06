@@ -161,6 +161,17 @@
     'tv': 2,
   })
 # ---
+# name: test_data_retrieval[issue_count]
+  dict({
+    'audio': 0,
+    'closed': 0,
+    'open': 0,
+    'others': 0,
+    'subtitles': 0,
+    'total': 0,
+    'video': 0,
+  })
+# ---
 # name: test_data_retrieval[status]
   dict({
     'commits_behind': 0,

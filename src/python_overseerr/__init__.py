@@ -33,6 +33,7 @@ from python_overseerr.models import (
     WatchlistResponse,
     WebhookNotificationConfig,
     WebhookNotificationOptions,
+    IssueCount
 )
 from python_overseerr.overseerr import OverseerrClient
 
@@ -68,4 +69,5 @@ __all__ = [
     "WatchlistResponse",
     "WebhookNotificationConfig",
     "WebhookNotificationOptions",
+    "IssueCount"
 ]
