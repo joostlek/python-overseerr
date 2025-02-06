@@ -14,6 +14,11 @@ from yarl import URL
 
 from .exceptions import OverseerrAuthenticationError, OverseerrConnectionError
 from .models import (
+    Issue,
+    IssueCount,
+    IssueFilterStatus,
+    IssueResponse,
+    IssueSortStatus,
     MediaType,
     MovieDetails,
     NotificationType,
@@ -113,6 +118,11 @@ class OverseerrClient:
         response = await self._request(METH_GET, "request/count")
         return RequestCount.from_json(response)
 
+    async def get_issue_count(self) -> IssueCount:
+        """Get issue count from Overseerr."""
+        response = await self._request(METH_GET, "issue/count")
+        return IssueCount.from_json(response)
+
     async def get_status(self) -> Status:
         """Get status from Overseerr."""
         response = await self._request(METH_GET, "status")
@@ -157,6 +167,23 @@ class OverseerrClient:
             data["seasons"] = seasons
         response = await self._request(METH_POST, "request", data=data)
         return RequestWithMedia.from_json(response)
+
+    async def get_issues(
+        self,
+        status: IssueFilterStatus | None = None,
+        sort: IssueSortStatus | None = None,
+        requested_by: int | None = None,
+    ) -> list[Issue]:
+        """Get issues from Overseerr."""
+        params: dict[str, Any] = {}
+        if status:
+            params["filter"] = status
+        if sort:
+            params["sort"] = sort
+        if requested_by:
+            params["requestedBy"] = requested_by
+        response = await self._request(METH_GET, "issue", params=params)
+        return IssueResponse.from_json(response).results
 
     async def get_movie_details(self, identifier: int) -> MovieDetails:
         """Get movie details from Overseerr."""

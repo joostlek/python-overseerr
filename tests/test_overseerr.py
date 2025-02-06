@@ -151,12 +151,14 @@ async def test_authentication_error(
             "watchlist.json",
             "get_watchlist",
         ),
+        ("issue/count", "issue_count.json", "get_issue_count"),
     ],
     ids=[
         "request_count",
         "status",
         "webhook_config",
         "watchlist",
+        "issue_count",
     ],
 )
 async def test_data_retrieval(
@@ -349,6 +351,50 @@ async def test_fetching_request_parameters(
     await client.get_requests(**kwargs)
     responses.assert_called_once_with(
         f"{MOCK_URL}/request", METH_GET, headers=HEADERS, params=params, json=None
+    )
+
+
+async def test_fetching_issues(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching issues."""
+    responses.get(
+        f"{MOCK_URL}/issue",
+        status=200,
+        body=load_fixture("issue.json"),
+    )
+    assert await client.get_issues() == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue", METH_GET, headers=HEADERS, params={}, json=None
+    )
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "params", "query_string"),
+    [
+        ({"status": RequestFilterStatus.ALL}, {"filter": "all"}, "filter=all"),
+        ({"sort": RequestSortStatus.ADDED}, {"sort": "added"}, "sort=added"),
+        ({"requested_by": 1}, {"requestedBy": 1}, "requestedBy=1"),
+    ],
+)
+async def test_fetching_issue_parameters(
+    responses: aioresponses,
+    client: OverseerrClient,
+    kwargs: dict[str, Any],
+    params: dict[str, Any],
+    query_string: str,
+) -> None:
+    """Test fetching issues with parameters."""
+    responses.get(
+        f"{MOCK_URL}/issue?{query_string}",
+        status=200,
+        body=load_fixture("issue.json"),
+    )
+    await client.get_issues(**kwargs)
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue", METH_GET, headers=HEADERS, params=params, json=None
     )
 
 
