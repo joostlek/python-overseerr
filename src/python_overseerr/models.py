@@ -192,8 +192,8 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
-    plex_username: str = field(metadata=field_options(alias="plexUsername"))
-    plex_id: int = field(metadata=field_options(alias="plexId"))
+    plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
+    plex_id: int | None = field(metadata=field_options(alias="plexId"))
     email: str
     avatar: str
     movie_quota_limit: int | None = field(
