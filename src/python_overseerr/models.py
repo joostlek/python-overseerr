@@ -233,6 +233,7 @@ class RequestStatus(IntEnum):
     PENDING_APPROVAL = 1
     APPROVED = 2
     DECLINED = 3
+    IN_PROGRESS = 5
 
 
 @dataclass
