@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date, datetime  # noqa: TC003
 from enum import IntEnum, IntFlag, StrEnum
-from typing import Annotated
+from typing import Annotated, Optional
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
@@ -358,7 +358,12 @@ class MovieDetails(DataClassORJSONMixin):
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_title: str = field(metadata=field_options(alias="originalTitle"))
     popularity: float
-    release_date: date = field(metadata=field_options(alias="releaseDate"))
+    release_date: date | None = field(
+        metadata=field_options(
+            alias="releaseDate",
+            deserialize=lambda v: date.fromisoformat(v) if v else None,
+        ),
+    )
     revenue: int
     title: str
     vote_average: float = field(metadata=field_options(alias="voteAverage"))
