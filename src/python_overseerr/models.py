@@ -136,7 +136,7 @@ class Person(Result):
     mediaType = ResultMediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
     name: str
     popularity: float
-    known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
+    known_for: list[Movie | TV] = field(metadata=field_options(alias="knownFor"))
     adult: bool
 
 
