@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 from typing import TYPE_CHECKING, Any
+from unittest.mock import AsyncMock
 
 import aiohttp
 from aiohttp import ClientError
@@ -211,6 +212,18 @@ async def test_search(
         headers=HEADERS,
         params={"query": "frosty"},
         json=None,
+    )
+
+
+async def test_search_encodes_spaces(client: OverseerrClient) -> None:
+    """Test that spaces are encoded correctly."""
+    client._request = AsyncMock()
+    client._request.return_value = load_fixture("search_1.json")
+
+    await client.search("frosty the snowman")
+
+    client._request.assert_called_once_with(
+        "GET", "search", params={"query": "frosty%20the%20snowman"}
     )
 
 
