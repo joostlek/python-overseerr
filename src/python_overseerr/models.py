@@ -306,6 +306,16 @@ class IssueType(IntEnum):
 
 
 @dataclass
+class IssueComment(DataClassORJSONMixin):
+    """Issue comment model."""
+
+    id: int
+    message: str
+    user: User
+    created_at: datetime = field(metadata=field_options(alias="createdAt"))
+
+
+@dataclass
 class Issue(DataClassORJSONMixin):
     """Issue model."""
 
@@ -321,6 +331,7 @@ class Issue(DataClassORJSONMixin):
     modified_by: User | None = field(
         metadata=field_options(alias="modifiedBy"), default=None
     )
+    comments: list[IssueComment] = field(default_factory=list)
 
 
 @dataclass

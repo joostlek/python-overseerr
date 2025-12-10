@@ -9,7 +9,7 @@ import socket
 from typing import TYPE_CHECKING, Any, Literal
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
-from aiohttp.hdrs import METH_GET, METH_POST
+from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 from yarl import URL
 
 from .exceptions import OverseerrAuthenticationError, OverseerrConnectionError
@@ -19,6 +19,7 @@ from .models import (
     IssueFilterStatus,
     IssueResponse,
     IssueSortStatus,
+    IssueType,
     MediaType,
     MovieDetails,
     NotificationType,
@@ -184,6 +185,50 @@ class OverseerrClient:
             params["requestedBy"] = requested_by
         response = await self._request(METH_GET, "issue", params=params)
         return IssueResponse.from_json(response).results
+
+    async def get_issue(self, issue_id: int) -> Issue:
+        """Get a single issue from Overseerr."""
+        response = await self._request(METH_GET, f"issue/{issue_id}")
+        return Issue.from_json(response)
+
+    async def create_issue(
+        self,
+        issue_type: IssueType,
+        message: str,
+        media_id: int,
+        problem_season: int = 0,
+        problem_episode: int = 0,
+    ) -> Issue:
+        """Create a new issue in Overseerr."""
+        data = {
+            "issueType": issue_type,
+            "message": message,
+            "mediaId": media_id,
+            "problemSeason": problem_season,
+            "problemEpisode": problem_episode,
+        }
+        response = await self._request(METH_POST, "issue", data=data)
+        return Issue.from_json(response)
+
+    async def update_issue(
+        self,
+        issue_id: int,
+        *,
+        status: IssueStatus | None = None,
+        message: str | None = None,
+    ) -> Issue:
+        """Update an existing issue in Overseerr."""
+        data: dict[str, Any] = {}
+        if status is not None:
+            data["status"] = status
+        if message is not None:
+            data["message"] = message
+        response = await self._request(METH_PUT, f"issue/{issue_id}", data=data)
+        return Issue.from_json(response)
+
+    async def delete_issue(self, issue_id: int) -> None:
+        """Delete an issue from Overseerr."""
+        await self._request(METH_DELETE, f"issue/{issue_id}")
 
     async def get_movie_details(self, identifier: int) -> MovieDetails:
         """Get movie details from Overseerr."""
