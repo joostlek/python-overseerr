@@ -502,13 +502,16 @@ async def test_creating_issue(
         status=201,
         body=load_fixture("issue_created.json"),
     )
-    assert await client.create_issue(
-        issue_type=IssueType.VIDEO,
-        message="Video playback not working",
-        media_id=1156593,
-        problem_season=0,
-        problem_episode=0,
-    ) == snapshot
+    assert (
+        await client.create_issue(
+            issue_type=IssueType.VIDEO,
+            message="Video playback not working",
+            media_id=1156593,
+            problem_season=0,
+            problem_episode=0,
+        )
+        == snapshot
+    )
     responses.assert_called_once_with(
         f"{MOCK_URL}/issue",
         METH_POST,
@@ -535,10 +538,13 @@ async def test_updating_issue_status(
         status=200,
         body=load_fixture("issue_updated.json"),
     )
-    assert await client.update_issue(
-        issue_id=11,
-        status=IssueStatus.RESOLVED,
-    ) == snapshot
+    assert (
+        await client.update_issue(
+            issue_id=11,
+            status=IssueStatus.RESOLVED,
+        )
+        == snapshot
+    )
     responses.assert_called_once_with(
         f"{MOCK_URL}/issue/11",
         METH_PUT,
@@ -559,11 +565,14 @@ async def test_updating_issue_with_comment(
         status=200,
         body=load_fixture("issue_updated.json"),
     )
-    assert await client.update_issue(
-        issue_id=11,
-        status=IssueStatus.RESOLVED,
-        message="Issue has been resolved",
-    ) == snapshot
+    assert (
+        await client.update_issue(
+            issue_id=11,
+            status=IssueStatus.RESOLVED,
+            message="Issue has been resolved",
+        )
+        == snapshot
+    )
     responses.assert_called_once_with(
         f"{MOCK_URL}/issue/11",
         METH_PUT,
