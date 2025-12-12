@@ -518,7 +518,7 @@ async def test_creating_issue(
         headers=HEADERS,
         params=None,
         json={
-            "issueType": IssueType.VIDEO,
+            "issueType": 1,
             "message": "Video playback not working",
             "mediaId": 1156593,
             "problemSeason": 0,
@@ -550,7 +550,7 @@ async def test_updating_issue_status(
         METH_PUT,
         headers=HEADERS,
         params=None,
-        json={"status": IssueStatus.RESOLVED},
+        json={"status": 2},
     )
 
 
@@ -578,7 +578,7 @@ async def test_updating_issue_with_comment(
         METH_PUT,
         headers=HEADERS,
         params=None,
-        json={"status": IssueStatus.RESOLVED, "message": "Issue has been resolved"},
+        json={"status": 2, "message": "Issue has been resolved"},
     )
 
 
