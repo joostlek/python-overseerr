@@ -202,7 +202,7 @@ class OverseerrClient:
     ) -> Issue:
         """Create a new issue in Overseerr."""
         data = {
-            "issueType": issue_type,
+            "issueType": issue_type.value,
             "message": message,
             "mediaId": media_id,
             "problemSeason": problem_season,
@@ -221,7 +221,7 @@ class OverseerrClient:
         """Update an existing issue in Overseerr."""
         data: dict[str, Any] = {}
         if status is not None:
-            data["status"] = status
+            data["status"] = status.value
         if message is not None:
             data["message"] = message
         response = await self._request(METH_PUT, f"issue/{issue_id}", data=data)
