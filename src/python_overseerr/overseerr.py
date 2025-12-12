@@ -19,6 +19,7 @@ from .models import (
     IssueFilterStatus,
     IssueResponse,
     IssueSortStatus,
+    IssueStatus,
     IssueType,
     MediaType,
     MovieDetails,
