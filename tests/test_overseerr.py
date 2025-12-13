@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING, Any
 
 import aiohttp
 from aiohttp import ClientError
-from aiohttp.hdrs import METH_GET, METH_POST
+from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
 from aioresponses import CallbackResult, aioresponses
 import pytest
 
@@ -18,6 +18,8 @@ from python_overseerr.exceptions import (
     OverseerrError,
 )
 from python_overseerr.models import (
+    IssueStatus,
+    IssueType,
     NotificationType,
     RequestFilterStatus,
     RequestSortStatus,
@@ -469,4 +471,127 @@ async def test_creating_request(
     assert await client.create_request(*args) == snapshot
     responses.assert_called_once_with(
         f"{MOCK_URL}/request", METH_POST, headers=HEADERS, params=None, json=json
+    )
+
+
+async def test_fetching_single_issue(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test fetching a single issue."""
+    responses.get(
+        f"{MOCK_URL}/issue/11",
+        status=200,
+        body=load_fixture("issue_single.json"),
+    )
+    assert await client.get_issue(11) == snapshot
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue/11", METH_GET, headers=HEADERS, params=None, json=None
+    )
+
+
+async def test_creating_issue(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test creating an issue."""
+    responses.post(
+        f"{MOCK_URL}/issue",
+        status=201,
+        body=load_fixture("issue_created.json"),
+    )
+    assert (
+        await client.create_issue(
+            issue_type=IssueType.VIDEO,
+            message="Video playback not working",
+            media_id=1156593,
+            problem_season=0,
+            problem_episode=0,
+        )
+        == snapshot
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue",
+        METH_POST,
+        headers=HEADERS,
+        params=None,
+        json={
+            "issueType": 1,
+            "message": "Video playback not working",
+            "mediaId": 1156593,
+            "problemSeason": 0,
+            "problemEpisode": 0,
+        },
+    )
+
+
+async def test_updating_issue_status(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test updating issue status."""
+    responses.put(
+        f"{MOCK_URL}/issue/11",
+        status=200,
+        body=load_fixture("issue_updated.json"),
+    )
+    assert (
+        await client.update_issue(
+            issue_id=11,
+            status=IssueStatus.RESOLVED,
+        )
+        == snapshot
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue/11",
+        METH_PUT,
+        headers=HEADERS,
+        params=None,
+        json={"status": 2},
+    )
+
+
+async def test_updating_issue_with_comment(
+    responses: aioresponses,
+    client: OverseerrClient,
+    snapshot: SnapshotAssertion,
+) -> None:
+    """Test updating issue with comment."""
+    responses.put(
+        f"{MOCK_URL}/issue/11",
+        status=200,
+        body=load_fixture("issue_updated.json"),
+    )
+    assert (
+        await client.update_issue(
+            issue_id=11,
+            status=IssueStatus.RESOLVED,
+            message="Issue has been resolved",
+        )
+        == snapshot
+    )
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue/11",
+        METH_PUT,
+        headers=HEADERS,
+        params=None,
+        json={"status": 2, "message": "Issue has been resolved"},
+    )
+
+
+async def test_deleting_issue(
+    responses: aioresponses,
+    client: OverseerrClient,
+) -> None:
+    """Test deleting an issue."""
+    responses.delete(
+        f"{MOCK_URL}/issue/11",
+        status=204,
+    )
+    await client.delete_issue(11)
+    responses.assert_called_once_with(
+        f"{MOCK_URL}/issue/11", METH_DELETE, headers=HEADERS, params=None, json=None
     )
