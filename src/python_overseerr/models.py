@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date, datetime  # noqa: TC003
 from enum import IntEnum, IntFlag, StrEnum
-from typing import Annotated
+from typing import Annotated, Optional
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
@@ -136,7 +136,7 @@ class Person(Result):
     mediaType = ResultMediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
     name: str
     popularity: float
-    known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
+    known_for: list[Movie | TV] = field(metadata=field_options(alias="knownFor"))
     adult: bool
 
 
@@ -192,8 +192,8 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
-    plex_username: str = field(metadata=field_options(alias="plexUsername"))
-    plex_id: int = field(metadata=field_options(alias="plexId"))
+    plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
+    plex_id: int | None = field(metadata=field_options(alias="plexId"))
     email: str
     avatar: str
     movie_quota_limit: int | None = field(
@@ -233,6 +233,7 @@ class RequestStatus(IntEnum):
     PENDING_APPROVAL = 1
     APPROVED = 2
     DECLINED = 3
+    IN_PROGRESS = 5
 
 
 @dataclass
@@ -368,7 +369,12 @@ class MovieDetails(DataClassORJSONMixin):
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_title: str = field(metadata=field_options(alias="originalTitle"))
     popularity: float
-    release_date: date = field(metadata=field_options(alias="releaseDate"))
+    release_date: date | None = field(
+        metadata=field_options(
+            alias="releaseDate",
+            deserialize=lambda v: date.fromisoformat(v) if v else None,
+        ),
+    )
     revenue: int
     title: str
     vote_average: float = field(metadata=field_options(alias="voteAverage"))
