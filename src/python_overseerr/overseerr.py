@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from importlib import metadata
 import socket
 from typing import TYPE_CHECKING, Any, Literal
+from urllib.parse import quote
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
@@ -132,7 +133,9 @@ class OverseerrClient:
 
     async def search(self, keyword: str) -> list[Result]:
         """Search for media in Overseerr."""
-        response = await self._request(METH_GET, "search", params={"query": keyword})
+        response = await self._request(
+            METH_GET, "search", params={"query": quote(keyword)}
+        )
         return SearchResult.from_json(response).results
 
     async def get_webhook_notification_config(self) -> WebhookNotificationConfig:
