@@ -136,7 +136,7 @@ class Person(Result):
     mediaType = ResultMediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
     name: str
     popularity: float
-    known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
+    known_for: list[Result] = field(metadata=field_options(alias="knownFor"))
     adult: bool
 
 
@@ -217,9 +217,15 @@ class User(DataClassORJSONMixin):
     jellyfin_username: str | None = field(
         metadata=field_options(alias="jellyfinUsername"), default=None
     )
-    jellyfin_user_id: str | None = field(metadata=field_options(alias="jellyfinUserId"), default=None)
-    avatar_e_tag: str | None = field(metadata=field_options(alias="avatarETag"), default=None)
-    avatar_version: str | None = field(metadata=field_options(alias="avatarVersion"), default=None)
+    jellyfin_user_id: str | None = field(
+        metadata=field_options(alias="jellyfinUserId"), default=None
+    )
+    avatar_e_tag: str | None = field(
+        metadata=field_options(alias="avatarETag"), default=None
+    )
+    avatar_version: str | None = field(
+        metadata=field_options(alias="avatarVersion"), default=None
+    )
 
 
 @dataclass
