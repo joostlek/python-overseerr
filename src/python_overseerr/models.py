@@ -192,17 +192,11 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
+    email: str
+    avatar: str
     username: str | None
     plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
     plex_id: int | None = field(metadata=field_options(alias="plexId"))
-    jellyfin_username: str | None = field(
-        metadata=field_options(alias="jellyfinUsername")
-    )
-    jellyfin_user_id: str | None = field(metadata=field_options(alias="jellyfinUserId"))
-    email: str
-    avatar: str
-    avatar_e_tag: str | None = field(metadata=field_options(alias="avatarETag"))
-    avatar_version: str | None = field(metadata=field_options(alias="avatarVersion"))
     movie_quota_limit: int | None = field(
         metadata=field_options(alias="movieQuotaLimit")
     )
@@ -220,6 +214,12 @@ class User(DataClassORJSONMixin):
     user_type: int | None = field(metadata=field_options(alias="userType"))
     settings: UserSettings | None = None
     warnings: list[str] = field(default_factory=list)
+    jellyfin_username: str | None = field(
+        metadata=field_options(alias="jellyfinUsername"), default=None
+    )
+    jellyfin_user_id: str | None = field(metadata=field_options(alias="jellyfinUserId"), default=None)
+    avatar_e_tag: str | None = field(metadata=field_options(alias="avatarETag"), default=None)
+    avatar_version: str | None = field(metadata=field_options(alias="avatarVersion"), default=None)
 
 
 @dataclass
