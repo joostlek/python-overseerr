@@ -233,10 +233,9 @@ class UserSettings(DataClassORJSONMixin):
     """User settings model."""
 
     discord_id: str | None = field(metadata=field_options(alias="discordId"))
-    discover_region: str | None = field(metadata=field_options(alias="discoverRegion"))
     id: str
     locale: str
-    notification_types: str | None = field(
+    notification_types: dict[str, int] | None = field(
         metadata=field_options(alias="notificationTypes")
     )
     original_language: str | None = field(
@@ -253,13 +252,7 @@ class UserSettings(DataClassORJSONMixin):
     pushover_user_key: str | None = field(
         metadata=field_options(alias="pushoverUserKey")
     )
-    streaming_region: str | None = field(
-        metadata=field_options(alias="streamingRegion")
-    )
     telegram_chat_id: str | None = field(metadata=field_options(alias="telegramChatId"))
-    telegram_message_thread_id: str | None = field(
-        metadata=field_options(alias="telegramMessageThreadId")
-    )
     telegram_send_silently: str | None = field(
         metadata=field_options(alias="telegramSendSilently")
     )
@@ -268,6 +261,15 @@ class UserSettings(DataClassORJSONMixin):
     )
     watchlist_sync_tv: str | None = field(
         metadata=field_options(alias="watchlistSyncTv")
+    )
+    discover_region: str | None = field(
+        metadata=field_options(alias="discoverRegion"), default=None
+    )
+    streaming_region: str | None = field(
+        metadata=field_options(alias="streamingRegion"), default=None
+    )
+    telegram_message_thread_id: str | None = field(
+        metadata=field_options(alias="telegramMessageThreadId"), default=None
     )
 
 
@@ -442,7 +444,9 @@ class MovieDetails(DataClassORJSONMixin):
     runtime: int
     tagline: str
     keywords: list[Keyword]
-    media_info: MediaInfoWithRequests | None = field(metadata=field_options(alias="mediaInfo"), default=None)
+    media_info: MediaInfoWithRequests | None = field(
+        metadata=field_options(alias="mediaInfo"), default=None
+    )
 
 
 @dataclass
