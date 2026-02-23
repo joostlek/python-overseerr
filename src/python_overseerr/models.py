@@ -235,7 +235,7 @@ class UserSettings(DataClassORJSONMixin):
     discord_id: str | None = field(metadata=field_options(alias="discordId"))
     id: str
     locale: str
-    notification_types: dict[str, int] | None = field(
+    notification_types: NotificationTypes = field(
         metadata=field_options(alias="notificationTypes")
     )
     original_language: str | None = field(
@@ -271,6 +271,20 @@ class UserSettings(DataClassORJSONMixin):
     telegram_message_thread_id: str | None = field(
         metadata=field_options(alias="telegramMessageThreadId"), default=None
     )
+
+
+@dataclass
+class NotificationTypes(DataClassORJSONMixin):
+    """Notification types model."""
+
+    email: int | None = field(default=None)
+    discord: int | None = field(default=None)
+    pushbullet: int | None = field(default=None)
+    pushover: int | None = field(default=None)
+    slack: int | None = field(default=None)
+    telegram: int | None = field(default=None)
+    webhook: int | None = field(default=None)
+    webpush: int | None = field(default=None)
 
 
 class RequestFilterStatus(StrEnum):
