@@ -231,7 +231,7 @@ async def test_search_with_encoded_spaces(
     responses.get(
         f"{MOCK_URL}/search?query=frosty%20the%20snowman",
         status=200,
-        body=load_fixture("search_1.json"),
+        body=load_fixture("overseerr/search_1.json"),
     )
     assert await client.search("frosty the snowman")
     responses.assert_called_once_with(
