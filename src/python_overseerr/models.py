@@ -375,8 +375,8 @@ class IssueComment(DataClassORJSONMixin):
 
     id: int
     message: str
-    user: User
     created_at: datetime = field(metadata=field_options(alias="createdAt"))
+    user: User | None = None
 
 
 @dataclass
