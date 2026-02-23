@@ -30,6 +30,8 @@ from tests.const import HEADERS, MOCK_URL
 if TYPE_CHECKING:
     from syrupy import SnapshotAssertion
 
+SERVICES = ["overseerr", "seerr"]
+
 
 async def test_putting_in_own_session(
     responses: aioresponses,
@@ -38,7 +40,7 @@ async def test_putting_in_own_session(
     responses.get(
         f"{MOCK_URL}/request/count",
         status=200,
-        body=load_fixture("request_count.json"),
+        body=load_fixture("overseerr/request_count.json"),
     )
     async with aiohttp.ClientSession() as session:
         overseerr = OverseerrClient("192.168.0.30", 443, "abc", session=session)
@@ -56,7 +58,7 @@ async def test_creating_own_session(
     responses.get(
         f"{MOCK_URL}/request/count",
         status=200,
-        body=load_fixture("request_count.json"),
+        body=load_fixture("overseerr/request_count.json"),
     )
     overseerr = OverseerrClient("192.168.0.30", 443, "abc")
     await overseerr.get_request_count()
@@ -124,20 +126,23 @@ async def test_client_error(
         await client.get_request_count()
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_authentication_error(
     client: OverseerrClient,
     responses: aioresponses,
+    service: str,
 ) -> None:
     """Test authentication error."""
     responses.get(
         f"{MOCK_URL}/request/count",
         status=403,
-        body=load_fixture("no_access.json"),
+        body=load_fixture(f"{service}/no_access.json"),
     )
     with pytest.raises(OverseerrAuthenticationError):
         await client.get_request_count()
 
 
+@pytest.mark.parametrize("service", SERVICES)
 @pytest.mark.parametrize(
     ("endpoint", "fixture", "method"),
     [
@@ -170,12 +175,13 @@ async def test_data_retrieval(
     endpoint: str,
     fixture: str,
     method: str,
+    service: str,
 ) -> None:
     """Test data retrieval."""
     responses.get(
         f"{MOCK_URL}/{endpoint}",
         status=200,
-        body=load_fixture(fixture),
+        body=load_fixture(f"{service}/{fixture}"),
     )
     assert await getattr(client, method)() == snapshot
     responses.assert_called_once_with(
@@ -187,8 +193,9 @@ async def test_data_retrieval(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 @pytest.mark.parametrize(
-    "fixtures",
+    "fixture",
     [
         "search_1.json",
         "search_2.json",
@@ -198,13 +205,14 @@ async def test_search(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
-    fixtures: str,
+    fixture: str,
+    service: str,
 ) -> None:
     """Test searching for media."""
     responses.get(
         f"{MOCK_URL}/search?query=frosty",
         status=200,
-        body=load_fixture(fixtures),
+        body=load_fixture(f"{service}/{fixture}"),
     )
     assert await client.search("frosty") == snapshot
     responses.assert_called_once_with(
@@ -331,16 +339,18 @@ async def test_failing_webhook_config_test(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_requests(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test fetching requests."""
     responses.get(
         f"{MOCK_URL}/request",
         status=200,
-        body=load_fixture("request.json"),
+        body=load_fixture(f"{service}/request.json"),
     )
     assert await client.get_requests() == snapshot
     responses.assert_called_once_with(
@@ -367,7 +377,7 @@ async def test_fetching_request_parameters(
     responses.get(
         f"{MOCK_URL}/request?{query_string}",
         status=200,
-        body=load_fixture("request.json"),
+        body=load_fixture("overseerr/request.json"),
     )
     await client.get_requests(**kwargs)
     responses.assert_called_once_with(
@@ -375,16 +385,18 @@ async def test_fetching_request_parameters(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_issues(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test fetching issues."""
     responses.get(
         f"{MOCK_URL}/issue",
         status=200,
-        body=load_fixture("issue.json"),
+        body=load_fixture(f"{service}/issue.json"),
     )
     assert await client.get_issues() == snapshot
     responses.assert_called_once_with(
@@ -411,7 +423,7 @@ async def test_fetching_issue_parameters(
     responses.get(
         f"{MOCK_URL}/issue?{query_string}",
         status=200,
-        body=load_fixture("issue.json"),
+        body=load_fixture("overseerr/issue.json"),
     )
     await client.get_issues(**kwargs)
     responses.assert_called_once_with(
@@ -419,16 +431,18 @@ async def test_fetching_issue_parameters(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_movie_details(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test fetching movie details."""
     responses.get(
         f"{MOCK_URL}/movie/1156593",
         status=200,
-        body=load_fixture("movie.json"),
+        body=load_fixture(f"{service}/movie.json"),
     )
     assert await client.get_movie_details(1156593) == snapshot
     responses.assert_called_once_with(
@@ -436,16 +450,18 @@ async def test_fetching_movie_details(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_tv_details(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test fetching tv details."""
     responses.get(
         f"{MOCK_URL}/tv/249522",
         status=200,
-        body=load_fixture("tv.json"),
+        body=load_fixture(f"{service}/tv.json"),
     )
     assert await client.get_tv_details(249522) == snapshot
     responses.assert_called_once_with(
@@ -453,6 +469,7 @@ async def test_fetching_tv_details(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 @pytest.mark.parametrize(
     ("args", "fixture", "json"),
     [
@@ -480,12 +497,13 @@ async def test_creating_request(
     args: tuple[Any, ...],
     fixture: str,
     json: dict[str, Any],
+    service: str,
 ) -> None:
     """Test creating a request."""
     responses.post(
         f"{MOCK_URL}/request",
         status=201,
-        body=load_fixture(fixture),
+        body=load_fixture(f"{service}/{fixture}"),
     )
     assert await client.create_request(*args) == snapshot
     responses.assert_called_once_with(
@@ -493,16 +511,18 @@ async def test_creating_request(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_single_issue(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test fetching a single issue."""
     responses.get(
         f"{MOCK_URL}/issue/11",
         status=200,
-        body=load_fixture("issue_single.json"),
+        body=load_fixture(f"{service}/issue_single.json"),
     )
     assert await client.get_issue(11) == snapshot
     responses.assert_called_once_with(
@@ -510,16 +530,18 @@ async def test_fetching_single_issue(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_creating_issue(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test creating an issue."""
     responses.post(
         f"{MOCK_URL}/issue",
         status=201,
-        body=load_fixture("issue_created.json"),
+        body=load_fixture(f"{service}/issue_created.json"),
     )
     assert (
         await client.create_issue(
@@ -546,16 +568,18 @@ async def test_creating_issue(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_updating_issue_status(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test updating issue status."""
     responses.put(
         f"{MOCK_URL}/issue/11",
         status=200,
-        body=load_fixture("issue_updated.json"),
+        body=load_fixture(f"{service}/issue_updated.json"),
     )
     assert (
         await client.update_issue(
@@ -573,16 +597,18 @@ async def test_updating_issue_status(
     )
 
 
+@pytest.mark.parametrize("service", SERVICES)
 async def test_updating_issue_with_comment(
     responses: aioresponses,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
+    service: str,
 ) -> None:
     """Test updating issue with comment."""
     responses.put(
         f"{MOCK_URL}/issue/11",
         status=200,
-        body=load_fixture("issue_updated.json"),
+        body=load_fixture(f"{service}/issue_updated.json"),
     )
     assert (
         await client.update_issue(
