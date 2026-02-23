@@ -441,8 +441,8 @@ class MovieDetails(DataClassORJSONMixin):
     overview: str
     runtime: int
     tagline: str
-    media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
     keywords: list[Keyword]
+    media_info: MediaInfoWithRequests | None = field(metadata=field_options(alias="mediaInfo"), default=None)
 
 
 @dataclass
