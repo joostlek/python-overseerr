@@ -1,0 +1,2774 @@
+{
+    "createdBy": [
+        {
+            "id": 1770973,
+            "credit_id": "60d84970a1c59d002c41855c",
+            "name": "Yu Bo-ra",
+            "original_name": "Yu Bo-ra",
+            "gender": 0,
+            "profile_path": null
+        }
+    ],
+    "episodeRunTime": [
+        50
+    ],
+    "firstAirDate": "2019-08-22",
+    "genres": [
+        {
+            "id": 18,
+            "name": "Drama"
+        },
+        {
+            "id": 10765,
+            "name": "Sci-Fi & Fantasy"
+        }
+    ],
+    "relatedVideos": [
+        {
+            "site": "YouTube",
+            "key": "RCSD3VgJfkI",
+            "name": "[Behind the Scenes] Song Kang and Jung Ga-ram look after Kim So-hyun | Love Alarm [ENG SUB]",
+            "size": 1080,
+            "type": "Behind the Scenes",
+            "url": "https://www.youtube.com/watch?v=RCSD3VgJfkI"
+        },
+        {
+            "site": "YouTube",
+            "key": "F4e4u16VZrE",
+            "name": "[Behind the Scenes]Kim So-hyun and Song Kang prepare for their first kiss scene |Love Alarm[ENG SUB]",
+            "size": 1080,
+            "type": "Behind the Scenes",
+            "url": "https://www.youtube.com/watch?v=F4e4u16VZrE"
+        },
+        {
+            "site": "YouTube",
+            "key": "kTn_tXgMaxg",
+            "name": "Making a series to ring our hearts | Love Alarm Featurette [ENG SUB]",
+            "size": 1080,
+            "type": "Featurette",
+            "url": "https://www.youtube.com/watch?v=kTn_tXgMaxg"
+        },
+        {
+            "site": "YouTube",
+            "key": "yBV57AoJ98k",
+            "name": "Cast of Love Alarm’s first script reading 📖🔍👀 [ENG SUB]",
+            "size": 1080,
+            "type": "Behind the Scenes",
+            "url": "https://www.youtube.com/watch?v=yBV57AoJ98k"
+        },
+        {
+            "site": "YouTube",
+            "key": "FW3rw0XQ-r4",
+            "name": "Love Alarm | Main Trailer | Netflix",
+            "size": 1080,
+            "type": "Trailer",
+            "url": "https://www.youtube.com/watch?v=FW3rw0XQ-r4"
+        },
+        {
+            "site": "YouTube",
+            "key": "Yh7PNUGxihU",
+            "name": "Love Alarm | Teaser | Netflix",
+            "size": 1080,
+            "type": "Teaser",
+            "url": "https://www.youtube.com/watch?v=Yh7PNUGxihU"
+        }
+    ],
+    "homepage": "https://www.netflix.com/title/80168068",
+    "id": 89641,
+    "inProduction": false,
+    "languages": [
+        "ko"
+    ],
+    "lastAirDate": "2021-03-12",
+    "name": "Love Alarm",
+    "networks": [
+        {
+            "id": 213,
+            "name": "Netflix",
+            "originCountry": "",
+            "logoPath": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
+        }
+    ],
+    "numberOfEpisodes": 14,
+    "numberOfSeasons": 2,
+    "originCountry": [
+        "KR"
+    ],
+    "originalLanguage": "ko",
+    "originalName": "좋아하면 울리는",
+    "tagline": "",
+    "overview": "In einer Welt, in der eine App den Menschen heimliche Verehrer in deren Umgebung aufzeigt, erlebt Kim Jojo zwar private Widrigkeiten, aber auch eine junge Liebe.",
+    "popularity": 5.9127,
+    "productionCompanies": [
+        {
+            "id": 86418,
+            "name": "Studio Dragon",
+            "originCountry": "KR",
+            "logoPath": "/vzzqRwqTin3iAAMw2JlrmVPNnPa.png"
+        },
+        {
+            "id": 126405,
+            "name": "Production H",
+            "originCountry": "KR",
+            "logoPath": "/beAhkAErNhnTFZy2lmMaLT0LJML.png"
+        }
+    ],
+    "productionCountries": [
+        {
+            "iso_3166_1": "KR",
+            "name": "South Korea"
+        }
+    ],
+    "contentRatings": {
+        "results": [
+            {
+                "descriptors": [],
+                "iso_3166_1": "KR",
+                "rating": "15"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "BR",
+                "rating": "16"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "AT",
+                "rating": "16"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "IE",
+                "rating": "15"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "PL",
+                "rating": "16"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "CH",
+                "rating": "16"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "HU",
+                "rating": "16"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "CZ",
+                "rating": "18+"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "RO",
+                "rating": "AP"
+            },
+            {
+                "descriptors": [],
+                "iso_3166_1": "ES",
+                "rating": "16"
+            }
+        ]
+    },
+    "spokenLanguages": [
+        {
+            "englishName": "Korean",
+            "iso_639_1": "ko",
+            "name": "한국어/조선말"
+        }
+    ],
+    "seasons": [
+        {
+            "airDate": "2019-08-22",
+            "episodeCount": 8,
+            "id": 124623,
+            "name": "Staffel 1",
+            "overview": "",
+            "seasonNumber": 1,
+            "posterPath": "/zhENTHahyRBfaWwOkLLmjn63kTG.jpg"
+        },
+        {
+            "airDate": "2021-03-12",
+            "episodeCount": 6,
+            "id": 134955,
+            "name": "Staffel 2",
+            "overview": "",
+            "seasonNumber": 2,
+            "posterPath": "/2qfmY60E7667vEhMbbjQDgtzRlR.jpg"
+        }
+    ],
+    "status": "Ended",
+    "type": "Scripted",
+    "voteAverage": 8.255,
+    "voteCount": 2020,
+    "backdropPath": "/mXouvrZbn8YpZMURGvw30QK8qfo.jpg",
+    "lastEpisodeToAir": {
+        "id": 2731775,
+        "airDate": "2021-03-12",
+        "episodeNumber": 6,
+        "name": "Folge 6",
+        "overview": "",
+        "productionCode": "",
+        "seasonNumber": 2,
+        "showId": 89641,
+        "voteAverage": 5.7,
+        "voteCount": 9,
+        "stillPath": "/zSJGQymCl9rI1p2kLAhMA29ucfZ.jpg"
+    },
+    "posterPath": "/uJjJOxWNqP8diFrZmpXrhdciC4f.jpg",
+    "credits": {
+        "cast": [
+            {
+                "character": "Kim Jojo",
+                "creditId": "5ce63aec0e0a265256d4b7c0",
+                "id": 235731,
+                "name": "김소현",
+                "order": 0,
+                "gender": 1,
+                "profilePath": "/fmraV9d1NYEN3I3I6npE1rwOQ0.jpg"
+            },
+            {
+                "character": "Lee Hye-yeong",
+                "creditId": "5d37c4c5ab684974f587fbff",
+                "id": 1865300,
+                "name": "정가람",
+                "order": 1,
+                "gender": 2,
+                "profilePath": "/nuG7pXpapuedmIEeTdHw7313t4A.jpg"
+            },
+            {
+                "character": "Hwang Sun-oh",
+                "creditId": "5ce63aff0e0a265cdecda72a",
+                "id": 1878952,
+                "name": "Song Kang",
+                "order": 2,
+                "gender": 2,
+                "profilePath": "/83fLAMMb1LGT8YZ4dgRI0fti3az.jpg"
+            },
+            {
+                "character": "Park Gul-mi",
+                "creditId": "5d37c4d060c51d7868816dc1",
+                "id": 1787992,
+                "name": "Go Min-si",
+                "order": 3,
+                "gender": 1,
+                "profilePath": "/tgBb9dDyewLlautcmJH9KSXZz1O.jpg"
+            },
+            {
+                "character": "Chon Duk-gu",
+                "creditId": "604b8c611d78f200577d38a8",
+                "id": 1307736,
+                "name": "이재응",
+                "order": 4,
+                "gender": 2,
+                "profilePath": "/eXet0PJzTzYZkmI6yyfVVfOFmzC.jpg"
+            },
+            {
+                "character": "Yuk-jo",
+                "creditId": "5d37c84fe54d5d20b3dda680",
+                "id": 2369771,
+                "name": "Kim Si-eun",
+                "order": 6,
+                "gender": 1,
+                "profilePath": "/eJWjsLN3VrxdMjnd7qhbAghPhVo.jpg"
+            },
+            {
+                "character": "Jeong Mi-mi",
+                "creditId": "5d37c4e160c51d001284afac",
+                "id": 102269,
+                "name": "송선미",
+                "order": 9,
+                "gender": 1,
+                "profilePath": "/eBqFhQm58VFfghc2l2dv438JyX3.jpg"
+            },
+            {
+                "character": "Bae Gyeong-hee",
+                "creditId": "604b8be0a35c8e00589b07d7",
+                "id": 229947,
+                "name": "심이영",
+                "order": 10,
+                "gender": 1,
+                "profilePath": "/fkIWDrXGH4x8mWEX2eK1kUL8u2n.jpg"
+            },
+            {
+                "character": "Hwang Jae-cheol",
+                "creditId": "604b8cac8a0e9b005a29a6d9",
+                "id": 1488075,
+                "name": "Kim Young-pil",
+                "order": 11,
+                "gender": 2,
+                "profilePath": "/sjT92A9eK4bF16zrApuXwRVzz7i.jpg"
+            },
+            {
+                "character": "Jojos Aunt",
+                "creditId": "604b8cdd07e281002bbfb449",
+                "id": 1793045,
+                "name": "박성연",
+                "order": 12,
+                "gender": 1,
+                "profilePath": "/30aZicvfKu8ey6YCFrThpD2lsLR.jpg"
+            },
+            {
+                "character": "Kim Min-jae",
+                "creditId": "604b8cf907e28100451c439e",
+                "id": 2087240,
+                "name": "윤나무",
+                "order": 13,
+                "gender": 2,
+                "profilePath": "/vXQA20pwMw0TwDB3GlW1WBcucJm.jpg"
+            },
+            {
+                "character": "Jang Il-sik",
+                "creditId": "5d36c2d760c51d0012817c85",
+                "id": 2353469,
+                "name": "신승호",
+                "order": 10,
+                "gender": 2,
+                "profilePath": "/pIvBFVWOhfLvWClrFMqBKRJ1iK4.jpg"
+            },
+            {
+                "character": "Kim Jang-go",
+                "creditId": "604b8d2d07e281005a2cb6ed",
+                "id": 1663889,
+                "name": "Z.Hera",
+                "order": 13,
+                "gender": 1,
+                "profilePath": "/alJdfroZqWMS7iR3YSKYzC5Y2ZC.jpg"
+            },
+            {
+                "character": "Marx",
+                "creditId": "5d37c81560c51d001284bc82",
+                "id": 2218708,
+                "name": "송건희",
+                "order": 14,
+                "gender": 2,
+                "profilePath": "/8rjlzhudRf3w3xtSso7R7BG8Ikq.jpg"
+            },
+            {
+                "character": "",
+                "creditId": "5d37c81fe54d5d2490db094d",
+                "id": 2289712,
+                "name": "Choi Joo-won",
+                "order": 16,
+                "gender": 2,
+                "profilePath": "/86kwyD0OhV3Jw1DqvF5Gsa1drT6.jpg"
+            },
+            {
+                "character": "",
+                "creditId": "5d37c844ab68497d7d85589d",
+                "id": 138521,
+                "name": "김희창",
+                "order": 17,
+                "gender": 2,
+                "profilePath": "/7zLM9KCSWOoXBiDIycfv57EEC4j.jpg"
+            },
+            {
+                "character": "Sung Ji-yeon",
+                "creditId": "619e2af9f90b19002a9aee6c",
+                "id": 2816227,
+                "name": "Kim Ye-ji",
+                "order": 18,
+                "gender": 1,
+                "profilePath": "/mV0HhibBh9PgjeuHC47DPVXxJjm.jpg"
+            },
+            {
+                "character": "Jo Jos grandmother",
+                "creditId": "64efdeab72c13e00c5856ed2",
+                "id": 141153,
+                "name": "김영옥",
+                "order": 19,
+                "gender": 1,
+                "profilePath": "/vBk5QGcAFl8rlbkOoV898pa5GAi.jpg"
+            },
+            {
+                "character": "Classmate",
+                "creditId": "690b6b3f37efbd1bb778ae5a",
+                "id": 3713112,
+                "name": "Han Seo-wool",
+                "order": 20,
+                "gender": 1,
+                "profilePath": "/AkMj0XD7gSP8B5kCABd77NEgCw7.jpg"
+            },
+            {
+                "character": "Ji-Hoon",
+                "creditId": "6915a6e35fb76ce1f8a0dd0f",
+                "id": 3038411,
+                "name": "Park Ji-hoon",
+                "order": 5,
+                "gender": 2,
+                "profilePath": "/a1lhJxxIBlJL7roIDY4dOEoRMML.jpg"
+            },
+            {
+                "character": "Brian Chon",
+                "creditId": "604bc199a35c8e00589b5278",
+                "id": 2828043,
+                "name": "기도훈",
+                "order": 7,
+                "gender": 2,
+                "profilePath": "/fXHhGTM8ohtTNkKtbY7aQkHEGIm.jpg"
+            },
+            {
+                "character": "Mon-sun",
+                "creditId": "604bc1cd1d78f20075a6a26e",
+                "id": 2130298,
+                "name": "Bae Dabin",
+                "order": 8,
+                "gender": 1,
+                "profilePath": "/fWMvyN8LjKej5dxGQjuHo1ta5Rr.jpg"
+            },
+            {
+                "character": "Radio DJ",
+                "creditId": "602407b3c2b9df003ea4648e",
+                "id": 1057068,
+                "name": "한예리",
+                "order": 500,
+                "gender": 1,
+                "profilePath": "/ukEY6AV2EjeGDjMayDj5rpo8pHw.jpg"
+            },
+            {
+                "character": "",
+                "creditId": "6848231c69887655e9de770d",
+                "id": 1108037,
+                "name": "임세미",
+                "order": 501,
+                "gender": 1,
+                "profilePath": "/hmDpdTlTj1KX9AlgmBouNWcg09F.jpg"
+            }
+        ],
+        "crew": [
+            {
+                "creditId": "5fcce1d1a5743d004007d53b",
+                "department": "Writing",
+                "id": 2884028,
+                "job": "Writer",
+                "name": "Cha Yeon-su",
+                "gender": 0,
+                "profilePath": null
+            },
+            {
+                "creditId": "5fcce1f77314a1003fcd8bb9",
+                "department": "Writing",
+                "id": 2884030,
+                "job": "Writer",
+                "name": "Kim Seo-hee",
+                "gender": 0,
+                "profilePath": null
+            },
+            {
+                "creditId": "5fb4a068706e56003f2e29db",
+                "department": "Directing",
+                "id": 1796973,
+                "job": "Director",
+                "name": "Kim Jin-woo",
+                "gender": 2,
+                "profilePath": null
+            },
+            {
+                "creditId": "5d37ea3260c51d0013857498",
+                "department": "Writing",
+                "id": 1806407,
+                "job": "Comic Book",
+                "name": "Chon Kye-young",
+                "gender": 1,
+                "profilePath": null
+            }
+        ]
+    },
+    "externalIds": {
+        "facebookId": null,
+        "freebaseId": null,
+        "freebaseMid": null,
+        "imdbId": "tt9145880",
+        "instagramId": null,
+        "tvdbId": 362774,
+        "tvrageId": null,
+        "twitterId": null
+    },
+    "keywords": [
+        {
+            "id": 128,
+            "name": "love triangle"
+        },
+        {
+            "id": 1576,
+            "name": "technology"
+        },
+        {
+            "id": 6054,
+            "name": "friendship"
+        },
+        {
+            "id": 6270,
+            "name": "high school"
+        },
+        {
+            "id": 9673,
+            "name": "love"
+        },
+        {
+            "id": 10132,
+            "name": "matchmaking"
+        },
+        {
+            "id": 193400,
+            "name": "teen drama"
+        },
+        {
+            "id": 288474,
+            "name": "based on webcomic or webtoon"
+        }
+    ],
+    "mediaInfo": {
+        "downloadStatus": [],
+        "downloadStatus4k": [],
+        "id": 186,
+        "mediaType": "tv",
+        "tmdbId": 89641,
+        "tvdbId": 362774,
+        "imdbId": null,
+        "status": 5,
+        "status4k": 1,
+        "createdAt": "2026-02-06T19:40:50.000Z",
+        "updatedAt": "2026-02-06T19:40:50.000Z",
+        "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+        "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+        "serviceId": 0,
+        "serviceId4k": null,
+        "externalServiceId": 105,
+        "externalServiceId4k": null,
+        "externalServiceSlug": "love-alarm",
+        "externalServiceSlug4k": null,
+        "ratingKey": null,
+        "ratingKey4k": null,
+        "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+        "jellyfinMediaId4k": null,
+        "requests": [
+            {
+                "id": 59,
+                "status": 5,
+                "createdAt": "2026-02-06T19:40:50.000Z",
+                "updatedAt": "2026-02-06T19:40:50.000Z",
+                "type": "tv",
+                "is4k": false,
+                "serverId": null,
+                "profileId": null,
+                "rootFolder": null,
+                "languageProfileId": null,
+                "tags": null,
+                "isAutoRequest": false,
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 186,
+                    "mediaType": "tv",
+                    "tmdbId": 89641,
+                    "tvdbId": 362774,
+                    "imdbId": null,
+                    "status": 5,
+                    "status4k": 1,
+                    "createdAt": "2026-02-06T19:40:50.000Z",
+                    "updatedAt": "2026-02-06T19:40:50.000Z",
+                    "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+                    "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 105,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "love-alarm",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+                    "jellyfinMediaId4k": null,
+                    "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+                    "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+                },
+                "requestedBy": {
+                    "permissions": 160,
+                    "warnings": [],
+                    "id": 3,
+                    "email": "two@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "anotheruser",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "50a5812baa05458ea7df786d69146ba7",
+                    "avatar": "/avatarproxy/50a5812baa05458ea7df786d69146ba7?v=1757624411000",
+                    "avatarETag": "6959257e91a22b569369d2bf18f374d625e4af431e32317c0196031b545602b0",
+                    "avatarVersion": "1757624411000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:41:53.000Z",
+                    "updatedAt": "2025-09-11T20:41:53.000Z",
+                    "requestCount": 9,
+                    "displayName": "anotheruser"
+                },
+                "modifiedBy": {
+                    "permissions": 160,
+                    "warnings": [],
+                    "id": 3,
+                    "email": "two@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "anotheruser",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "50a5812baa05458ea7df786d69146ba7",
+                    "avatar": "/avatarproxy/50a5812baa05458ea7df786d69146ba7?v=1757624411000",
+                    "avatarETag": "6959257e91a22b569369d2bf18f374d625e4af431e32317c0196031b545602b0",
+                    "avatarVersion": "1757624411000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:41:53.000Z",
+                    "updatedAt": "2025-09-11T20:41:53.000Z",
+                    "requestCount": 9,
+                    "displayName": "anotheruser"
+                },
+                "seasons": [
+                    {
+                        "id": 13,
+                        "seasonNumber": 1,
+                        "status": 5,
+                        "createdAt": "2026-02-06T19:40:50.000Z",
+                        "updatedAt": "2026-02-06T19:40:50.000Z"
+                    }
+                ],
+                "seasonCount": 1
+            },
+            {
+                "id": 60,
+                "status": 5,
+                "createdAt": "2026-02-09T11:07:37.000Z",
+                "updatedAt": "2026-02-09T11:07:37.000Z",
+                "type": "tv",
+                "is4k": false,
+                "serverId": null,
+                "profileId": null,
+                "rootFolder": null,
+                "languageProfileId": null,
+                "tags": null,
+                "isAutoRequest": false,
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 186,
+                    "mediaType": "tv",
+                    "tmdbId": 89641,
+                    "tvdbId": 362774,
+                    "imdbId": null,
+                    "status": 5,
+                    "status4k": 1,
+                    "createdAt": "2026-02-06T19:40:50.000Z",
+                    "updatedAt": "2026-02-06T19:40:50.000Z",
+                    "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+                    "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 105,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "love-alarm",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+                    "jellyfinMediaId4k": null,
+                    "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+                    "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+                },
+                "requestedBy": {
+                    "permissions": 160,
+                    "warnings": [],
+                    "id": 3,
+                    "email": "two@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "anotheruser",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "50a5812baa05458ea7df786d69146ba7",
+                    "avatar": "/avatarproxy/50a5812baa05458ea7df786d69146ba7?v=1757624411000",
+                    "avatarETag": "6959257e91a22b569369d2bf18f374d625e4af431e32317c0196031b545602b0",
+                    "avatarVersion": "1757624411000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:41:53.000Z",
+                    "updatedAt": "2025-09-11T20:41:53.000Z",
+                    "requestCount": 9,
+                    "displayName": "anotheruser"
+                },
+                "modifiedBy": {
+                    "permissions": 160,
+                    "warnings": [],
+                    "id": 3,
+                    "email": "two@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "anotheruser",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "50a5812baa05458ea7df786d69146ba7",
+                    "avatar": "/avatarproxy/50a5812baa05458ea7df786d69146ba7?v=1757624411000",
+                    "avatarETag": "6959257e91a22b569369d2bf18f374d625e4af431e32317c0196031b545602b0",
+                    "avatarVersion": "1757624411000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:41:53.000Z",
+                    "updatedAt": "2025-09-11T20:41:53.000Z",
+                    "requestCount": 9,
+                    "displayName": "anotheruser"
+                },
+                "seasons": [
+                    {
+                        "id": 14,
+                        "seasonNumber": 2,
+                        "status": 5,
+                        "createdAt": "2026-02-09T11:07:37.000Z",
+                        "updatedAt": "2026-02-09T11:07:37.000Z"
+                    }
+                ],
+                "seasonCount": 1
+            }
+        ],
+        "issues": [
+            {
+                "id": 5,
+                "issueType": 1,
+                "status": 1,
+                "problemSeason": 0,
+                "problemEpisode": 0,
+                "createdAt": "2026-02-15T15:43:04.000Z",
+                "updatedAt": "2026-02-15T15:43:04.000Z",
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 186,
+                    "mediaType": "tv",
+                    "tmdbId": 89641,
+                    "tvdbId": 362774,
+                    "imdbId": null,
+                    "status": 5,
+                    "status4k": 1,
+                    "createdAt": "2026-02-06T19:40:50.000Z",
+                    "updatedAt": "2026-02-06T19:40:50.000Z",
+                    "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+                    "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 105,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "love-alarm",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+                    "jellyfinMediaId4k": null,
+                    "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+                    "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+                },
+                "createdBy": {
+                    "permissions": 162,
+                    "warnings": [],
+                    "id": 2,
+                    "email": "one@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "someone",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "1bba6a9788ab418f89ae263315a1d712",
+                    "avatar": "/avatarproxy/1bba6a9788ab418f89ae263315a1d712?v=1758451253000",
+                    "avatarETag": "981168a3c88b23c0656316955720ce9fb99a50a4ebcc0ebb874a8aa42a1837e0",
+                    "avatarVersion": "1758451253000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:39:11.000Z",
+                    "updatedAt": "2025-09-11T20:39:11.000Z",
+                    "requestCount": 39,
+                    "displayName": "someone"
+                },
+                "modifiedBy": null,
+                "comments": [
+                    {
+                        "id": 5,
+                        "message": "testing",
+                        "createdAt": "2026-02-15T15:43:04.000Z",
+                        "updatedAt": "2026-02-15T15:43:04.000Z"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "issueType": 1,
+                "status": 1,
+                "problemSeason": 0,
+                "problemEpisode": 0,
+                "createdAt": "2026-02-15T15:43:41.000Z",
+                "updatedAt": "2026-02-15T15:43:41.000Z",
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 186,
+                    "mediaType": "tv",
+                    "tmdbId": 89641,
+                    "tvdbId": 362774,
+                    "imdbId": null,
+                    "status": 5,
+                    "status4k": 1,
+                    "createdAt": "2026-02-06T19:40:50.000Z",
+                    "updatedAt": "2026-02-06T19:40:50.000Z",
+                    "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+                    "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 105,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "love-alarm",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+                    "jellyfinMediaId4k": null,
+                    "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+                    "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+                },
+                "createdBy": {
+                    "permissions": 2,
+                    "warnings": [],
+                    "id": 1,
+                    "email": "one@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "somebody",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "feba146b527a4e08bff0ae8c7c53facb",
+                    "avatar": "/avatarproxy/feba146b527a4e08bff0ae8c7c53facb?v=null",
+                    "avatarETag": null,
+                    "avatarVersion": null,
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:33:00.000Z",
+                    "updatedAt": "2025-09-11T20:33:00.000Z",
+                    "requestCount": 3,
+                    "displayName": "somebody"
+                },
+                "modifiedBy": null,
+                "comments": [
+                    {
+                        "id": 6,
+                        "message": "testing",
+                        "createdAt": "2026-02-15T15:43:41.000Z",
+                        "updatedAt": "2026-02-15T15:43:41.000Z"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "issueType": 2,
+                "status": 1,
+                "problemSeason": 0,
+                "problemEpisode": 0,
+                "createdAt": "2026-02-15T15:40:16.000Z",
+                "updatedAt": "2026-02-15T15:40:16.000Z",
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 186,
+                    "mediaType": "tv",
+                    "tmdbId": 89641,
+                    "tvdbId": 362774,
+                    "imdbId": null,
+                    "status": 5,
+                    "status4k": 1,
+                    "createdAt": "2026-02-06T19:40:50.000Z",
+                    "updatedAt": "2026-02-06T19:40:50.000Z",
+                    "lastSeasonChange": "2026-02-07T02:00:35.455Z",
+                    "mediaAddedAt": "2026-02-06T20:18:30.615Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 105,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "love-alarm",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": "4822dfa5e543d74556827c5283f23f4d",
+                    "jellyfinMediaId4k": null,
+                    "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+                    "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+                },
+                "createdBy": {
+                    "permissions": 162,
+                    "warnings": [],
+                    "id": 2,
+                    "email": "one@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "someone",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "1bba6a9788ab418f89ae263315a1d712",
+                    "avatar": "/avatarproxy/1bba6a9788ab418f89ae263315a1d712?v=1758451253000",
+                    "avatarETag": "981168a3c88b23c0656316955720ce9fb99a50a4ebcc0ebb874a8aa42a1837e0",
+                    "avatarVersion": "1758451253000",
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:39:11.000Z",
+                    "updatedAt": "2025-09-11T20:39:11.000Z",
+                    "requestCount": 39,
+                    "displayName": "someone"
+                },
+                "modifiedBy": null,
+                "comments": [
+                    {
+                        "id": 3,
+                        "message": "Testing",
+                        "createdAt": "2026-02-15T15:40:16.000Z",
+                        "updatedAt": "2026-02-15T15:40:16.000Z"
+                    }
+                ]
+            }
+        ],
+        "seasons": [
+            {
+                "id": 231,
+                "seasonNumber": 1,
+                "status": 5,
+                "status4k": 1,
+                "createdAt": "2026-02-07T02:00:35.000Z",
+                "updatedAt": "2026-02-07T02:00:35.000Z"
+            },
+            {
+                "id": 232,
+                "seasonNumber": 2,
+                "status": 5,
+                "status4k": 1,
+                "createdAt": "2026-02-07T03:30:02.000Z",
+                "updatedAt": "2026-02-07T03:30:02.000Z"
+            }
+        ],
+        "mediaUrl": "http://192.168.0.2:8990/web/index.html#!/details?id=4822dfa5e543d74556827c5283f23f4d&context=home&serverId=05647f36ec63477298d28772721b3d1b",
+        "serviceUrl": "http://192.168.0.2:8988/series/love-alarm"
+    },
+    "watchProviders": [
+        {
+            "iso_3166_1": "AD",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AD",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 31,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AL",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AL",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 153,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AU",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AU",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 49,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "AZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=AZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BB",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BB",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BH",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BH",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 41,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BS",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BS",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 12,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "BZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=BZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 6,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 94,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CH",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CH",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CL",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CL",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CU",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CU",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CV",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CV",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 6,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "CZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=CZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "DE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=DE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 84,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "DK",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=DK",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "DO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=DO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "DZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=DZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "EC",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=EC",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "EE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=EE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "EG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=EG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ES",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ES",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 51,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "FI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=FI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "FJ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=FJ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "FR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=FR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 59,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GB",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GB",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 87,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GF",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GF",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GH",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GH",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GQ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GQ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "GT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=GT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "HK",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=HK",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "HN",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=HN",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "HR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=HR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "HU",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=HU",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ID",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ID",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IL",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IL",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IN",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IN",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IQ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IQ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IS",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IS",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "IT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=IT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "JM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=JM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "JO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=JO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "JP",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=JP",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 4,
+                    "logoPath": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+                    "id": 9,
+                    "name": "Amazon Prime Video"
+                },
+                {
+                    "displayPriority": 24,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                },
+                {
+                    "displayPriority": 43,
+                    "logoPath": "/pQvLERAjzSc9XfrRppJQLoMKMPH.jpg",
+                    "id": 2491,
+                    "name": "Channel K Amazon Channel"
+                },
+                {
+                    "displayPriority": 72,
+                    "logoPath": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg",
+                    "id": 2100,
+                    "name": "Amazon Prime Video with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "KE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=KE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "KR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=KR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/hPcjSaWfMwEqXaCMu7Fkb529Dkc.jpg",
+                    "id": 356,
+                    "name": "wavve"
+                },
+                {
+                    "displayPriority": 26,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "KW",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=KW",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LB",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LB",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LC",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LC",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LU",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LU",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 7,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LV",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LV",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "LY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=LY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MC",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MC",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MD",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MD",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ME",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ME",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MK",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MK",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ML",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ML",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 4,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MU",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MU",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MX",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MX",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 7,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 39,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "MZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=MZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 10,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NL",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NL",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "NZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=NZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "OM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=OM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PF",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PF",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PH",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PH",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PK",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PK",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PL",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PL",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PS",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PS",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "PY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=PY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "QA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=QA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "RO",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=RO",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "RS",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=RS",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SC",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SC",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SI",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SI",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SK",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SK",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SN",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SN",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "SV",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=SV",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TC",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TC",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TD",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TD",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 3,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TH",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TH",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 1,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TN",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TN",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TR",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TR",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TT",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TT",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TW",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TW",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "TZ",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=TZ",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "UA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=UA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "UG",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=UG",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "US",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=US",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 2,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                },
+                {
+                    "displayPriority": 155,
+                    "logoPath": "/dpR8r13zWDeUR0QkzWidrdMxa56.jpg",
+                    "id": 1796,
+                    "name": "Netflix Standard with Ads"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "UY",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=UY",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "VE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=VE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "YE",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=YE",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ZA",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ZA",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ZM",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ZM",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 0,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        },
+        {
+            "iso_3166_1": "ZW",
+            "link": "https://www.themoviedb.org/tv/89641/watch?locale=ZW",
+            "buy": [],
+            "flatrate": [
+                {
+                    "displayPriority": 4,
+                    "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+                    "id": 8,
+                    "name": "Netflix"
+                }
+            ]
+        }
+    ],
+    "onUserWatchlist": false
+}

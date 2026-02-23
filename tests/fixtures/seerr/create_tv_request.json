@@ -1,0 +1,536 @@
+{
+    "type": "tv",
+    "media": {
+        "downloadStatus": [],
+        "downloadStatus4k": [],
+        "id": 194,
+        "mediaType": "tv",
+        "tmdbId": 1416,
+        "tvdbId": 73762,
+        "imdbId": null,
+        "status": 3,
+        "status4k": 1,
+        "createdAt": "2024-12-26T14:37:30.000Z",
+        "updatedAt": "2024-12-26T14:37:30.000Z",
+        "lastSeasonChange": "2026-02-15T15:38:38.000Z",
+        "mediaAddedAt": "2026-02-15T15:38:38.000Z",
+        "serviceId": 0,
+        "serviceId4k": null,
+        "externalServiceId": 108,
+        "externalServiceId4k": null,
+        "externalServiceSlug": "greys-anatomy",
+        "externalServiceSlug4k": null,
+        "ratingKey": null,
+        "ratingKey4k": null,
+        "jellyfinMediaId": null,
+        "jellyfinMediaId4k": null,
+        "requests": [
+            {
+                "id": 71,
+                "status": 2,
+                "createdAt": "2026-02-15T15:38:38.000Z",
+                "updatedAt": "2026-02-15T15:38:38.000Z",
+                "type": "tv",
+                "is4k": false,
+                "serverId": null,
+                "profileId": null,
+                "rootFolder": null,
+                "languageProfileId": null,
+                "tags": null,
+                "isAutoRequest": false,
+                "media": {
+                    "downloadStatus": [],
+                    "downloadStatus4k": [],
+                    "id": 194,
+                    "mediaType": "tv",
+                    "tmdbId": 1416,
+                    "tvdbId": 73762,
+                    "imdbId": null,
+                    "status": 3,
+                    "status4k": 1,
+                    "createdAt": "2026-02-15T15:38:38.000Z",
+                    "updatedAt": "2026-02-15T15:38:38.000Z",
+                    "lastSeasonChange": "2026-02-15T15:38:38.000Z",
+                    "mediaAddedAt": "2026-02-15T15:38:38.000Z",
+                    "serviceId": 0,
+                    "serviceId4k": null,
+                    "externalServiceId": 108,
+                    "externalServiceId4k": null,
+                    "externalServiceSlug": "greys-anatomy",
+                    "externalServiceSlug4k": null,
+                    "ratingKey": null,
+                    "ratingKey4k": null,
+                    "jellyfinMediaId": null,
+                    "jellyfinMediaId4k": null,
+                    "serviceUrl": "http://192.168.0.2:8989/series/greys-anatomy"
+                },
+                "requestedBy": {
+                    "permissions": 2,
+                    "warnings": [],
+                    "id": 1,
+                    "email": "one@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "somebody",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "feba146b527a4e08bff0ae8c7c53facb",
+                    "avatar": "/avatarproxy/feba146b527a4e08bff0ae8c7c53facb?v=null",
+                    "avatarETag": null,
+                    "avatarVersion": null,
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:33:00.000Z",
+                    "updatedAt": "2025-09-11T20:33:00.000Z",
+                    "requestCount": 2,
+                    "displayName": "somebody"
+                },
+                "modifiedBy": {
+                    "permissions": 2,
+                    "warnings": [],
+                    "id": 1,
+                    "email": "one@email.com",
+                    "plexUsername": null,
+                    "jellyfinUsername": "somebody",
+                    "username": null,
+                    "recoveryLinkExpirationDate": null,
+                    "userType": 3,
+                    "plexId": null,
+                    "jellyfinUserId": "feba146b527a4e08bff0ae8c7c53facb",
+                    "avatar": "/avatarproxy/feba146b527a4e08bff0ae8c7c53facb?v=null",
+                    "avatarETag": null,
+                    "avatarVersion": null,
+                    "movieQuotaLimit": null,
+                    "movieQuotaDays": null,
+                    "tvQuotaLimit": null,
+                    "tvQuotaDays": null,
+                    "createdAt": "2025-09-11T20:33:00.000Z",
+                    "updatedAt": "2025-09-11T20:33:00.000Z",
+                    "requestCount": 2,
+                    "displayName": "somebody"
+                },
+                "seasons": [
+                    {
+                        "id": 17,
+                        "seasonNumber": 1,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 18,
+                        "seasonNumber": 2,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 19,
+                        "seasonNumber": 3,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 20,
+                        "seasonNumber": 4,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 21,
+                        "seasonNumber": 5,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 22,
+                        "seasonNumber": 6,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 23,
+                        "seasonNumber": 7,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 24,
+                        "seasonNumber": 8,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 25,
+                        "seasonNumber": 9,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 26,
+                        "seasonNumber": 10,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 27,
+                        "seasonNumber": 11,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 28,
+                        "seasonNumber": 12,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 29,
+                        "seasonNumber": 13,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 30,
+                        "seasonNumber": 14,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 31,
+                        "seasonNumber": 15,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 32,
+                        "seasonNumber": 16,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 33,
+                        "seasonNumber": 17,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 34,
+                        "seasonNumber": 18,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 35,
+                        "seasonNumber": 19,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 36,
+                        "seasonNumber": 20,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 37,
+                        "seasonNumber": 21,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    },
+                    {
+                        "id": 38,
+                        "seasonNumber": 22,
+                        "status": 2,
+                        "createdAt": "2026-02-15T15:38:38.000Z",
+                        "updatedAt": "2026-02-15T15:38:38.000Z"
+                    }
+                ],
+                "seasonCount": 22
+            }
+        ],
+        "seasons": [],
+        "serviceUrl": "http://192.168.0.2:8989/series/greys-anatomy"
+    },
+    "requestedBy": {
+        "permissions": 2,
+        "warnings": [],
+        "id": 1,
+        "email": "one@email.com",
+        "plexUsername": null,
+        "jellyfinUsername": "somebody",
+        "username": null,
+        "recoveryLinkExpirationDate": null,
+        "userType": 3,
+        "plexId": null,
+        "jellyfinUserId": "feba146b527a4e08bff0ae8c7c53facb",
+        "avatar": "/avatarproxy/feba146b527a4e08bff0ae8c7c53facb?v=null",
+        "avatarETag": null,
+        "avatarVersion": null,
+        "movieQuotaLimit": null,
+        "movieQuotaDays": null,
+        "tvQuotaLimit": null,
+        "tvQuotaDays": null,
+        "createdAt": "2025-09-11T20:33:00.000Z",
+        "updatedAt": "2025-09-11T20:33:00.000Z",
+        "settings": {
+            "id": 3,
+            "locale": "",
+            "discoverRegion": null,
+            "streamingRegion": null,
+            "originalLanguage": null,
+            "pgpKey": null,
+            "discordId": null,
+            "pushbulletAccessToken": null,
+            "pushoverApplicationToken": null,
+            "pushoverUserKey": null,
+            "pushoverSound": null,
+            "telegramChatId": null,
+            "telegramMessageThreadId": null,
+            "telegramSendSilently": null,
+            "watchlistSyncMovies": null,
+            "watchlistSyncTv": null,
+            "notificationTypes": {
+                "email": 4196,
+                "webpush": 8190
+            }
+        },
+        "requestCount": 2,
+        "displayName": "somebody"
+    },
+    "status": 2,
+    "modifiedBy": {
+        "permissions": 2,
+        "warnings": [],
+        "id": 1,
+        "email": "one@email.com",
+        "plexUsername": null,
+        "jellyfinUsername": "somebody",
+        "username": null,
+        "recoveryLinkExpirationDate": null,
+        "userType": 3,
+        "plexId": null,
+        "jellyfinUserId": "feba146b527a4e08bff0ae8c7c53facb",
+        "avatar": "/avatarproxy/feba146b527a4e08bff0ae8c7c53facb?v=null",
+        "avatarETag": null,
+        "avatarVersion": null,
+        "movieQuotaLimit": null,
+        "movieQuotaDays": null,
+        "tvQuotaLimit": null,
+        "tvQuotaDays": null,
+        "createdAt": "2025-09-11T20:33:00.000Z",
+        "updatedAt": "2025-09-11T20:33:00.000Z",
+        "settings": {
+            "id": 3,
+            "locale": "",
+            "discoverRegion": null,
+            "streamingRegion": null,
+            "originalLanguage": null,
+            "pgpKey": null,
+            "discordId": null,
+            "pushbulletAccessToken": null,
+            "pushoverApplicationToken": null,
+            "pushoverUserKey": null,
+            "pushoverSound": null,
+            "telegramChatId": null,
+            "telegramMessageThreadId": null,
+            "telegramSendSilently": null,
+            "watchlistSyncMovies": null,
+            "watchlistSyncTv": null,
+            "notificationTypes": {
+                "email": 4196,
+                "webpush": 8190
+            }
+        },
+        "requestCount": 2,
+        "displayName": "somebody"
+    },
+    "is4k": false,
+    "serverId": null,
+    "profileId": null,
+    "rootFolder": null,
+    "languageProfileId": null,
+    "tags": null,
+    "seasons": [
+        {
+            "seasonNumber": 1,
+            "status": 2,
+            "id": 39,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 2,
+            "status": 2,
+            "id": 40,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 3,
+            "status": 2,
+            "id": 41,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 4,
+            "status": 2,
+            "id": 42,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 5,
+            "status": 2,
+            "id": 43,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 6,
+            "status": 2,
+            "id": 44,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 7,
+            "status": 2,
+            "id": 45,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 8,
+            "status": 2,
+            "id": 46,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 9,
+            "status": 2,
+            "id": 47,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 10,
+            "status": 2,
+            "id": 48,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 11,
+            "status": 2,
+            "id": 49,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 12,
+            "status": 2,
+            "id": 50,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 13,
+            "status": 2,
+            "id": 51,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 14,
+            "status": 2,
+            "id": 52,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 15,
+            "status": 2,
+            "id": 53,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 16,
+            "status": 2,
+            "id": 54,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 17,
+            "status": 2,
+            "id": 55,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 18,
+            "status": 2,
+            "id": 56,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 19,
+            "status": 2,
+            "id": 57,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 20,
+            "status": 2,
+            "id": 58,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 21,
+            "status": 2,
+            "id": 59,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        },
+        {
+            "seasonNumber": 22,
+            "status": 2,
+            "id": 60,
+            "createdAt": "2026-02-15T15:38:45.000Z",
+            "updatedAt": "2026-02-15T15:38:45.000Z"
+        }
+    ],
+    "isAutoRequest": false,
+    "id": 72,
+    "createdAt": "2026-02-15T15:38:45.000Z",
+    "updatedAt": "2026-02-15T15:38:45.000Z"
+}

@@ -1,4 +1,4 @@
-# Python: Overseerr
+# Python: Seerr
 
 [![GitHub Release][releases-shield]][releases]
 [![Python Versions][python-versions-shield]][pypi]
@@ -9,11 +9,11 @@
 [![Build Status][build-shield]][build]
 [![Code Coverage][codecov-shield]][codecov]
 
-Asynchronous Python client for Overseerr.
+Asynchronous Python client for [Seerr](https://github.com/seerr-team/seerr).
 
 ## About
 
-This package allows you to fetch data from Overseerr.
+This package allows you to fetch data from Seerr. It also has backwards compatibility with Overseerr.
 
 ## Installation
 
@@ -29,12 +29,12 @@ functionality. The format of the log is based on
 [Keep a Changelog][keepchangelog].
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## Contributing
 

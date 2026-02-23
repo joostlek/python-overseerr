@@ -136,7 +136,7 @@ class Person(Result):
     mediaType = ResultMediaType.PERSON  # noqa: N815 # pylint: disable=invalid-name
     name: str
     popularity: float
-    known_for: list[Movie] = field(metadata=field_options(alias="knownFor"))
+    known_for: list[Result] = field(metadata=field_options(alias="knownFor"))
     adult: bool
 
 
@@ -192,10 +192,11 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
-    plex_username: str = field(metadata=field_options(alias="plexUsername"))
-    plex_id: int = field(metadata=field_options(alias="plexId"))
     email: str
     avatar: str
+    username: str | None
+    plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
+    plex_id: int | None = field(metadata=field_options(alias="plexId"))
     movie_quota_limit: int | None = field(
         metadata=field_options(alias="movieQuotaLimit")
     )
@@ -206,6 +207,84 @@ class User(DataClassORJSONMixin):
     updated_at: datetime = field(metadata=field_options(alias="updatedAt"))
     request_count: int = field(metadata=field_options(alias="requestCount"))
     display_name: str = field(metadata=field_options(alias="displayName"))
+    permissions: int
+    recovery_link_expiration_date: date | None = field(
+        metadata=field_options(alias="recoveryLinkExpirationDate")
+    )
+    user_type: int | None = field(metadata=field_options(alias="userType"))
+    settings: UserSettings | None = None
+    warnings: list[str] = field(default_factory=list)
+    jellyfin_username: str | None = field(
+        metadata=field_options(alias="jellyfinUsername"), default=None
+    )
+    jellyfin_user_id: str | None = field(
+        metadata=field_options(alias="jellyfinUserId"), default=None
+    )
+    avatar_e_tag: str | None = field(
+        metadata=field_options(alias="avatarETag"), default=None
+    )
+    avatar_version: str | None = field(
+        metadata=field_options(alias="avatarVersion"), default=None
+    )
+
+
+@dataclass
+class UserSettings(DataClassORJSONMixin):
+    """User settings model."""
+
+    discord_id: str | None = field(metadata=field_options(alias="discordId"))
+    id: str
+    locale: str
+    notification_types: NotificationTypes = field(
+        metadata=field_options(alias="notificationTypes")
+    )
+    original_language: str | None = field(
+        metadata=field_options(alias="originalLanguage")
+    )
+    pgp_key: str | None = field(metadata=field_options(alias="pgpKey"))
+    pushbullet_access_token: str | None = field(
+        metadata=field_options(alias="pushbulletAccessToken")
+    )
+    pushover_application_token: str | None = field(
+        metadata=field_options(alias="pushoverApplicationToken")
+    )
+    pushover_sound: str | None = field(metadata=field_options(alias="pushoverSound"))
+    pushover_user_key: str | None = field(
+        metadata=field_options(alias="pushoverUserKey")
+    )
+    telegram_chat_id: str | None = field(metadata=field_options(alias="telegramChatId"))
+    telegram_send_silently: str | None = field(
+        metadata=field_options(alias="telegramSendSilently")
+    )
+    watchlist_sync_movies: str | None = field(
+        metadata=field_options(alias="watchlistSyncMovies")
+    )
+    watchlist_sync_tv: str | None = field(
+        metadata=field_options(alias="watchlistSyncTv")
+    )
+    discover_region: str | None = field(
+        metadata=field_options(alias="discoverRegion"), default=None
+    )
+    streaming_region: str | None = field(
+        metadata=field_options(alias="streamingRegion"), default=None
+    )
+    telegram_message_thread_id: str | None = field(
+        metadata=field_options(alias="telegramMessageThreadId"), default=None
+    )
+
+
+@dataclass
+class NotificationTypes(DataClassORJSONMixin):
+    """Notification types model."""
+
+    email: int | None = field(default=None)
+    discord: int | None = field(default=None)
+    pushbullet: int | None = field(default=None)
+    pushover: int | None = field(default=None)
+    slack: int | None = field(default=None)
+    telegram: int | None = field(default=None)
+    webhook: int | None = field(default=None)
+    webpush: int | None = field(default=None)
 
 
 class RequestFilterStatus(StrEnum):
@@ -233,6 +312,7 @@ class RequestStatus(IntEnum):
     PENDING_APPROVAL = 1
     APPROVED = 2
     DECLINED = 3
+    COMPLETED = 5
 
 
 @dataclass
@@ -311,8 +391,8 @@ class IssueComment(DataClassORJSONMixin):
 
     id: int
     message: str
-    user: User
     created_at: datetime = field(metadata=field_options(alias="createdAt"))
+    user: User | None = None
 
 
 @dataclass
@@ -377,8 +457,10 @@ class MovieDetails(DataClassORJSONMixin):
     overview: str
     runtime: int
     tagline: str
-    media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
     keywords: list[Keyword]
+    media_info: MediaInfoWithRequests | None = field(
+        metadata=field_options(alias="mediaInfo"), default=None
+    )
 
 
 @dataclass
@@ -390,7 +472,7 @@ class Season(DataClassORJSONMixin):
     overview: str
     season_number: int = field(metadata=field_options(alias="seasonNumber"))
     episode_count: int = field(metadata=field_options(alias="episodeCount"))
-    air_date: date = field(metadata=field_options(alias="airDate"))
+    air_date: date | None = field(metadata=field_options(alias="airDate"))
     poster_path: str = field(metadata=field_options(alias="posterPath"))
 
 
@@ -402,8 +484,8 @@ class Episode(DataClassORJSONMixin):
     name: str
     overview: str
     episode_number: int = field(metadata=field_options(alias="episodeNumber"))
-    air_date: date = field(metadata=field_options(alias="airDate"))
     still_path: str = field(metadata=field_options(alias="stillPath"))
+    air_date: date | None = field(metadata=field_options(alias="airDate"), default=None)
 
 
 @dataclass
@@ -428,7 +510,9 @@ class TVDetails(DataClassORJSONMixin):
         metadata=field_options(alias="lastEpisodeToAir")
     )
     keywords: list[Keyword]
-    media_info: MediaInfoWithRequests = field(metadata=field_options(alias="mediaInfo"))
+    media_info: MediaInfoWithRequests | None = field(
+        metadata=field_options(alias="mediaInfo"), default=None
+    )
     next_episode_to_air: Episode | None = field(
         metadata=field_options(alias="nextEpisodeToAir"), default=None
     )
