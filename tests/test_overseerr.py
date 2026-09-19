@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING, Any
 import aiohttp
 from aiohttp import ClientError
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
-from aioresponses import CallbackResult, aioresponses
+from aiointercept import CallbackResult, aiointercept
 import pytest
 
 from python_overseerr import MediaType, OverseerrClient
@@ -34,7 +34,7 @@ SERVICES = ["overseerr", "seerr"]
 
 
 async def test_putting_in_own_session(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test putting in own session."""
     responses.get(
@@ -43,7 +43,7 @@ async def test_putting_in_own_session(
         body=load_fixture("overseerr/request_count.json"),
     )
     async with aiohttp.ClientSession() as session:
-        overseerr = OverseerrClient("192.168.0.30", 443, "abc", session=session)
+        overseerr = OverseerrClient("overseerr.test", 443, "abc", session=session)
         await overseerr.get_request_count()
         assert overseerr.session is not None
         assert not overseerr.session.closed
@@ -52,7 +52,7 @@ async def test_putting_in_own_session(
 
 
 async def test_creating_own_session(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test creating own session."""
     responses.get(
@@ -60,7 +60,7 @@ async def test_creating_own_session(
         status=200,
         body=load_fixture("overseerr/request_count.json"),
     )
-    overseerr = OverseerrClient("192.168.0.30", 443, "abc")
+    overseerr = OverseerrClient("overseerr.test", 443, "abc")
     await overseerr.get_request_count()
     assert overseerr.session is not None
     assert not overseerr.session.closed
@@ -69,7 +69,7 @@ async def test_creating_own_session(
 
 
 async def test_unexpected_server_response(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
 ) -> None:
     """Test handling unexpected response."""
@@ -84,7 +84,7 @@ async def test_unexpected_server_response(
 
 
 async def test_timeout(
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test request timeout."""
 
@@ -99,7 +99,7 @@ async def test_timeout(
         callback=response_handler,
     )
     async with OverseerrClient(
-        "192.168.0.30",
+        "overseerr.test",
         443,
         "abc",
         request_timeout=1,
@@ -110,7 +110,7 @@ async def test_timeout(
 
 async def test_client_error(
     client: OverseerrClient,
-    responses: aioresponses,
+    responses: aiointercept,
 ) -> None:
     """Test client error."""
 
@@ -129,7 +129,7 @@ async def test_client_error(
 @pytest.mark.parametrize("service", SERVICES)
 async def test_authentication_error(
     client: OverseerrClient,
-    responses: aioresponses,
+    responses: aiointercept,
     service: str,
 ) -> None:
     """Test authentication error."""
@@ -169,7 +169,7 @@ async def test_authentication_error(
     ],
 )
 async def test_data_retrieval(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     endpoint: str,
@@ -202,7 +202,7 @@ async def test_data_retrieval(
     ],
 )
 async def test_search(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     fixture: str,
@@ -225,11 +225,14 @@ async def test_search(
 
 
 async def test_search_with_encoded_spaces(
-    responses: aioresponses, client: OverseerrClient
+    responses: aiointercept, client: OverseerrClient
 ) -> None:
     """Test searching for media."""
+    # The client pre-encodes the keyword with quote() and then passes it as a
+    # query parameter, so aiohttp encodes it again: the space is sent on the
+    # wire as the double-encoded "%2520".
     responses.get(
-        f"{MOCK_URL}/search?query=frosty%20the%20snowman",
+        f"{MOCK_URL}/search?query=frosty%2520the%2520snowman",
         status=200,
         body=load_fixture("overseerr/search_1.json"),
     )
@@ -244,7 +247,7 @@ async def test_search_with_encoded_spaces(
 
 
 async def test_setting_webhook_configuration(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
 ) -> None:
     """Test setting webhook configuration."""
@@ -275,7 +278,7 @@ async def test_setting_webhook_configuration(
 
 
 async def test_webhook_config_test(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
 ) -> None:
     """Test setting webhook configuration."""
@@ -307,7 +310,7 @@ async def test_webhook_config_test(
 
 
 async def test_failing_webhook_config_test(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
 ) -> None:
     """Test setting webhook configuration."""
@@ -341,7 +344,7 @@ async def test_failing_webhook_config_test(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_requests(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -367,7 +370,7 @@ async def test_fetching_requests(
     ],
 )
 async def test_fetching_request_parameters(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     kwargs: dict[str, Any],
     params: dict[str, Any],
@@ -387,7 +390,7 @@ async def test_fetching_request_parameters(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_issues(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -413,7 +416,7 @@ async def test_fetching_issues(
     ],
 )
 async def test_fetching_issue_parameters(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     kwargs: dict[str, Any],
     params: dict[str, Any],
@@ -433,7 +436,7 @@ async def test_fetching_issue_parameters(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_movie_details(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -452,7 +455,7 @@ async def test_fetching_movie_details(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_tv_details(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -491,7 +494,7 @@ async def test_fetching_tv_details(
     ],
 )
 async def test_creating_request(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     args: tuple[Any, ...],
@@ -513,7 +516,7 @@ async def test_creating_request(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_fetching_single_issue(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -532,7 +535,7 @@ async def test_fetching_single_issue(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_creating_issue(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -570,7 +573,7 @@ async def test_creating_issue(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_updating_issue_status(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -599,7 +602,7 @@ async def test_updating_issue_status(
 
 @pytest.mark.parametrize("service", SERVICES)
 async def test_updating_issue_with_comment(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
     snapshot: SnapshotAssertion,
     service: str,
@@ -628,7 +631,7 @@ async def test_updating_issue_with_comment(
 
 
 async def test_deleting_issue(
-    responses: aioresponses,
+    responses: aiointercept,
     client: OverseerrClient,
 ) -> None:
     """Test deleting an issue."""

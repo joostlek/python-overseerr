@@ -1,9 +1,9 @@
 """Asynchronous Python client for Overseerr."""
 
-from collections.abc import AsyncGenerator, Generator
+from collections.abc import AsyncGenerator
 
 import aiohttp
-from aioresponses import aioresponses
+from aiointercept import aiointercept
 import pytest
 
 from python_overseerr import OverseerrClient
@@ -24,7 +24,7 @@ async def client() -> AsyncGenerator[OverseerrClient, None]:
     async with (
         aiohttp.ClientSession() as session,
         OverseerrClient(
-            "192.168.0.30",
+            "overseerr.test",
             443,
             "key",
             session=session,
@@ -34,7 +34,7 @@ async def client() -> AsyncGenerator[OverseerrClient, None]:
 
 
 @pytest.fixture(name="responses")
-def aioresponses_fixture() -> Generator[aioresponses, None, None]:
-    """Return aioresponses fixture."""
-    with aioresponses() as mocked_responses:
+async def aiointercept_fixture() -> AsyncGenerator[aiointercept, None]:
+    """Return aiointercept fixture."""
+    async with aiointercept(mock_external_urls=True) as mocked_responses:
         yield mocked_responses
