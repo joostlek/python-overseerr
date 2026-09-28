@@ -108,6 +108,15 @@ class Movie(Result):
     popularity: float
     title: str
     adult: bool
+    poster_path: str | None = field(
+        metadata=field_options(alias="posterPath"), default=None
+    )
+    backdrop_path: str | None = field(
+        metadata=field_options(alias="backdropPath"), default=None
+    )
+    release_date: str | None = field(
+        metadata=field_options(alias="releaseDate"), default=None
+    )
     media_info: MediaInfo | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
     )
@@ -124,6 +133,12 @@ class TV(Result):
     original_name: str = field(metadata=field_options(alias="originalName"))
     overview: str
     popularity: float
+    poster_path: str | None = field(
+        metadata=field_options(alias="posterPath"), default=None
+    )
+    backdrop_path: str | None = field(
+        metadata=field_options(alias="backdropPath"), default=None
+    )
     media_info: MediaInfo | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
     )
@@ -458,6 +473,12 @@ class MovieDetails(DataClassORJSONMixin):
     runtime: int
     tagline: str
     keywords: list[Keyword]
+    poster_path: str | None = field(
+        metadata=field_options(alias="posterPath"), default=None
+    )
+    backdrop_path: str | None = field(
+        metadata=field_options(alias="backdropPath"), default=None
+    )
     media_info: MediaInfoWithRequests | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
     )
@@ -510,6 +531,12 @@ class TVDetails(DataClassORJSONMixin):
         metadata=field_options(alias="lastEpisodeToAir")
     )
     keywords: list[Keyword]
+    poster_path: str | None = field(
+        metadata=field_options(alias="posterPath"), default=None
+    )
+    backdrop_path: str | None = field(
+        metadata=field_options(alias="backdropPath"), default=None
+    )
     media_info: MediaInfoWithRequests | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
     )
