@@ -3385,7 +3385,7 @@
       'overview': '“I need to run because I love having that connection to nature,” says ultra-runner Anna Frost, who’s been racking up competitive wins for more than a decade. After being consumed with running for years, Frost takes on a new challenge. This film follows the endurance athlete from podium to motherhood.',
       'popularity': 0.001,
       'poster_path': None,
-      'release_date': '',
+      'release_date': None,
       'title': 'Frosty',
     }),
     dict({
@@ -3409,7 +3409,7 @@
       'overview': "When a young widow's magic scarf brings a dashing snowman to life, can he help her rediscover romance, laughter and holiday cheer before he melts away?",
       'popularity': 87.462,
       'poster_path': '/waW6R5WJQSxq65gwBkvnKlseU6n.jpg',
-      'release_date': '2024-11-12',
+      'release_date': datetime.date(2024, 11, 12),
       'title': 'Hot Frosty',
     }),
     dict({
@@ -3469,7 +3469,7 @@
       'overview': "Mr. Twitchell, a greedy old businessman, has invented Summer Wheeze: a spray that instantly removes snow and slush! Now Holly has to keep Frosty from melting, and convince everybody that snow's actually a good thing.",
       'popularity': 7.677,
       'poster_path': '/t22OhZnczuoT68k5KNPCM0C9zUT.jpg',
-      'release_date': '1992-12-01',
+      'release_date': datetime.date(1992, 12, 1),
       'title': 'Frosty Returns',
     }),
     dict({
@@ -3509,7 +3509,7 @@
       'overview': 'Years have passed since Frosty left for the North Pole, but his promise is kept when he hears news of the first snowfall of the season, and decides to return.',
       'popularity': 10.095,
       'poster_path': '/o915rkZ0wwQjrk0UAEQkEkmt1E1.jpg',
-      'release_date': '1976-12-02',
+      'release_date': datetime.date(1976, 12, 2),
       'title': "Frosty's Winter Wonderland",
     }),
     dict({
@@ -3524,7 +3524,7 @@
       'overview': 'A discarded silk top-hat becomes the focus of a struggle between a washed-up stage magician and a group of schoolchildren, after it magically brings a snowman to life. Realizing that newly-living Frosty will melt in spring unless he takes refuge in a colder climate, Frosty and Karen, a young girl who he befriends, stow away on a freight train headed for the north pole. Little do they know that the magician is following them, and he wants his hat back!',
       'popularity': 20.297,
       'poster_path': '/gw7ie4W3iW8nefnZ4kuw8dgYNM2.jpg',
-      'release_date': '1969-12-07',
+      'release_date': datetime.date(1969, 12, 7),
       'title': 'Frosty the Snowman',
     }),
     dict({
@@ -3539,7 +3539,7 @@
       'overview': 'Winterbolt is trying to make the North Pole his evil wonderland, and it is up to Frosty the Snowman, Rudolph the Red-Nosed Reindeer and others to stop him.',
       'popularity': 6.946,
       'poster_path': '/3BfpQ4trGB6aEIIirL7SikStHRU.jpg',
-      'release_date': '1979-07-01',
+      'release_date': datetime.date(1979, 7, 1),
       'title': "Rudolph and Frosty's Christmas in July",
     }),
     dict({
@@ -3554,7 +3554,7 @@
       'overview': "Hot Frosty 2024 is a pleasant surprise among holiday romances. The film goes beyond what you would expect from a film in this genre, turning a potentially silly premise into a complex look at grief, love, and magical second chances. Lacey Chabert and Dustin Milligan's captivating chemistry, clever script, and true emotional depth turn a potentially forgotten idea into a memorable one. The film skillfully combines funny and touching moments to create a unique story that shows how complicated relationships can be. Unlike other holiday movies, it combines magic with a moving true story.",
       'popularity': 0.537,
       'poster_path': None,
-      'release_date': '',
+      'release_date': None,
       'title': 'Hot Frosty 2024 - Comedy, Romance, Fantasy',
     }),
     dict({
@@ -3584,7 +3584,7 @@
       'overview': 'Ten Musical Yuletide treasures featuring the voices of Fred Astaire, Jimmy Durante and Burl Ives. Create A tuneful new family tradition with this festive, fun-to-follow sing along!',
       'popularity': 1.55,
       'poster_path': '/6TPx3OOgSlhKIwtVEiaedJ7UmBa.jpg',
-      'release_date': '2024-11-08',
+      'release_date': datetime.date(2024, 11, 8),
       'title': 'The Rudolph, Frosty & Friends Sing Along',
     }),
     dict({
@@ -3599,7 +3599,7 @@
       'overview': 'On the shore of the Podkamennaya Tunguska, in harsh northern conditions, the Kto people live, the keeper of a special way of life, traditions and rituals.',
       'popularity': 0.005,
       'poster_path': None,
-      'release_date': '2015-03-09',
+      'release_date': datetime.date(2015, 3, 9),
       'title': 'And Over Tunguska Frosty Fog Spreads',
     }),
     dict({
@@ -3614,7 +3614,7 @@
       'overview': 'In the mid – 1960’s, Latvia was a part of the Soviet Union. People lived identical lives, listened to the same radio stations. Children wore the same boots and ate the same porridge every morning. Only their dreams and desires for something different set them apart from each other. For little Dace this is a moment, where stand still of childhood’s happiness turns into time for growing up.  "A fulfilled expression of Beauty in the passage of Life." (Dmitry Rancev, "The Independent", Latvia)  "Competent and Spartan…" (Jan Ingman, catalogue of "Stockholm IFF")',
       'popularity': 0.426,
       'poster_path': None,
-      'release_date': '2001-10-10',
+      'release_date': datetime.date(2001, 10, 10),
       'title': 'Frosty Flowers',
     }),
     dict({
@@ -3629,7 +3629,7 @@
       'overview': "Moosavi, a country schoolteacher, must undertake an arduous journey to fetch medicine for his village's sick. Accompanied by his student and a villager, he travels through a blizzard and is pursued by a pack of hungry wolves.",
       'popularity': 0.001,
       'poster_path': '/wm60uU0s6UvyaE7d2zRjWvJXh5z.jpg',
-      'release_date': '1985-01-01',
+      'release_date': datetime.date(1985, 1, 1),
       'title': 'Frosty Roads',
     }),
     dict({
@@ -3644,7 +3644,7 @@
       'overview': "Loosely based on Maxim Gorky's The Lower Depths",
       'popularity': 0.746,
       'poster_path': '/d3daC6WjqcPIXYDIWmGCQXe6M94.jpg',
-      'release_date': '1957-07-04',
+      'release_date': datetime.date(1957, 7, 4),
       'title': 'The Frosty Night',
     }),
     dict({
@@ -3659,7 +3659,7 @@
       'overview': 'How Morozik decorated a rainy day with sparkling snow.',
       'popularity': 0.001,
       'poster_path': '/xBVamm4xxgKqfQHtVoLTpd3tjpz.jpg',
-      'release_date': '1974-02-16',
+      'release_date': datetime.date(1974, 2, 16),
       'title': 'Frosty Pattern',
     }),
   ])
@@ -3688,7 +3688,7 @@
       'overview': '',
       'popularity': 0.0125,
       'poster_path': None,
-      'release_date': '',
+      'release_date': None,
       'title': 'Frosty',
     }),
     dict({
@@ -3703,7 +3703,7 @@
       'overview': 'Schulkinder bauen aus dem ersten Schnee des Jahres, der einen Tag vor Weihnachten fiel, einen Schneemann. Als der Wind den Zylinder eines schlechten Zauberers auf den Kopf des Schneemannes weht, erwacht dieser zum Leben. Aber weil Frosty, wie er von den Kindern liebevoll genannt wird, bei den Temperaturen schnell droht zu schmilzen, hilft ein kleines Mädchen ihm dabei zum Nordpol zu kommen. Das wäre alles viel leichter, wäre nicht der böse Zauberer hinter ihnen her, den er um jeden Preis seinen Zylinder zurück haben möchte...',
       'popularity': 1.479,
       'poster_path': '/6xtOfaaSLkAM0mZtjHnNHvfm4ji.jpg',
-      'release_date': '1969-12-07',
+      'release_date': datetime.date(1969, 12, 7),
       'title': 'Frosty, der Schneemann',
     }),
     dict({
@@ -3718,7 +3718,7 @@
       'overview': '',
       'popularity': 0.6185,
       'poster_path': '/ArlNMipfH89GrpQ6Ifjy74hPHid.jpg',
-      'release_date': '2015-10-03',
+      'release_date': datetime.date(2015, 10, 3),
       'title': 'A Frosty Affair',
     }),
     dict({
@@ -3733,7 +3733,7 @@
       'overview': '',
       'popularity': 1.5216,
       'poster_path': '/qYgHxkiRvjVnPihSAm9Je91kOZq.jpg',
-      'release_date': '1993-09-15',
+      'release_date': datetime.date(1993, 9, 15),
       'title': 'Frosty Returns',
     }),
     dict({
@@ -3748,7 +3748,7 @@
       'overview': 'Der Zauberschal einer jungen Witwe erweckt einen attraktiven Schneemann zum Leben. Kann sie Romantik, Freude und Weihnachtsstimmung wieder erleben, bevor er schmilzt?',
       'popularity': 4.534,
       'poster_path': '/waW6R5WJQSxq65gwBkvnKlseU6n.jpg',
-      'release_date': '2024-11-12',
+      'release_date': datetime.date(2024, 11, 12),
       'title': 'Hot Frosty',
     }),
     dict({
@@ -3763,7 +3763,7 @@
       'overview': '',
       'popularity': 0.1356,
       'poster_path': '/8tNW3y3tcPEhWqrnzOnbnO8CzrN.jpg',
-      'release_date': '2010-02-21',
+      'release_date': datetime.date(2010, 2, 21),
       'title': 'Frosty Man and the BMX Kid',
     }),
     dict({
@@ -3778,7 +3778,7 @@
       'overview': '',
       'popularity': 0.5906,
       'poster_path': '/cBlIsdS68NrJJLYcRCbMKhI0aPe.jpg',
-      'release_date': '2005-10-18',
+      'release_date': datetime.date(2005, 10, 18),
       'title': 'The Legend of Frosty the Snowman',
     }),
     dict({
@@ -3793,7 +3793,7 @@
       'overview': '',
       'popularity': 0.6272,
       'poster_path': '/o915rkZ0wwQjrk0UAEQkEkmt1E1.jpg',
-      'release_date': '1976-12-02',
+      'release_date': datetime.date(1976, 12, 2),
       'title': 'Frostys Winter Wonderland',
     }),
     dict({
@@ -3823,7 +3823,7 @@
       'overview': '',
       'popularity': 0.1953,
       'poster_path': '/4MqgcBTGSO0OEV46PmaHFpQp5WZ.jpg',
-      'release_date': '1915-06-02',
+      'release_date': datetime.date(1915, 6, 2),
       'title': 'The Conversion of Frosty Blake',
     }),
     dict({
@@ -3838,7 +3838,7 @@
       'overview': '',
       'popularity': 0.7995,
       'poster_path': '/v24SYZqlfvzvjyQpt6MtQLQNJ0u.jpg',
-      'release_date': '1979-07-01',
+      'release_date': datetime.date(1979, 7, 1),
       'title': 'Rudolph and Frostys Christmas in July',
     }),
     dict({
@@ -3878,7 +3878,7 @@
       'overview': '',
       'popularity': 0.3372,
       'poster_path': '/6kXLqGk5kju688vv5S6uZdmb08w.jpg',
-      'release_date': '1951-12-23',
+      'release_date': datetime.date(1951, 12, 23),
       'title': 'Frosty the Snowman',
     }),
     dict({
@@ -3893,7 +3893,7 @@
       'overview': '',
       'popularity': 0.7132,
       'poster_path': '/5NpBk74KE57HWcmXmdc0A4QG8GS.jpg',
-      'release_date': '1992-12-01',
+      'release_date': datetime.date(1992, 12, 1),
       'title': 'The Spirit of Christmas: Jesus vs. Frosty',
     }),
     dict({
@@ -3958,7 +3958,7 @@
       'overview': '',
       'popularity': 0.5663,
       'poster_path': None,
-      'release_date': '',
+      'release_date': None,
       'title': 'Stay Frosty',
     }),
     dict({
@@ -3993,7 +3993,7 @@
       'overview': '',
       'popularity': 0.137,
       'poster_path': '/yVHThOR6EizZhkLGyuw8R7D1Yb9.jpg',
-      'release_date': '2009-10-13',
+      'release_date': datetime.date(2009, 10, 13),
       'title': 'HIT Favorites: Frosty Friends',
     }),
   ])
@@ -4063,7 +4063,7 @@
       'overview': "When virtually all of the residents of Piedmont, New Mexico, are found dead after the return to Earth of a space satellite, the head of the US Air Force's Project Scoop declares an emergency. A group of eminent scientists led by Dr. Jeremy Stone scramble to a secure laboratory and try to first isolate the life form while determining why two people from Piedmont - an old alcoholic and a six-month-old baby - survived. The scientists methodically study the alien life form unaware that it has already mutated and presents a far greater danger in the lab, which is equipped with a nuclear self-destruct device designed to prevent the escape of dangerous biological agents.",
       'popularity': 16.612,
       'poster_path': '/i3rTxQRJaBJoBcY8VMUOPT2E8Hp.jpg',
-      'release_date': '1971-03-12',
+      'release_date': datetime.date(1971, 3, 12),
       'title': 'The Andromeda Strain',
     }),
     dict({
@@ -4078,7 +4078,7 @@
       'overview': 'A behind the scenes look at the background and making of the 2008 TV mini-series',
       'popularity': 2.258,
       'poster_path': '/mmmMytFB1S0RsUhkRHx6Bb4RwiD.jpg',
-      'release_date': '2008-07-21',
+      'release_date': datetime.date(2008, 7, 21),
       'title': 'Terra Incognita: Making the Andromeda Strain',
     }),
     dict({
@@ -4093,7 +4093,7 @@
       'overview': "A man-made virus, 'The Killing Strain'-- an out-of-control swine flu-- turns infected humans into raging monsters. As it rapidly spreads, a group of uninfected survivors must make life-or-death decisions before the U.S. military firebombs the area in a desperate attempt contain the contagion. The survivors are unaware that the virus has already reached their group-- by infecting one of them-- and now the merciless metamorphic process has begun.",
       'popularity': 1.021,
       'poster_path': '/uvr3ukOPUZSLcg410I2Exi7bk0c.jpg',
-      'release_date': '2010-01-01',
+      'release_date': datetime.date(2010, 1, 1),
       'title': 'The Killing Strain',
     }),
     dict({
@@ -4108,7 +4108,7 @@
       'overview': 'The making of "The Andromeda Strain".',
       'popularity': 0.979,
       'poster_path': '/cclujsq7P7Ua0hYTQqtPlWDRpCb.jpg',
-      'release_date': '2003-04-01',
+      'release_date': datetime.date(2003, 4, 1),
       'title': 'The Andromeda Strain: Making the Film',
     }),
     dict({
@@ -4123,7 +4123,7 @@
       'overview': 'Lucille Cameron, the spirited daughter of a Kentucky colonel, discovers that her father is nearly bankrupt as a result of his dealings with New York horseman and stock promoter Jim De Luce....',
       'popularity': 0.158,
       'poster_path': '/wjzev8BHgnb3xXmOJKia3mneF0R.jpg',
-      'release_date': '1918-12-22',
+      'release_date': datetime.date(1918, 12, 22),
       'title': 'The Racing Strain',
     }),
     dict({
@@ -4138,7 +4138,7 @@
       'overview': "Although the prominent Hollywood family prides itself on its illustrious family tree, young Winifred Hollywood exhibits a fondness for wild adventures that greatly disturbs her parents. When Winifred becomes engaged to bank official Harold Burton, his equally snobbish parents visit the Hollywood home and are shocked by the young woman's spirited outbursts and mischievous tricks, and the engagement is broken after she decides to perform bareback feats with a traveling circus.",
       'popularity': 0.179,
       'poster_path': '/uEnJZjaHr4Yjw7wge3kxznbP0MI.jpg',
-      'release_date': '1918-01-14',
+      'release_date': datetime.date(1918, 1, 14),
       'title': 'The Wild Strain',
     }),
     dict({
@@ -4153,7 +4153,7 @@
       'overview': 'A race-car driver whose career is on the skids because of his drinking falls for a rich society girl. That motivates him to clean up his act and resume his career, but it may be too late for that.',
       'popularity': 1.441,
       'poster_path': '/e9WgARGE5sHKewCxS21bFnMP3Ac.jpg',
-      'release_date': '1932-12-16',
+      'release_date': datetime.date(1932, 12, 16),
       'title': 'The Racing Strain',
     }),
     dict({
@@ -4168,7 +4168,7 @@
       'overview': "Lt. Milt Mulford graduates from West Point and is assigned to a cavalry outpost in the West, near an Apache reservation. One day the Apaches, tired of being cheated by a crooked Indian agent, break the reservation and Mulford is sent after them with a patrol. Unfortunately, he cracks under the pressure of his first firefight, and is thrown out of the army. His fiancé, disgusted, ends their engagement. He sets out to prove that he is not a coward and regain his fiancé's love.",
       'popularity': 0.564,
       'poster_path': '/xe0dIiHdWP62vFS5gPJnKtLNQH0.jpg',
-      'release_date': '1925-12-27',
+      'release_date': datetime.date(1925, 12, 27),
       'title': 'The Golden Strain',
     }),
     dict({
@@ -4183,7 +4183,7 @@
       'overview': 'Short animated film.',
       'popularity': 0.238,
       'poster_path': None,
-      'release_date': '1971-01-01',
+      'release_date': datetime.date(1971, 1, 1),
       'title': 'The Noble Strain',
     }),
     dict({
@@ -4198,7 +4198,7 @@
       'overview': 'A family threatened by a nationwide biological apocalypse flees everyday city life to survive.',
       'popularity': 0.298,
       'poster_path': None,
-      'release_date': '2013-11-01',
+      'release_date': datetime.date(2013, 11, 1),
       'title': 'The Missouri Strain',
     }),
     dict({
@@ -4213,7 +4213,7 @@
       'overview': 'A 1966 short documentary showing athletes in action at the 1966 National Amateur Athletic Union track carnival in New York. The film was nominated for an Oscar for Best Live Action Short Film.',
       'popularity': 0.347,
       'poster_path': '/9NnuxC7BUb6yaOPCwpuESMiEtBM.jpg',
-      'release_date': '1966-01-01',
+      'release_date': datetime.date(1966, 1, 1),
       'title': 'The Winning Strain',
     }),
     dict({
@@ -4228,7 +4228,7 @@
       'overview': "An Earl's cadet son stops a German baron from planting wireless-controlled signals at Brighton.",
       'popularity': 0.442,
       'poster_path': '/8o5ESrX3Quncyp2pkqUD3m9JNrC.jpg',
-      'release_date': '1919-03-15',
+      'release_date': datetime.date(1919, 3, 15),
       'title': 'The Warrior Strain',
     }),
     dict({
@@ -4243,7 +4243,7 @@
       'overview': 'The story is set in Alaska, where spoiled and pampered heiress Octavia Van Ness has come for her health. Here she meets \'Chuck\' Hemingway, who despite his rough exterior is likewise a child of wealth, and a Yale graduate to boot. When Van Ness violently rejects his romantic overtures, Hemingway turns to an old Indian chum for advice. The Indian suggests rather chauvinistically that the way to win a headstrong girl is to "tame" her -- that is, treat \'er rough and make \'er like it.',
       'popularity': 0.442,
       'poster_path': '/a1APOLxbPfL3sWo2QNjZEMmkKtJ.jpg',
-      'release_date': '1915-11-07',
+      'release_date': datetime.date(1915, 11, 7),
       'title': 'The Iron Strain',
     }),
     dict({
@@ -4283,7 +4283,7 @@
       'overview': 'Positively torturous, undecipherable shambles of a horror film concerns the titular doctor and his nephew as they incautiously revive corpses in their basement laboratory.',
       'popularity': 0.479,
       'poster_path': None,
-      'release_date': '1991-10-31',
+      'release_date': datetime.date(1991, 10, 31),
       'title': 'Doctor Strain the Body Snatcher',
     }),
     dict({
@@ -4381,7 +4381,7 @@
       'overview': "When virtually all of the residents of Piedmont, New Mexico, are found dead after the return to Earth of a space satellite, the head of the US Air Force's Project Scoop declares an emergency. A group of eminent scientists led by Dr. Jeremy Stone scramble to a secure laboratory and try to first isolate the life form while determining why two people from Piedmont - an old alcoholic and a six-month-old baby - survived. The scientists methodically study the alien life form unaware that it has already mutated and presents a far greater danger in the lab, which is equipped with a nuclear self-destruct device designed to prevent the escape of dangerous biological agents.",
       'popularity': 16.612,
       'poster_path': '/i3rTxQRJaBJoBcY8VMUOPT2E8Hp.jpg',
-      'release_date': '1971-03-12',
+      'release_date': datetime.date(1971, 3, 12),
       'title': 'The Andromeda Strain',
     }),
     dict({
@@ -4396,7 +4396,7 @@
       'overview': 'A behind the scenes look at the background and making of the 2008 TV mini-series',
       'popularity': 2.258,
       'poster_path': '/mmmMytFB1S0RsUhkRHx6Bb4RwiD.jpg',
-      'release_date': '2008-07-21',
+      'release_date': datetime.date(2008, 7, 21),
       'title': 'Terra Incognita: Making the Andromeda Strain',
     }),
     dict({
@@ -4411,7 +4411,7 @@
       'overview': "A man-made virus, 'The Killing Strain'-- an out-of-control swine flu-- turns infected humans into raging monsters. As it rapidly spreads, a group of uninfected survivors must make life-or-death decisions before the U.S. military firebombs the area in a desperate attempt contain the contagion. The survivors are unaware that the virus has already reached their group-- by infecting one of them-- and now the merciless metamorphic process has begun.",
       'popularity': 1.021,
       'poster_path': '/uvr3ukOPUZSLcg410I2Exi7bk0c.jpg',
-      'release_date': '2010-01-01',
+      'release_date': datetime.date(2010, 1, 1),
       'title': 'The Killing Strain',
     }),
     dict({
@@ -4426,7 +4426,7 @@
       'overview': 'The making of "The Andromeda Strain".',
       'popularity': 0.979,
       'poster_path': '/cclujsq7P7Ua0hYTQqtPlWDRpCb.jpg',
-      'release_date': '2003-04-01',
+      'release_date': datetime.date(2003, 4, 1),
       'title': 'The Andromeda Strain: Making the Film',
     }),
     dict({
@@ -4441,7 +4441,7 @@
       'overview': 'Lucille Cameron, the spirited daughter of a Kentucky colonel, discovers that her father is nearly bankrupt as a result of his dealings with New York horseman and stock promoter Jim De Luce....',
       'popularity': 0.158,
       'poster_path': '/wjzev8BHgnb3xXmOJKia3mneF0R.jpg',
-      'release_date': '1918-12-22',
+      'release_date': datetime.date(1918, 12, 22),
       'title': 'The Racing Strain',
     }),
     dict({
@@ -4456,7 +4456,7 @@
       'overview': "Although the prominent Hollywood family prides itself on its illustrious family tree, young Winifred Hollywood exhibits a fondness for wild adventures that greatly disturbs her parents. When Winifred becomes engaged to bank official Harold Burton, his equally snobbish parents visit the Hollywood home and are shocked by the young woman's spirited outbursts and mischievous tricks, and the engagement is broken after she decides to perform bareback feats with a traveling circus.",
       'popularity': 0.179,
       'poster_path': '/uEnJZjaHr4Yjw7wge3kxznbP0MI.jpg',
-      'release_date': '1918-01-14',
+      'release_date': datetime.date(1918, 1, 14),
       'title': 'The Wild Strain',
     }),
     dict({
@@ -4471,7 +4471,7 @@
       'overview': 'A race-car driver whose career is on the skids because of his drinking falls for a rich society girl. That motivates him to clean up his act and resume his career, but it may be too late for that.',
       'popularity': 1.441,
       'poster_path': '/e9WgARGE5sHKewCxS21bFnMP3Ac.jpg',
-      'release_date': '1932-12-16',
+      'release_date': datetime.date(1932, 12, 16),
       'title': 'The Racing Strain',
     }),
     dict({
@@ -4486,7 +4486,7 @@
       'overview': "Lt. Milt Mulford graduates from West Point and is assigned to a cavalry outpost in the West, near an Apache reservation. One day the Apaches, tired of being cheated by a crooked Indian agent, break the reservation and Mulford is sent after them with a patrol. Unfortunately, he cracks under the pressure of his first firefight, and is thrown out of the army. His fiancé, disgusted, ends their engagement. He sets out to prove that he is not a coward and regain his fiancé's love.",
       'popularity': 0.564,
       'poster_path': '/xe0dIiHdWP62vFS5gPJnKtLNQH0.jpg',
-      'release_date': '1925-12-27',
+      'release_date': datetime.date(1925, 12, 27),
       'title': 'The Golden Strain',
     }),
     dict({
@@ -4501,7 +4501,7 @@
       'overview': 'Short animated film.',
       'popularity': 0.238,
       'poster_path': None,
-      'release_date': '1971-01-01',
+      'release_date': datetime.date(1971, 1, 1),
       'title': 'The Noble Strain',
     }),
     dict({
@@ -4516,7 +4516,7 @@
       'overview': 'A family threatened by a nationwide biological apocalypse flees everyday city life to survive.',
       'popularity': 0.298,
       'poster_path': None,
-      'release_date': '2013-11-01',
+      'release_date': datetime.date(2013, 11, 1),
       'title': 'The Missouri Strain',
     }),
     dict({
@@ -4531,7 +4531,7 @@
       'overview': 'A 1966 short documentary showing athletes in action at the 1966 National Amateur Athletic Union track carnival in New York. The film was nominated for an Oscar for Best Live Action Short Film.',
       'popularity': 0.347,
       'poster_path': '/9NnuxC7BUb6yaOPCwpuESMiEtBM.jpg',
-      'release_date': '1966-01-01',
+      'release_date': datetime.date(1966, 1, 1),
       'title': 'The Winning Strain',
     }),
     dict({
@@ -4546,7 +4546,7 @@
       'overview': "An Earl's cadet son stops a German baron from planting wireless-controlled signals at Brighton.",
       'popularity': 0.442,
       'poster_path': '/8o5ESrX3Quncyp2pkqUD3m9JNrC.jpg',
-      'release_date': '1919-03-15',
+      'release_date': datetime.date(1919, 3, 15),
       'title': 'The Warrior Strain',
     }),
     dict({
@@ -4561,7 +4561,7 @@
       'overview': 'The story is set in Alaska, where spoiled and pampered heiress Octavia Van Ness has come for her health. Here she meets \'Chuck\' Hemingway, who despite his rough exterior is likewise a child of wealth, and a Yale graduate to boot. When Van Ness violently rejects his romantic overtures, Hemingway turns to an old Indian chum for advice. The Indian suggests rather chauvinistically that the way to win a headstrong girl is to "tame" her -- that is, treat \'er rough and make \'er like it.',
       'popularity': 0.442,
       'poster_path': '/a1APOLxbPfL3sWo2QNjZEMmkKtJ.jpg',
-      'release_date': '1915-11-07',
+      'release_date': datetime.date(1915, 11, 7),
       'title': 'The Iron Strain',
     }),
     dict({
@@ -4601,7 +4601,7 @@
       'overview': 'Positively torturous, undecipherable shambles of a horror film concerns the titular doctor and his nephew as they incautiously revive corpses in their basement laboratory.',
       'popularity': 0.479,
       'poster_path': None,
-      'release_date': '1991-10-31',
+      'release_date': datetime.date(1991, 10, 31),
       'title': 'Doctor Strain the Body Snatcher',
     }),
     dict({

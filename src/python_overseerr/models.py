@@ -3,13 +3,20 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import date, datetime  # noqa: TC003
+from datetime import date, datetime
 from enum import IntEnum, IntFlag, StrEnum
 from typing import Annotated
 
 from mashumaro import field_options
 from mashumaro.mixins.orjson import DataClassORJSONMixin
 from mashumaro.types import Discriminator
+
+
+def deserialize_optional_date(value: str | None) -> date | None:
+    """Deserialize an optional date, treating an empty string as None."""
+    if value is None or value == "":
+        return None
+    return date.fromisoformat(value)
 
 
 @dataclass
@@ -114,8 +121,12 @@ class Movie(Result):
     backdrop_path: str | None = field(
         metadata=field_options(alias="backdropPath"), default=None
     )
-    release_date: str | None = field(
-        metadata=field_options(alias="releaseDate"), default=None
+    release_date: date | None = field(
+        metadata=field_options(
+            alias="releaseDate",
+            deserialize=deserialize_optional_date,
+        ),
+        default=None,
     )
     media_info: MediaInfo | None = field(
         metadata=field_options(alias="mediaInfo"), default=None
