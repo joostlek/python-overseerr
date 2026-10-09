@@ -12,6 +12,13 @@ from mashumaro.mixins.orjson import DataClassORJSONMixin
 from mashumaro.types import Discriminator
 
 
+def deserialize_optional_date(value: str | None) -> date | None:
+    """Deserialize an optional date, treating an empty string as None."""
+    if value is None or value == "":
+        return None
+    return date.fromisoformat(value)
+
+
 @dataclass
 class RequestCount(DataClassORJSONMixin):
     """Request count model."""
@@ -118,7 +125,12 @@ class TV(Result):
     """TV result model."""
 
     mediaType = ResultMediaType.TV  # noqa: N815 # pylint: disable=invalid-name
-    first_air_date: date = field(metadata=field_options(alias="firstAirDate"))
+    first_air_date: date | None = field(
+        metadata=field_options(
+            alias="firstAirDate",
+            deserialize=deserialize_optional_date,
+        )
+    )
     name: str
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_name: str = field(metadata=field_options(alias="originalName"))

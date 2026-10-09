@@ -223,6 +223,43 @@ async def test_search(
         json=None,
     )
 
+async def test_search_with_empty_tv_first_air_date(
+    responses: aiointercept,
+    client: OverseerrClient,
+) -> None:
+    """Test searching for a TV result with an empty first air date."""
+    responses.get(
+        f"{MOCK_URL}/search?query=unknown",
+        status=200,
+        body="""{
+            "page": 1,
+            "totalPages": 1,
+            "totalResults": 1,
+            "results": [
+                {
+                    "id": 123,
+                    "firstAirDate": "",
+                    "genreIds": [],
+                    "mediaType": "tv",
+                    "name": "Unknown",
+                    "originCountry": ["US"],
+                    "originalLanguage": "en",
+                    "originalName": "Unknown",
+                    "overview": "",
+                    "popularity": 0,
+                    "voteAverage": 0,
+                    "voteCount": 0,
+                    "backdropPath": null,
+                    "posterPath": null
+                }
+            ]
+        }""",
+    )
+
+    results = await client.search("unknown")
+
+    assert len(results) == 1
+    assert results[0].first_air_date is None
 
 async def test_search_with_encoded_spaces(
     responses: aiointercept, client: OverseerrClient
