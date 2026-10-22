@@ -194,11 +194,9 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
-    email: str
     avatar: str
     username: str | None
     plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
-    plex_id: int | None = field(metadata=field_options(alias="plexId"))
     movie_quota_limit: int | None = field(
         metadata=field_options(alias="movieQuotaLimit")
     )
@@ -214,6 +212,8 @@ class User(DataClassORJSONMixin):
         metadata=field_options(alias="recoveryLinkExpirationDate")
     )
     user_type: int | None = field(metadata=field_options(alias="userType"))
+    email: str | None = None
+    plex_id: int | None = field(metadata=field_options(alias="plexId"), default=None)
     settings: UserSettings | None = None
     warnings: list[str] = field(default_factory=list)
     jellyfin_username: str | None = field(
