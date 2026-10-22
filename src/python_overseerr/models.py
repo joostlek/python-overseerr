@@ -57,6 +57,8 @@ class MediaStatus(IntEnum):
     PROCESSING = 3
     PARTIALLY_AVAILABLE = 4
     AVAILABLE = 5
+    BLOCKLISTED = 6
+    DELETED = 7
 
 
 @dataclass

@@ -2668,7 +2668,7 @@
         'id': 182,
         'imdb_id': 'tt0079470',
         'media_type': <MediaType.MOVIE: 'movie'>,
-        'status': <MediaStatus.AVAILABLE: 5>,
+        'status': <MediaStatus.DELETED: 7>,
         'tmdb_id': 583,
         'tvdb_id': None,
         'updated_at': datetime.datetime(2026, 1, 30, 13, 0, 47, tzinfo=datetime.timezone.utc),
