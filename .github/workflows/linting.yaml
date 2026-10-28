@@ -23,7 +23,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -46,7 +46,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -102,7 +102,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -127,7 +127,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -150,7 +150,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -173,7 +173,7 @@ jobs:
         run: pipx install poetry
       - name: 🏗 Set up Python ${{ env.DEFAULT_PYTHON }}
         id: python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: ${{ env.DEFAULT_PYTHON }}
           cache: "poetry"
@@ -184,7 +184,7 @@ jobs:
       - name: 🏗 Install Python dependencies
         run: poetry install --no-interaction
       - name: 🏗 Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: ".nvmrc"
           cache: "npm"

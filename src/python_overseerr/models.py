@@ -64,6 +64,8 @@ class MediaStatus(IntEnum):
     PROCESSING = 3
     PARTIALLY_AVAILABLE = 4
     AVAILABLE = 5
+    BLOCKLISTED = 6
+    DELETED = 7
 
 
 @dataclass
@@ -138,7 +140,12 @@ class TV(Result):
     """TV result model."""
 
     mediaType = ResultMediaType.TV  # noqa: N815 # pylint: disable=invalid-name
-    first_air_date: date = field(metadata=field_options(alias="firstAirDate"))
+    first_air_date: date | None = field(
+        metadata=field_options(
+            alias="firstAirDate",
+            deserialize=deserialize_optional_date,
+        )
+    )
     name: str
     original_language: str = field(metadata=field_options(alias="originalLanguage"))
     original_name: str = field(metadata=field_options(alias="originalName"))
@@ -218,11 +225,9 @@ class User(DataClassORJSONMixin):
     """User model."""
 
     id: int
-    email: str
     avatar: str
     username: str | None
     plex_username: str | None = field(metadata=field_options(alias="plexUsername"))
-    plex_id: int | None = field(metadata=field_options(alias="plexId"))
     movie_quota_limit: int | None = field(
         metadata=field_options(alias="movieQuotaLimit")
     )
@@ -238,6 +243,8 @@ class User(DataClassORJSONMixin):
         metadata=field_options(alias="recoveryLinkExpirationDate")
     )
     user_type: int | None = field(metadata=field_options(alias="userType"))
+    email: str | None = None
+    plex_id: int | None = field(metadata=field_options(alias="plexId"), default=None)
     settings: UserSettings | None = None
     warnings: list[str] = field(default_factory=list)
     jellyfin_username: str | None = field(
