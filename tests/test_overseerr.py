@@ -18,6 +18,7 @@ from python_overseerr.exceptions import (
     OverseerrError,
 )
 from python_overseerr.models import (
+    TV,
     IssueStatus,
     IssueType,
     NotificationType,
@@ -223,6 +224,7 @@ async def test_search(
         json=None,
     )
 
+
 async def test_search_with_empty_tv_first_air_date(
     responses: aiointercept,
     client: OverseerrClient,
@@ -259,7 +261,9 @@ async def test_search_with_empty_tv_first_air_date(
     results = await client.search("unknown")
 
     assert len(results) == 1
+    assert isinstance(results[0], TV)
     assert results[0].first_air_date is None
+
 
 async def test_search_with_encoded_spaces(
     responses: aiointercept, client: OverseerrClient

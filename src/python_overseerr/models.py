@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import date, datetime  # noqa: TC003
+from datetime import date, datetime
 from enum import IntEnum, IntFlag, StrEnum
 from typing import Annotated
 
