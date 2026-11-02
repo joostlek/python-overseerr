@@ -92,6 +92,9 @@ warn_unused_configs = true
 warn_unused_ignores = true
 
 [tool.pylint.MASTER]
+extension-pkg-allow-list = [
+  "orjson",
+]
 ignore = [
   "tests",
 ]
