@@ -16,7 +16,7 @@ from python_overseerr.exceptions import (
     OverseerrAuthenticationError,
     OverseerrConnectionError,
     OverseerrError,
-    OverseerrMediaAlreadyAvailableError,
+    OverseerrNothingToRequestError,
 )
 from python_overseerr.models import (
     IssueStatus,
@@ -521,9 +521,9 @@ async def test_creating_request_nothing_to_request(
     client: OverseerrClient,
     service: str,
 ) -> None:
-    """Test creating a request when every season is already available.
+    """Test creating a request when every season is already requested or available.
 
-    Overseerr responds with a 2xx status and a {"status", "message"} body
+    Overseerr responds with HTTP 202 and a {"status", "message"} body
     instead of a created request in this case, rather than an HTTP error.
     """
     responses.post(
@@ -531,7 +531,7 @@ async def test_creating_request_nothing_to_request(
         status=202,
         body=load_fixture(f"{service}/no_seasons_available.json"),
     )
-    with pytest.raises(OverseerrMediaAlreadyAvailableError):
+    with pytest.raises(OverseerrNothingToRequestError):
         await client.create_request(MediaType.TV, 249522, "all")
 
 

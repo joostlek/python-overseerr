@@ -17,7 +17,7 @@ from yarl import URL
 from .exceptions import (
     OverseerrAuthenticationError,
     OverseerrConnectionError,
-    OverseerrMediaAlreadyAvailableError,
+    OverseerrNothingToRequestError,
 )
 from .models import (
     Issue,
@@ -177,14 +177,10 @@ class OverseerrClient:
             data["seasons"] = seasons
         response = await self._request(METH_POST, "request", data=data)
         parsed: dict[str, Any] = orjson.loads(response)
-        if "id" not in parsed:
-            # A 2xx response without a created request means there was
-            # nothing left to request, e.g. every season is already
-            # available. The body is {"status": ..., "message": ...}
-            # rather than a MediaRequest in that case.
+        if parsed.get("status") == 202:
             msg = parsed.get("message", "No request was created")
-            raise OverseerrMediaAlreadyAvailableError(msg)
-        return RequestWithMedia.from_json(response)
+            raise OverseerrNothingToRequestError(msg)
+        return RequestWithMedia.from_dict(parsed)
 
     async def get_issues(
         self,

@@ -13,11 +13,10 @@ class OverseerrAuthenticationError(OverseerrError):
     """Overseerr authentication exception."""
 
 
-class OverseerrMediaAlreadyAvailableError(OverseerrError):
+class OverseerrNothingToRequestError(OverseerrError):
     """Raised when there is nothing left to request.
 
-    Overseerr responds with a 2xx status and a ``{"status", "message"}`` body
+    Overseerr responds with HTTP 202 and a ``{"status", "message"}`` body
     instead of a created request when every requested season is already
-    available (e.g. ``NoSeasonsAvailableError`` server-side), so this can't
-    be detected from the HTTP status code alone.
+    requested or available (``NoSeasonsAvailableError`` server-side).
     """
