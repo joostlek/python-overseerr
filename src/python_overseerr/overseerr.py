@@ -11,9 +11,14 @@ from urllib.parse import quote
 
 from aiohttp import ClientError, ClientResponseError, ClientSession
 from aiohttp.hdrs import METH_DELETE, METH_GET, METH_POST, METH_PUT
+import orjson
 from yarl import URL
 
-from .exceptions import OverseerrAuthenticationError, OverseerrConnectionError
+from .exceptions import (
+    OverseerrAuthenticationError,
+    OverseerrConnectionError,
+    OverseerrNothingToRequestError,
+)
 from .models import (
     Issue,
     IssueCount,
@@ -171,7 +176,11 @@ class OverseerrClient:
         if seasons:
             data["seasons"] = seasons
         response = await self._request(METH_POST, "request", data=data)
-        return RequestWithMedia.from_json(response)
+        parsed: dict[str, Any] = orjson.loads(response)
+        if parsed.get("status") == 202:
+            msg = parsed.get("message", "No request was created")
+            raise OverseerrNothingToRequestError(msg)
+        return RequestWithMedia.from_dict(parsed)
 
     async def get_issues(
         self,
